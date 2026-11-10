@@ -1,0 +1,8 @@
+{
+  "name": "Remix SACHHAY - Nhà Sách Trực Tuyến Hàng Đầu",
+  "description": "Website thương mại điện tử bán sách SACHHAY phong cách Fahasa với hệ thống danh mục phong phú, Flash Sale, giỏ hàng, thanh toán COD và cổng quản trị Admin toàn diện.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
