@@ -71,8 +71,8 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                 </div>
             <?php endif; ?>
             <div class="empty-actions">
-                <a href="/books" class="button btn-browse-books">Khám Phá Sách Ngay &rarr;</a>
-                <a href="/account#vouchers" class="secondary btn-empty-vouchers">Xem Kho Voucher &rarr;</a>
+                <a href="/books" class="btn-browse-books">Khám Phá Sách Ngay &rarr;</a>
+                <a href="/account#vouchers" class="btn-empty-vouchers">🎟️ Xem Kho Voucher &rarr;</a>
             </div>
         </div>
 
