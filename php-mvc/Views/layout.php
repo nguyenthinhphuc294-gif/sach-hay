@@ -35,7 +35,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     </div>
     <div class="nav-bar">
         <div class="wrap nav-row">
-            <?php $navCategories = ['Văn Học','Sách Kinh Tế','Tâm Lý - Kỹ Năng','Manga - Comic','Sách Thiếu Nhi','Sách Ngoại Văn','Văn Phòng Phẩm']; ?>
+            <?php $navCategories = ['Văn Học','Sách Kinh Tế','Tâm Lý - Kỹ Năng','Manga - Comic','Manga Huyền Thoại','Sách Thiếu Nhi','Sách Ngoại Văn','Văn Phòng Phẩm']; ?>
             <details class="category-menu"><summary><?php $icon = 'menu'; require __DIR__ . '/store-icon.php'; ?> Danh mục sản phẩm <?php $icon = 'down'; require __DIR__ . '/store-icon.php'; ?></summary>
                 <div><?php foreach ($navCategories as $label): ?><a href="/books?<?= $e(http_build_query(['category'=>$label])) ?>"><?= $e($label) ?></a><?php endforeach; ?></div>
             </details>
@@ -43,7 +43,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
             <a href="/"<?= ($home ?? false) ? ' aria-current="page"' : '' ?>>Trang Chủ</a>
             <a href="/books"<?= ($view === 'books' && !($home ?? false) && !($category ?? '') && ($sort ?? '') !== 'sale') ? ' aria-current="page"' : '' ?>>Tất Cả Sách</a>
             <a href="/about"<?= $view === 'about' ? ' aria-current="page"' : '' ?>>Về chúng tôi &amp; Liên hệ</a>
-            <?php foreach (array_slice($navCategories, 0, 6) as $label): ?>
+            <?php foreach ($navCategories as $label): ?>
                 <a href="/books?<?= $e(http_build_query(['category'=>$label])) ?>"<?= ($category ?? '') === $label ? ' aria-current="page"' : '' ?>><?= $e($label) ?></a>
             <?php endforeach; ?>
             </nav>

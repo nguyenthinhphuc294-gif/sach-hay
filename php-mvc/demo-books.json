@@ -5598,5 +5598,1605 @@
     "stock": 115,
     "soldCount": 5903,
     "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/52/d2/e8/e4fbb8d1d7c4bf9abaf2eb0c516d4919.jpg"
+  },
+  {
+    "id": "book-701",
+    "title": "Doraemon Học Tập (Tái Bản)",
+    "price": 579600,
+    "stock": 116,
+    "soldCount": 798,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e3/5c/e9/f2d636b7dad8b043d082e1e38642466e.jpg"
+  },
+  {
+    "id": "book-702",
+    "title": "Doraemon Tuyển Tập Những Người Thân Yêu (6 Tập)",
+    "price": 165600,
+    "stock": 132,
+    "soldCount": 7365,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/56/7d/53/27865b80694cc24dc9a4d8605dd3960d.jpg"
+  },
+  {
+    "id": "book-703",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu (6 Tập)",
+    "price": 285000,
+    "stock": 203,
+    "soldCount": 4778,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/dd/f6/0b/870567b0e7d0eb16b51ef1904ef96d30.jpg"
+  },
+  {
+    "id": "book-704",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số (6 Tập)",
+    "price": 165600,
+    "stock": 41,
+    "soldCount": 3200,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/media/catalog/product/product/8b/89/29/0204f3f5a53694803dec644ecc3f643b.jpg"
+  },
+  {
+    "id": "book-705",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 1",
+    "price": 46000,
+    "stock": 181,
+    "soldCount": 1117,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/65/7a/8d/8388cc6337f97d5ae53450aaa956866d.jpg"
+  },
+  {
+    "id": "book-706",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 5",
+    "price": 46000,
+    "stock": 44,
+    "soldCount": 2082,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/04/43/d6/c912928132f9407a34fce89b3025116b.jpg"
+  },
+  {
+    "id": "book-707",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 2",
+    "price": 46000,
+    "stock": 171,
+    "soldCount": 2282,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/37/87/fd/926afc9f84d7ecef6b14b4998ed92f83.jpg"
+  },
+  {
+    "id": "book-708",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 5 (Tái Bản)",
+    "price": 27000,
+    "stock": 186,
+    "soldCount": 803,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/87/d6/23/f98aedaf16f7c2d73dc20b28ac5c3db0.jpg"
+  },
+  {
+    "id": "book-709",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 3",
+    "price": 46000,
+    "stock": 192,
+    "soldCount": 8916,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/64/71/ea/b8412b4a2faf218fd9ef07a4e603a474.jpg"
+  },
+  {
+    "id": "book-710",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 6",
+    "price": 46000,
+    "stock": 49,
+    "soldCount": 3199,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d0/bf/31/3da1bd75892b3baa36a7ad9c395e2aa1.jpg"
+  },
+  {
+    "id": "book-711",
+    "title": "Đội Quân Doraemon (6 Tập)",
+    "price": 131100,
+    "stock": 140,
+    "soldCount": 1409,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d6/7d/f1/64c856b502fc9f325b6e9be3710ab428.jpg"
+  },
+  {
+    "id": "book-712",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 4",
+    "price": 46000,
+    "stock": 112,
+    "soldCount": 7027,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/10/13/35/e2d737024737a37fe13edd87396a6406.jpg"
+  },
+  {
+    "id": "book-713",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 2: Nobita Và Shizuka (Bìa Mềm)",
+    "price": 33250,
+    "stock": 55,
+    "soldCount": 9816,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/9d/74/df/4f481ac0244481a3eca2e40f64eb020d.jpg"
+  },
+  {
+    "id": "book-714",
+    "title": "Doraemon Hoạt Hình Màu - Tập 1 (Tái Bản 2020)",
+    "price": 33250,
+    "stock": 214,
+    "soldCount": 5836,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5e/a5/37/bd614af1f3910843c44497b75f83f748.jpg"
+  },
+  {
+    "id": "book-715",
+    "title": "Doraemon Plus Tập 1",
+    "price": 23000,
+    "stock": 108,
+    "soldCount": 9465,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/fa/7a/73/2341a454cf41b4de09989292a5f2d7a9.jpg"
+  },
+  {
+    "id": "book-716",
+    "title": "Doraemon Plus Tập 5",
+    "price": 23750,
+    "stock": 161,
+    "soldCount": 9229,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f7/d1/86/d41d3bfbf8681f5ba7fc5e6f4e1ff479.jpg"
+  },
+  {
+    "id": "book-717",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 1: Những Tình Huống Dở Khóc Dở Cười (Bìa Mềm) (Tái Bản 2022)",
+    "price": 34100,
+    "stock": 207,
+    "soldCount": 7934,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/76/f3/03/c0ba0a5b7d1b3d0df993efbdd068cb47.png"
+  },
+  {
+    "id": "book-718",
+    "title": "Doraemon Tập 10: Nobita Và Hành Tinh Muông Thú [Tái Bản 2023]",
+    "price": 23000,
+    "stock": 61,
+    "soldCount": 719,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/31/a0/7d/cf248cad98bdfc0572a710cbc827d1e0.jpg"
+  },
+  {
+    "id": "book-719",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 4 (Tái Bản)",
+    "price": 27000,
+    "stock": 187,
+    "soldCount": 644,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/10/a3/fe/6f8ccab471c94e0cc85228970a647f80.jpg"
+  },
+  {
+    "id": "book-720",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 3: Tình Huống Bất Ngờ (Bìa Mềm)",
+    "price": 33250,
+    "stock": 126,
+    "soldCount": 3115,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/94/58/ed/d493133defc7e686b26b9d925e434256.jpg"
+  },
+  {
+    "id": "book-721",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 4: Thiên Nhiên Kì Thú (Bìa Mềm)",
+    "price": 33250,
+    "stock": 206,
+    "soldCount": 7931,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/24/cd/7a/575806d3c3d00391d2b43438223664ae.jpg"
+  },
+  {
+    "id": "book-722",
+    "title": "Doraemon Hoạt Hình Màu - Tập 2 (Tái Bản 2020)",
+    "price": 29750,
+    "stock": 103,
+    "soldCount": 2932,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/4c/c4/32/6c726fba31967b000ee63055e80ba6cc.jpg"
+  },
+  {
+    "id": "book-723",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 3: Tình Huống Bất Ngờ (Tái Bản 2019)",
+    "price": 34300,
+    "stock": 146,
+    "soldCount": 6758,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/66/7b/80/ebe8a5ee1c40d3df4106d1b1632e775e.jpg"
+  },
+  {
+    "id": "book-724",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 2 (Tái Bản 2023)",
+    "price": 49000,
+    "stock": 131,
+    "soldCount": 2176,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ba/bf/39/c7ef7ba57c9cdadc845ba4df4913d9a1.jpg"
+  },
+  {
+    "id": "book-725",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu - Tập 4 (Tái Bản 2023)",
+    "price": 49000,
+    "stock": 158,
+    "soldCount": 568,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/dc/aa/bb/415620a388b9e18b301e74466d8524dc.jpg"
+  },
+  {
+    "id": "book-726",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 4: Thiên Nhiên Kì Thú (Tái Bản 2019)",
+    "price": 34300,
+    "stock": 212,
+    "soldCount": 9340,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/cf/57/cf/1c513168437b96ba57b5d1effcac3ebf.jpg"
+  },
+  {
+    "id": "book-727",
+    "title": "Doraemon Tranh Truyện Màu - Nobita Vũ Trụ Phiêu Lưu Kí - Tập 1",
+    "price": 27600,
+    "stock": 89,
+    "soldCount": 7825,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ae/a4/89/de873768a16cfb21f9cccbb3606e56c1.jpg"
+  },
+  {
+    "id": "book-728",
+    "title": "Doraemon Học Tập - Cùng Làm Họa Sĩ (Tái Bản 2024)",
+    "price": 44100,
+    "stock": 197,
+    "soldCount": 8988,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/73/81/20/5100ad4931968f202418aca1abc5fe0e.jpg"
+  },
+  {
+    "id": "book-729",
+    "title": "Truyện - Doraemon Học Tập - Chọn Lẻ 19 Chủ Đề - Kim Đồng",
+    "price": 50000,
+    "stock": 56,
+    "soldCount": 1952,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/15/73/df/d85e9c2eaf803f4ea71b9fa664492a97.jpg"
+  },
+  {
+    "id": "book-730",
+    "title": "Doraemon Bảo Bối - Tập 1",
+    "price": 33250,
+    "stock": 147,
+    "soldCount": 2241,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/73/9b/13/db1de8eac5c6bc741440eaaa0d042e4a.jpg"
+  },
+  {
+    "id": "book-731",
+    "title": "Doraemon Bảo Bối - Tập 1 (Tái Bản 2023)",
+    "price": 34300,
+    "stock": 110,
+    "soldCount": 3348,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ee/85/ed/97a1acdc43e23b61b6fe5c4858b7292a.jpg"
+  },
+  {
+    "id": "book-732",
+    "title": "Doraemon Học Tập: Thể Dục Dụng Cụ (Tái Bản 2021)",
+    "price": 39200,
+    "stock": 174,
+    "soldCount": 5372,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/2a/e6/37/b01c661f9176a6b1c7e2e7684517cbc9.jpg"
+  },
+  {
+    "id": "book-733",
+    "title": "Bộ Sách Doraemon: Tuyển Tập Những Người Thân Yêu (Không Kèm Hộp)",
+    "price": 176400,
+    "stock": 52,
+    "soldCount": 4536,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/31/bf/66/c4773d3226611e563daa0755747ce14a.jpg"
+  },
+  {
+    "id": "book-734",
+    "title": "Doraemon - Truyện Dài - Tập 5 - Nobita Và Chuyến Phiêu Lưu Vào Xứ Quỷ (Tái Bản 2026)",
+    "price": 25000,
+    "stock": 192,
+    "soldCount": 6266,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/46/a5/97/0c12730090f3ec7cd9362a9725733caf.jpg"
+  },
+  {
+    "id": "book-735",
+    "title": "Doraemon Học Tập - Những Trò Chơi Em Yêu Thích (Tái Bản 2026)",
+    "price": 44100,
+    "stock": 124,
+    "soldCount": 4710,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/bb/03/4e/b3743188602b888e49e6edc59b50c334.jpg"
+  },
+  {
+    "id": "book-736",
+    "title": "Doraemon Học Tập - Diện Tích-Thể Tích (Tái Bản 2024)",
+    "price": 44100,
+    "stock": 72,
+    "soldCount": 5057,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/06/ef/ce/02a0d69ce69ffcf4736a2cf16fda4b70.jpg"
+  },
+  {
+    "id": "book-737",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 4 - Thiên Nhiên Kì Thú",
+    "price": 35000,
+    "stock": 67,
+    "soldCount": 2615,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/b0/54/01/537ca021d4af673d12bea6642428d65d.png"
+  },
+  {
+    "id": "book-738",
+    "title": "Tiểu Thuyết Doraemon - Nobita Và Cuộc Phiêu Lưu Vào Thế Giới Trong Tranh",
+    "price": 57000,
+    "stock": 135,
+    "soldCount": 3130,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a6/b8/a9/0d19a5f4561fa5f0d415eac87f1a85f1.jpg"
+  },
+  {
+    "id": "book-739",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 2",
+    "price": 27000,
+    "stock": 133,
+    "soldCount": 6307,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/db/01/1f/b324e596474a45601b1bd079ca90cdbd.jpg"
+  },
+  {
+    "id": "book-740",
+    "title": "Doraemon Truyện Ngắn (45 Tập)",
+    "price": 1012500,
+    "stock": 152,
+    "soldCount": 1336,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e4/10/e3/1396373bfbafe6f8787bc7df79208060.jpg"
+  },
+  {
+    "id": "book-741",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 6 (Tái Bản)",
+    "price": 27000,
+    "stock": 81,
+    "soldCount": 5839,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/cc/9d/28/9aa2a244d7df3c85609d94b9284f9030.jpg"
+  },
+  {
+    "id": "book-742",
+    "title": "Doraemon Tuyển Tập Theo Chủ Đề (10 Cuốn)",
+    "price": 322000,
+    "stock": 193,
+    "soldCount": 6345,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/media/catalog/product/product/69/4b/ed/e4f840b621a08379848639a4cc40605d.jpg"
+  },
+  {
+    "id": "book-743",
+    "title": "Doraemon Plus Tập 2",
+    "price": 20240,
+    "stock": 129,
+    "soldCount": 3555,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f6/3a/5c/54786d39b5db9b4dd890513aceff0047.jpg"
+  },
+  {
+    "id": "book-744",
+    "title": "Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 3",
+    "price": 25500,
+    "stock": 185,
+    "soldCount": 9015,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/95/3b/30/a4865d9afb7eb3ccfd18e3c025affbe2.jpg"
+  },
+  {
+    "id": "book-745",
+    "title": "Doraemon Tập 19: Nobita - Vũ Trụ Phiêu Lưu Kí [Tái Bản]",
+    "price": 21600,
+    "stock": 66,
+    "soldCount": 5933,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/c8/e9/40/1d2fa82f6d3f2016fd8cccd3da6bf58c.jpg"
+  },
+  {
+    "id": "book-746",
+    "title": "Doraemon Tập 17: Nobita Và Cuộc Phiêu Lưu Ở Thành Phố Dây Cót [Tái Bản 2023]",
+    "price": 23000,
+    "stock": 160,
+    "soldCount": 940,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e6/1d/4b/0355f04d454c5197c86352a225d835f2.jpg"
+  },
+  {
+    "id": "book-747",
+    "title": "Doraemon Tập 13: Nobita Và Mê Cung Thiếc [Tái Bản 2023]",
+    "price": 23000,
+    "stock": 34,
+    "soldCount": 546,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/0e/4c/a6/4a66f24321e412522e1eb3e85dcbfd75.jpg"
+  },
+  {
+    "id": "book-748",
+    "title": "Doraemon Đố Vui (Tập 1) - Doraemon Xuất Hiện",
+    "price": 33950,
+    "stock": 201,
+    "soldCount": 5018,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d9/89/fb/c79e61cb9cd80d25a3b067836920981d.jpg"
+  },
+  {
+    "id": "book-749",
+    "title": "Doraemon Tranh Truyện Màu : Nobita Và Cuộc Phiêu Lưu Ở Thành Phố Dây Cót - Tập 1",
+    "price": 27600,
+    "stock": 198,
+    "soldCount": 1633,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ba/bd/fa/b31cd971b389b56981c23bf04c0eeb19.jpg"
+  },
+  {
+    "id": "book-750",
+    "title": "Doraemon - Tuyển Tập Theo Chủ Đề Tập 6: Những Câu Chuyện Đáng Sợ (Bìa Mềm)",
+    "price": 34100,
+    "stock": 62,
+    "soldCount": 9724,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/82/24/76/d876ca25cf2d0e25fa0ec02415ce4048.jpg"
+  },
+  {
+    "id": "book-751",
+    "title": "One Piece Tập 102 (Bản Bìa Áo): “Bước Ngoặt Quan Trọng”",
+    "price": 27600,
+    "stock": 149,
+    "soldCount": 721,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/db/1c/68/cbfce485ed8c95e5f9c4b003e1005b9e.jpg"
+  },
+  {
+    "id": "book-752",
+    "title": "One Piece Tập 104 (Bản Bìa Áo): “Kozuki Momonosuke - Tướng Quân Của Wano Quốc”",
+    "price": 27600,
+    "stock": 56,
+    "soldCount": 6501,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/46/9c/c9/7298b31a45f14b16fca8cd96d504698b.jpg"
+  },
+  {
+    "id": "book-753",
+    "title": "One Piece - Tập 109",
+    "price": 27600,
+    "stock": 42,
+    "soldCount": 984,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/dc/79/ff/8e4f367e6c5230e7ed5d36ceae461ddd.jpg"
+  },
+  {
+    "id": "book-754",
+    "title": "One Piece Tập 103 - Bản Bìa Áo: “Chiến Binh Giải Phóng”",
+    "price": 27600,
+    "stock": 120,
+    "soldCount": 2163,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a2/8b/c4/9df24f71612536ae70e462cc7574ba72.jpg"
+  },
+  {
+    "id": "book-755",
+    "title": "One Piece (101 Tập) (Tái Bản)",
+    "price": 2695500,
+    "stock": 87,
+    "soldCount": 7112,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/80/8b/51/a10fca469596aef0dbff5a8d47f9423e.jpg"
+  },
+  {
+    "id": "book-756",
+    "title": "Bộ Truyện One Piece [Chọn Tập Lẻ",
+    "price": 23000,
+    "stock": 192,
+    "soldCount": 6355,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/45/bb/b9/76349f438a48121700cfab25a56588e4.jpg"
+  },
+  {
+    "id": "book-757",
+    "title": "One Piece Tập 79: Lucy!! (Tái Bản 2022)",
+    "price": 21250,
+    "stock": 148,
+    "soldCount": 4833,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/43/c8/e3/33bb41a89aefd279e04838570115eaff.jpg"
+  },
+  {
+    "id": "book-758",
+    "title": "One Piece Party - Tập 7",
+    "price": 27600,
+    "stock": 141,
+    "soldCount": 3843,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/bf/44/d2/84b2d59534a8f984d6d2796fb996e418.jpg"
+  },
+  {
+    "id": "book-759",
+    "title": "One Piece Tập 106",
+    "price": 27600,
+    "stock": 117,
+    "soldCount": 1324,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a8/d8/db/e3147b06f3f4e80d5b4ed4a6a1d41946.jpg"
+  },
+  {
+    "id": "book-760",
+    "title": "One Piece Tập 69: Sad (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 191,
+    "soldCount": 1243,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/00/4c/c0/5139a635549e940e55ff182096bb1ddd.jpg"
+  },
+  {
+    "id": "book-761",
+    "title": "One Piece Tập 105 (Bản Bìa Áo): “Ước Mơ Của Luffy”",
+    "price": 27600,
+    "stock": 115,
+    "soldCount": 8149,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/44/66/3b/faadbc97885280795ec2e78f17e5f9d4.jpg"
+  },
+  {
+    "id": "book-762",
+    "title": "One Piece Tập 74: Ta Sẽ Luôn Ở Bên Con (Tái Bản 2022)",
+    "price": 28800,
+    "stock": 55,
+    "soldCount": 9891,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a9/cc/f1/7a5ac7edf15dcf12ea7096efcbce63ef.jpg"
+  },
+  {
+    "id": "book-763",
+    "title": "One Piece - Tập 111 “Cuộc Phiêu Lưu Ở Elbaph”",
+    "price": 23000,
+    "stock": 33,
+    "soldCount": 280,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3d/cb/45/4a9859a3ffe9e33e5ce20f97d93c003e.jpg"
+  },
+  {
+    "id": "book-764",
+    "title": "One Piece Tập 101: “Siêu Sao Thượng Đài” - Bản Bìa Cứng - Limited Edition",
+    "price": 150000,
+    "stock": 189,
+    "soldCount": 2118,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/03/b4/27/ced0cc5c4ee1e1106cf013bdbb09a44d.jpg"
+  },
+  {
+    "id": "book-765",
+    "title": "One Piece - Tập 106 - “Giấc Mơ Của Thiên Tài” - Bản Bìa Áo",
+    "price": 30000,
+    "stock": 102,
+    "soldCount": 3996,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/59/69/71/b3e5c8fd2c4a712cc6229bb5b5b41479.jpg"
+  },
+  {
+    "id": "book-766",
+    "title": "One Piece Tập 27: Oveture (Tái Bản)",
+    "price": 28500,
+    "stock": 168,
+    "soldCount": 1023,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ff/b3/bf/938932b083152d5146e876d5897a062c.jpg"
+  },
+  {
+    "id": "book-767",
+    "title": "One Piece Party - Tập 5 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 42,
+    "soldCount": 326,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/95/a1/0f/12b9f6a6cf8fb9c482a7cc0b9d147848.jpg"
+  },
+  {
+    "id": "book-768",
+    "title": "One Piece - Tập 13 - Không Sao!!! - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 216,
+    "soldCount": 1362,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/cb/10/a2/52ae0649edb8b9b05ff7ee94cfec9195.jpg"
+  },
+  {
+    "id": "book-769",
+    "title": "One Piece - Tập 108 (Bìa rời)",
+    "price": 28500,
+    "stock": 204,
+    "soldCount": 8497,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/55/d3/32/021f99ee389763d79b8f61ffde2c428d.jpg"
+  },
+  {
+    "id": "book-770",
+    "title": "One Piece - Tập 6 - Lời Thề - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 82,
+    "soldCount": 4781,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/31/7b/3c/513f1e14efe7d95dc060883fc51350c7.jpg"
+  },
+  {
+    "id": "book-771",
+    "title": "One Piece Tập 23: Cuôc Phiêu Lưu Của Vivi (Tái Bản)",
+    "price": 28500,
+    "stock": 123,
+    "soldCount": 5984,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/63/c6/42/be687874447ffe2f72ce2f6c70fb4a05.jpg"
+  },
+  {
+    "id": "book-772",
+    "title": "One Piece Tập 96: “Oden Sinh Ra Là Để Nấu Sôi” (Tái Bản)",
+    "price": 25000,
+    "stock": 122,
+    "soldCount": 6075,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ec/2d/9b/f299b00659d477354a9c5ebf92e53608.jpg"
+  },
+  {
+    "id": "book-773",
+    "title": "One Piece Tập 56: Cảm Ơn (Tái Bản)",
+    "price": 24000,
+    "stock": 119,
+    "soldCount": 5930,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/44/bb/2e/ec14d24f44247648b30d5b1170b562da.jpg"
+  },
+  {
+    "id": "book-774",
+    "title": "One Piece Party - Tập 6 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 93,
+    "soldCount": 1753,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/db/42/6a/918eab7d7f478b3e728d132adc6a908d.jpg"
+  },
+  {
+    "id": "book-775",
+    "title": "One Piece - Tập 111 - “Cuộc Phiêu Lưu Ở Elbaph” - Bản Bìa Áo",
+    "price": 30000,
+    "stock": 48,
+    "soldCount": 9307,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/60/66/31/b38d69c5f830303c533d483d063af8dc.jpg"
+  },
+  {
+    "id": "book-776",
+    "title": "One Piece Party - Tập 1 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 179,
+    "soldCount": 7049,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d9/cd/fe/ec99d664ff3ee66a53bbcc50de41879d.jpg"
+  },
+  {
+    "id": "book-777",
+    "title": "One piece - Tập 105 bản bìa gập và bìa áo",
+    "price": 25000,
+    "stock": 81,
+    "soldCount": 4832,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/fc/8e/eb/c56601d6fb1357a0b9a5eca8f4b21b0f.png"
+  },
+  {
+    "id": "book-778",
+    "title": "One Piece Party - Tập 2 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 97,
+    "soldCount": 2948,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d6/75/a6/39947b7c4bcc1cfcb601ee28f52212af.jpg"
+  },
+  {
+    "id": "book-779",
+    "title": "One Piece Party - Tập 3 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 113,
+    "soldCount": 468,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/93/61/d8/4f2c9e8555ad10f1a3ac699200a186f3.jpg"
+  },
+  {
+    "id": "book-780",
+    "title": "One Piece Party - Tập 4 (Tái Bản 2026)",
+    "price": 29400,
+    "stock": 106,
+    "soldCount": 4441,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d1/24/21/a7afcf17d254ce78597e68c94e1cedca.jpg"
+  },
+  {
+    "id": "book-781",
+    "title": "Tuyển Tập Tranh Eiichiro Oda - One Piece - Color Walk - Tập 10 - Dragon",
+    "price": 127400,
+    "stock": 111,
+    "soldCount": 5876,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f1/b3/a9/8309cfbf7c513cec994c16b42506554e.jpg"
+  },
+  {
+    "id": "book-782",
+    "title": "One Piece - Tập Tập 102 - “Bước Ngoặt Quan Trọng” (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 62,
+    "soldCount": 6061,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/29/ab/42/817e2a79e30518f2caebb8f74414c884.jpg"
+  },
+  {
+    "id": "book-783",
+    "title": "One Piece - Tập 48",
+    "price": 19500,
+    "stock": 213,
+    "soldCount": 4668,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6e/24/3b/c72fb1efbd1fc489f3b9722ce03cd3c8.jpg"
+  },
+  {
+    "id": "book-784",
+    "title": "One Piece 500 Quiz Book - Get Or Lost Challenge Wanted - Tập 1",
+    "price": 34300,
+    "stock": 182,
+    "soldCount": 214,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/61/2f/42/89e8a5a0d4e950e8b5f47843bc1c61b7.jpg"
+  },
+  {
+    "id": "book-785",
+    "title": "One Piece - Tập 40 - Gear - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 91,
+    "soldCount": 5831,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/14/91/c3/af48f9652a9f124bfc08c4ff0b8df5c4.jpg"
+  },
+  {
+    "id": "book-786",
+    "title": "Truyện - One Piece - Vua Hải Tặc - Chọn Lẻ Tập 1 - 25 - Eiichiro Oda - Kim Đồng",
+    "price": 40000,
+    "stock": 207,
+    "soldCount": 670,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/1d/f7/38/435f4988a71e3a3884266e1867cf3c7c.jpg"
+  },
+  {
+    "id": "book-787",
+    "title": "One Piece (Tập 34)",
+    "price": 19500,
+    "stock": 180,
+    "soldCount": 733,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/44/7a/e5/562d6a1faf7e4ceb244733552daa157a.jpg"
+  },
+  {
+    "id": "book-788",
+    "title": "One Piece - Tập 79 - Lucy!! - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 53,
+    "soldCount": 5301,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3b/35/db/693b908a1d5704502d11736d5616ddf3.jpg"
+  },
+  {
+    "id": "book-789",
+    "title": "One Piece Magazine - Tập 5 [Tặng Kèm Tờ Truy Nã Zoro]",
+    "price": 119600,
+    "stock": 146,
+    "soldCount": 8798,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/87/a5/ca/15ea69bc230d0719921fe97da9998f3d.jpg"
+  },
+  {
+    "id": "book-790",
+    "title": "One Piece Lucky 77: Bộ Sưu Tập Postcard Và Giấy Nhắn Kèm Tranh Vẽ",
+    "price": 94050,
+    "stock": 110,
+    "soldCount": 8701,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/media/catalog/product/1/_/1.u5430.d20171026.t115402.564453_1.jpg"
+  },
+  {
+    "id": "book-791",
+    "title": "One Piece - Tập 110",
+    "price": 23000,
+    "stock": 76,
+    "soldCount": 3148,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/94/51/56/d61aa82b44b1822f029ee65626314712.jpg"
+  },
+  {
+    "id": "book-792",
+    "title": "One Piece - Tập 108: “Thà Chết Còn Hơn",
+    "price": 27600,
+    "stock": 82,
+    "soldCount": 8167,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/49/f4/75/e63e82ed1b849cb262b2cdeb88239806.jpg"
+  },
+  {
+    "id": "book-793",
+    "title": "One Piece Tập 54: Không Thể Ngăn Cản (Tái Bản 2022)",
+    "price": 21250,
+    "stock": 144,
+    "soldCount": 2807,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ec/0b/53/57aaca83ce43455cbb4a8536e8e8ebba.jpg"
+  },
+  {
+    "id": "book-794",
+    "title": "One Piece - Tập 74 - Ta Sẽ Luôn Ở Bên Con (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 209,
+    "soldCount": 1211,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/06/18/02/7ed1c8b52955ca31ff7522f42e950ca2.jpg"
+  },
+  {
+    "id": "book-795",
+    "title": "One Piece Tập 28: “Chiến Quỷ” Wiper (Tái Bản 2022)",
+    "price": 24000,
+    "stock": 148,
+    "soldCount": 7319,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e7/3f/91/f017ff9b8d686943a16cb7975ae0f566.jpg"
+  },
+  {
+    "id": "book-796",
+    "title": "One Piece Tập 22: Hope! (Tái Bản 2022)",
+    "price": 25000,
+    "stock": 55,
+    "soldCount": 3234,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f4/b7/79/53e93aca13a00c5eb4ac6dd8db92897b.jpg"
+  },
+  {
+    "id": "book-797",
+    "title": "One Piece - Tập 19 (Tái Bản 2015)",
+    "price": 19500,
+    "stock": 79,
+    "soldCount": 3097,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5f/4b/10/4327f14b7ca56efab32e9cdb49c04165.jpg"
+  },
+  {
+    "id": "book-798",
+    "title": "One Piece - Tập 92 - \"Oiran Komurasaki Giá Lâm\" (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 46,
+    "soldCount": 1858,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d7/12/c0/30621be3aa61c649950cd0e652e24e91.jpg"
+  },
+  {
+    "id": "book-799",
+    "title": "One Piece - Tập 3 - Thứ Không Thể Nói Dối - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 105,
+    "soldCount": 9357,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6e/e0/92/42ec2461ab6d5f820352af9c82fce177.jpg"
+  },
+  {
+    "id": "book-800",
+    "title": "One Piece - Tập 96 - “Oden Sinh Ra Là Để Nấu Sôi” - Bản Bìa Áo (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 198,
+    "soldCount": 1847,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d7/ea/1c/7dc1371fd6f4f8713e0719ce2de43295.jpg"
+  },
+  {
+    "id": "book-801",
+    "title": "Dragon Ball Super - Tập 3: Kế Hoạch Vô Nhân (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 86,
+    "soldCount": 468,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/9d/72/f2/2d62abc5a04da3f39e0bd9b9240c9d89.jpg"
+  },
+  {
+    "id": "book-802",
+    "title": "Dragon Ball Super Tập 13: Trên Từng Chiến Tuyến (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 143,
+    "soldCount": 3893,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/78/cb/be/fa5b5fd8bbb6cb3840f2787d5b9f3b83.jpg"
+  },
+  {
+    "id": "book-803",
+    "title": "Dragon Ball Super Tập 17: Sức Mạnh Của Thần Huỷ Diệt",
+    "price": 27600,
+    "stock": 173,
+    "soldCount": 6726,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/29/ac/46/bafe0e40631ea809b17085c204f99d45.jpg"
+  },
+  {
+    "id": "book-804",
+    "title": "Dragon Ball Super Tập 16: Chiến Binh Mạnh Nhất Vũ Trụ",
+    "price": 27600,
+    "stock": 142,
+    "soldCount": 2047,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f1/d3/f4/d38235e640608808303fed04d97a84d7.jpg"
+  },
+  {
+    "id": "book-805",
+    "title": "Dragon Ball Super Tập 18: Bardock, Cha Đẻ Của Goku",
+    "price": 27600,
+    "stock": 90,
+    "soldCount": 5657,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/9e/5f/fa/b4fb2e70703482e2a2fd91b03f68f782.jpg"
+  },
+  {
+    "id": "book-806",
+    "title": "Dragon Ball Super Tập 23: Son Gohan- Siêu Tiềm Lực Khai Mở!",
+    "price": 27600,
+    "stock": 42,
+    "soldCount": 818,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/1a/37/3f/0dd576634b8e2a35fb443f6e2938a477.jpg"
+  },
+  {
+    "id": "book-807",
+    "title": "Dragon Ball (Trọn Bộ 42 Tập)",
+    "price": 1134000,
+    "stock": 214,
+    "soldCount": 6278,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/media/catalog/product/d/s/dsc_0090.u335.d20160615.t143742.jpg"
+  },
+  {
+    "id": "book-808",
+    "title": "Dragon Ball Super - Tập 4: Hi Vọng Cuối Cùng (Tái Bản)",
+    "price": 27600,
+    "stock": 168,
+    "soldCount": 2206,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/0d/c9/e3/f1a383300a88a85cd5503f3f43ab8801.jpg"
+  },
+  {
+    "id": "book-809",
+    "title": "Dragon Ball - 7 Viên Ngọc Rồng [Chọn Tập Lẻ",
+    "price": 25500,
+    "stock": 147,
+    "soldCount": 8428,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/77/98/a1/e3b56c1cd91c9794f4f15233b1c93caa.jpg"
+  },
+  {
+    "id": "book-810",
+    "title": "Series các tập Dragon Ball SD - 7 Viên Ngọc Rồng Nhí",
+    "price": 69000,
+    "stock": 220,
+    "soldCount": 5504,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e5/ab/21/d3df3a4bc6acd296a7be2b7622ec1307.jpg"
+  },
+  {
+    "id": "book-811",
+    "title": "Dragon Ball Super - Tập 2: Vũ Trụ Nào Chiến Thắng",
+    "price": 27600,
+    "stock": 51,
+    "soldCount": 2396,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/42/99/f5/7d28674ee158681e22c0224ce16fe224.jpg"
+  },
+  {
+    "id": "book-812",
+    "title": "Dragon Ball Super - Tập 9: Tàn Cuộc (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 183,
+    "soldCount": 965,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3a/90/03/7ecdf3a84b2a7da9d0c1fef3c5129e91.jpg"
+  },
+  {
+    "id": "book-813",
+    "title": "Dragon Ball Super Tập 6: Hỡi Các Siêu Chiến Binh, Hãy Tập Hợp! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 99,
+    "soldCount": 7091,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/21/7d/6d/4c3bbbf6644db45418715943534f7808.jpg"
+  },
+  {
+    "id": "book-814",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 5: Trận Chiến Sống Còn [Tặng Kèm Postcard]",
+    "price": 69000,
+    "stock": 171,
+    "soldCount": 752,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/06/32/8e/4b80b689c193757e08ca67da39973e63.jpg"
+  },
+  {
+    "id": "book-815",
+    "title": "Dragon Ball Full Color - Đại Ma Vương Piccolo Tập 3",
+    "price": 70840,
+    "stock": 107,
+    "soldCount": 4379,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/41/79/d5/6702f6c3b7a62860a7ec2cc05828ad5d.jpg"
+  },
+  {
+    "id": "book-816",
+    "title": "Dragon Ball Super Tập 8: Dấu Hiệu Thức Tỉnh Của Son Goku",
+    "price": 27600,
+    "stock": 117,
+    "soldCount": 7953,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/0c/64/47/3811b611f05e9739d6b91b4c918b5bf5.jpg"
+  },
+  {
+    "id": "book-817",
+    "title": "Dragon Ball Super Tập 10: Điều Ước Của Moro (Tái Bản)",
+    "price": 27600,
+    "stock": 198,
+    "soldCount": 4392,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/10/b0/08/86aca97391e1777fee5dfa076f5659a0.jpg"
+  },
+  {
+    "id": "book-818",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng NHÍ Tập 7: Tiến Về Namek",
+    "price": 69000,
+    "stock": 166,
+    "soldCount": 7607,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/8c/d1/9f/e493407c4f5aba9d02f8205077325f40.jpg"
+  },
+  {
+    "id": "book-819",
+    "title": "Dragon Ball Super Tập 5: Tạm Biệt Nhé Trunks Lớn",
+    "price": 26125,
+    "stock": 152,
+    "soldCount": 1387,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/fe/96/47/53bbf92dae71a58eca8d15a29c4bf41a.jpg"
+  },
+  {
+    "id": "book-820",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 8: Đội Đặc Nhiệm Ginyu [Tặng Kèm Standee]",
+    "price": 63750,
+    "stock": 55,
+    "soldCount": 5109,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/85/c9/0c/c6f75ce51971558a2f716556946fd00f.jpg"
+  },
+  {
+    "id": "book-821",
+    "title": "Trọn Bộ 42 tập Dragon Ball - 7 Viên Ngọc Rồng",
+    "price": 1450000,
+    "stock": 47,
+    "soldCount": 2239,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/cd/93/4d/90c24f328d30d8957c757014044e565d.jpg"
+  },
+  {
+    "id": "book-822",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 2: Khuynh Đảo Đại Hội Võ Thuật",
+    "price": 73500,
+    "stock": 148,
+    "soldCount": 3463,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/15/d9/66/38b0d4e807c15d2ec29115eb97fd9841.jpg"
+  },
+  {
+    "id": "book-823",
+    "title": "Dragon Ball - 7 Viên Ngọc Rồng Tập 5: Nỗi Kinh Hoàng Tháp Muscle",
+    "price": 28500,
+    "stock": 198,
+    "soldCount": 3919,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/7d/e8/0e/6e3bae32e8859301bba3e022581beb9c.jpg"
+  },
+  {
+    "id": "book-824",
+    "title": "Dragon Ball Super - Tập 4 - Hi Vọng Cuối Cùng (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 193,
+    "soldCount": 7100,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6f/05/ce/a36122f85655c85e30659205bab80c1a.jpg"
+  },
+  {
+    "id": "book-825",
+    "title": "Dragon Ball Super - Bộ 23 Tập - Akira Toriyama & Toyotarou ( KĐ )",
+    "price": 830000,
+    "stock": 104,
+    "soldCount": 7538,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a3/1f/7e/77be1e754fbf91078552336d82556198.jpg"
+  },
+  {
+    "id": "book-826",
+    "title": "Dragon Ball Full Color - Phần Hai: Đại Ma Vương Piccolo - Tập 1 [Tặng Bookmark]",
+    "price": 75400,
+    "stock": 156,
+    "soldCount": 9317,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/00/62/ba/a572b4e327c967fa9ac3c6e3613ed1fd.jpg"
+  },
+  {
+    "id": "book-827",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 5",
+    "price": 71250,
+    "stock": 67,
+    "soldCount": 8781,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e7/72/e9/e4135eed46621e78167127eccf994457.jpg"
+  },
+  {
+    "id": "book-828",
+    "title": "Dragon Ball - 7 Viên Ngọc Rồng - Tập 23 - Đội Đặc Nhiệm Ginyu (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 58,
+    "soldCount": 1785,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/60/9c/4d/eb5c254681a85ed8c63c5f3b2d376db3.jpg"
+  },
+  {
+    "id": "book-829",
+    "title": "Dragon Ball Super - Tập 13 - Trên Từng Chiến Tuyến (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 190,
+    "soldCount": 7326,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/52/ca/15/b0b3ec51b07ca9afec4b675503159c90.jpg"
+  },
+  {
+    "id": "book-830",
+    "title": "Dragon Ball - 7 Viên Ngọc Rồng - Tập 33 - Ngoại Truyện Về Trunks (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 99,
+    "soldCount": 4914,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/25/54/52/f05163c92d1e4379ee3ef89d9c807c32.jpg"
+  },
+  {
+    "id": "book-831",
+    "title": "Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 1 (Tái Bản 2025)",
+    "price": 78400,
+    "stock": 219,
+    "soldCount": 5027,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/c3/01/e1/795af510cdcefaa3b8bcd2de5f4d20d0.jpg"
+  },
+  {
+    "id": "book-832",
+    "title": "Dragon Ball Super - Tập 3 - Kế Hoạch Vô Nhân (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 180,
+    "soldCount": 3898,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/28/95/c5/c103bde66eac3947627d4ffd4c52e943.jpg"
+  },
+  {
+    "id": "book-833",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 1",
+    "price": 71250,
+    "stock": 132,
+    "soldCount": 8153,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6b/9b/e7/a36f1369ded6a4044a20851b50eae89b.jpg"
+  },
+  {
+    "id": "book-834",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 2",
+    "price": 71250,
+    "stock": 154,
+    "soldCount": 7990,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6c/c5/b8/6bcfce4c86c9a03b6405dff3ff233c7b.jpg"
+  },
+  {
+    "id": "book-835",
+    "title": "Dragon Ball - 7 Viên Ngọc Rồng - Tập 3 - Đại Hội Võ Thuật Khởi Tranh! (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 40,
+    "soldCount": 3612,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/ef/c3/cc/f60d97265b3d5a09aeab99166e479869.jpg"
+  },
+  {
+    "id": "book-836",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 3",
+    "price": 71250,
+    "stock": 117,
+    "soldCount": 6576,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/09/5f/8e/4d1e3d83a290588eb6a5b9f1a5cf24e9.jpg"
+  },
+  {
+    "id": "book-837",
+    "title": "Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 2 (Tái Bản 2025)",
+    "price": 78400,
+    "stock": 32,
+    "soldCount": 3632,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a5/87/9b/9e9f842033ff5076fa3ac0906fa53498.jpg"
+  },
+  {
+    "id": "book-838",
+    "title": "Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 3 (Tái Bản 2025)",
+    "price": 78400,
+    "stock": 130,
+    "soldCount": 7786,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/26/1c/e2/a048bebeb5f5e2b9063b9c5e2b90f2fd.jpg"
+  },
+  {
+    "id": "book-839",
+    "title": "Dragon Ball - Tập 38",
+    "price": 19500,
+    "stock": 220,
+    "soldCount": 2210,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/7c/ac/4c/9f9f95882b3f76fefa663208725dd50a.jpg"
+  },
+  {
+    "id": "book-840",
+    "title": "Truyện tranh - Combo 5 cuốn Dragon Ball Super - KĐ",
+    "price": 180000,
+    "stock": 66,
+    "soldCount": 1628,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a6/e7/51/084ba03a40c34079d31b73ec85bc4d25.jpg"
+  },
+  {
+    "id": "book-841",
+    "title": "Dragon Ball Super Tập 19: Niềm Tự Hào Nguồn Cội",
+    "price": 27600,
+    "stock": 182,
+    "soldCount": 7837,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5f/9b/3f/ef2290a0e5414258ba8d1973dd708791.jpg"
+  },
+  {
+    "id": "book-842",
+    "title": "Dragon Ball Super Tập 21: Đại Chiến Dr. Hedo",
+    "price": 27600,
+    "stock": 74,
+    "soldCount": 4882,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/0e/c5/04/5433478c7206720dd9b365ea39fbd8a0.jpg"
+  },
+  {
+    "id": "book-843",
+    "title": "Dragon Ball Super Tập 15: Moro - Kẻ Ăn Hành Tinh",
+    "price": 27600,
+    "stock": 59,
+    "soldCount": 2184,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/39/36/89/d12acd7b4418ddf7661b0c9387468cdd.jpg"
+  },
+  {
+    "id": "book-844",
+    "title": "Dragon Ball Super Tập 14: Tuần Tra Viên Ngân Hà Son Goku",
+    "price": 27600,
+    "stock": 146,
+    "soldCount": 2917,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e9/21/88/975f19d64ccbc851c7bbbbaba51bca87.jpg"
+  },
+  {
+    "id": "book-845",
+    "title": "Dragon Ball Super Tập 11: Cuộc Đại Vượt Ngục (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 86,
+    "soldCount": 1548,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d6/15/fe/8ed3b0608d1e2eb8031d6a8c204712fd.jpg"
+  },
+  {
+    "id": "book-846",
+    "title": "Dragon Ball Full Color - Phần Năm: Truy Lùng Cell Bọ Hung - Tập 4",
+    "price": 70840,
+    "stock": 59,
+    "soldCount": 5437,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3d/0f/4b/6064cef0c1c482678434c5ebdc3ae939.jpg"
+  },
+  {
+    "id": "book-847",
+    "title": "Dragon Ball Full Color - Phần Sáu: Ma Buu Tập 1",
+    "price": 65450,
+    "stock": 58,
+    "soldCount": 1302,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/cf/10/f1/331045a626320f50be5ef8bc19fb7352.jpg"
+  },
+  {
+    "id": "book-848",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 9: Siêu Saiya - Chiến Binh Của Truyền Thuyết [Tặng Kèm Standee]",
+    "price": 63750,
+    "stock": 75,
+    "soldCount": 928,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5e/5e/6e/6cd3a32aac722f7459ca659ccfe8b247.jpg"
+  },
+  {
+    "id": "book-849",
+    "title": "Dragon Ball Full Color - Phần Năm - Truy Lùng Cell Bọ Hung - Tập 5 (Tái Bản 2025)",
+    "price": 78400,
+    "stock": 87,
+    "soldCount": 712,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/93/c2/f1/047c51e054f8e803c659afe702001fd4.jpg"
+  },
+  {
+    "id": "book-850",
+    "title": "Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 6 - Trời Long Đất Lở",
+    "price": 73500,
+    "stock": 157,
+    "soldCount": 210,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/54/c7/3e/dc90a68029bf67db42deb2eac019262a.jpg"
+  },
+  {
+    "id": "book-851",
+    "title": "Naruto Tập 63: Mộng Giới (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 115,
+    "soldCount": 3946,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/44/ba/1f/daacd2f6ef137ba793a5ab0389de002c.jpg"
+  },
+  {
+    "id": "book-852",
+    "title": "Naruto Tập 48: Ngôi Làng Chào Đón!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 140,
+    "soldCount": 5100,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3f/df/99/182037b0b481186a5db98fa85cfed717.jpg"
+  },
+  {
+    "id": "book-853",
+    "title": "Naruto Tập 66: Thế Trận 3 Chân Mới",
+    "price": 27600,
+    "stock": 74,
+    "soldCount": 3819,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5c/f9/7d/41de91dff5664c3d9301c0df6e2fd401.jpg"
+  },
+  {
+    "id": "book-854",
+    "title": "Naruto Tập 70: Naruto & Lục Đạo Tiên Nhân…!! [Tái Bản 2023]",
+    "price": 27600,
+    "stock": 183,
+    "soldCount": 4289,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/43/64/44/2306f30a933a38783f92cbb77c0c0ea1.jpg"
+  },
+  {
+    "id": "book-855",
+    "title": "Naruto Tập 46: Naruto Trở Về!! (Tái Bản)",
+    "price": 27000,
+    "stock": 150,
+    "soldCount": 7252,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/66/c8/63/162bbd6df0b4c75d653a1ef4af790368.jpg"
+  },
+  {
+    "id": "book-856",
+    "title": "Naruto - Tập 8",
+    "price": 27600,
+    "stock": 146,
+    "soldCount": 6080,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/01/1b/c7/e671b25551a5f53194c40161c4b458f4.jpg"
+  },
+  {
+    "id": "book-857",
+    "title": "Naruto Tập 29: Kakashi Vs. Itachi",
+    "price": 27600,
+    "stock": 60,
+    "soldCount": 5273,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/27/7d/8b/5124ca18b376455d199284aaccc912bf.jpg"
+  },
+  {
+    "id": "book-858",
+    "title": "Naruto Tập 41: Lựa Chọn Của Jiraiya!! (Tái Bản)",
+    "price": 27600,
+    "stock": 188,
+    "soldCount": 5539,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a1/ca/88/5b91d071ec622bc834ff83322dc1693a.jpg"
+  },
+  {
+    "id": "book-859",
+    "title": "Naruto Tập 10: Ninja Kiệt Xuất…!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 220,
+    "soldCount": 2815,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e1/9c/98/1d13d411fa4a215fae305645e42dd93c.jpg"
+  },
+  {
+    "id": "book-860",
+    "title": "Naruto Tập 40: Nghệ Thuật Tối Thượng!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 89,
+    "soldCount": 604,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/32/10/18/161fb83a664ff31d3d500a520dd8fe1f.jpg"
+  },
+  {
+    "id": "book-861",
+    "title": "Naruto Tập 4: Cây Cầu Mang Tên Người Anh Hùng!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 78,
+    "soldCount": 5586,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/73/f5/68/265aaa4671e16649f270182db48810b1.jpg"
+  },
+  {
+    "id": "book-862",
+    "title": "Naruto Tập 14: Hokage Vs. Hokage!! (Tái Bản 2022)",
+    "price": 23275,
+    "stock": 174,
+    "soldCount": 7120,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/bc/6e/a3/01bd1679ba309b9f3a06ef11eb9122f8.jpg"
+  },
+  {
+    "id": "book-863",
+    "title": "Naruto Tập 51: Sasuke VS. Danzo…!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 150,
+    "soldCount": 4580,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/70/4f/86/5343394dd2e62d9def098479cc407bcc.jpg"
+  },
+  {
+    "id": "book-864",
+    "title": "Naruto Tập 30: Bà Chiyo & Sakura (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 98,
+    "soldCount": 1373,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/56/55/21/0febedf9d56b8df921790d545ba9b98d.jpg"
+  },
+  {
+    "id": "book-865",
+    "title": "Naruto Tập 24: Nguy-Nguy-Nguy!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 197,
+    "soldCount": 8520,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/07/ab/e0/680946a12dda4e4bb593a31b81ad0a14.jpg"
+  },
+  {
+    "id": "book-866",
+    "title": "Naruto Tập 5: Đấu Thủ!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 70,
+    "soldCount": 9866,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/d6/e1/58/9742484ee822c358699def82af7bffe1.jpg"
+  },
+  {
+    "id": "book-867",
+    "title": "Naruto Tập 38: Thành Quả Luyện Tập…!! (Tái Bản 2022)",
+    "price": 21250,
+    "stock": 171,
+    "soldCount": 1472,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/3b/12/77/108fdcb29e0cb9fecd8248ce4c18c5e2.jpg"
+  },
+  {
+    "id": "book-868",
+    "title": "Naruto Tập 42: Bí Mật Của Mangekyo…!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 82,
+    "soldCount": 7459,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/9c/74/a0/00423227ef239573056238215b996b60.jpg"
+  },
+  {
+    "id": "book-869",
+    "title": "Naruto Tập 3: Ước Mơ…!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 76,
+    "soldCount": 2268,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/64/2e/45/f51e815ee4f7dced3da7fe5d94877cb6.jpg"
+  },
+  {
+    "id": "book-870",
+    "title": "Naruto Tập 49: Hội Đàm Ngũ Kage, Bắt Đầu…!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 135,
+    "soldCount": 5129,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5e/1a/51/f1f3f7efeaf420dea02d63a7540361ba.jpg"
+  },
+  {
+    "id": "book-871",
+    "title": "Naruto Tập 32: Hướng Tới Sasuke!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 86,
+    "soldCount": 3910,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/70/b2/b0/14e2f717c1dc2192b39ce48a02a32946.jpg"
+  },
+  {
+    "id": "book-872",
+    "title": "Naruto Tập 50: Thủy Lao Tử Chiến!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 174,
+    "soldCount": 2148,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6f/e5/42/7ac84bdcbb762ca42f9a57cc73d23e51.jpg"
+  },
+  {
+    "id": "book-873",
+    "title": "Naruto Tập 25: Anh Và Em (Tái Bản)",
+    "price": 27600,
+    "stock": 59,
+    "soldCount": 3208,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/33/83/9d/fd4dbe9de8ecb1c5dc62506fc2e1e787.jpg"
+  },
+  {
+    "id": "book-874",
+    "title": "Naruto Tập 47: Phong Ấn Bị Phá Bỏ!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 143,
+    "soldCount": 4680,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/f8/1b/75/7339c79693be7f14cc8f5c218908918a.jpg"
+  },
+  {
+    "id": "book-875",
+    "title": "Naruto - Tập 45: Chiến Trường Làng Lá!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 95,
+    "soldCount": 4658,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/9d/89/55/456d3cbf02a5146db11a581e0528063b.jpg"
+  },
+  {
+    "id": "book-876",
+    "title": "Naruto - Tập 7",
+    "price": 27600,
+    "stock": 35,
+    "soldCount": 3281,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/fa/9a/2c/e7876406c5c7c00a43939e385fdfa358.jpg"
+  },
+  {
+    "id": "book-877",
+    "title": "Naruto Tập 1: Uzumaki Naruto (Tái Bản)",
+    "price": 27600,
+    "stock": 174,
+    "soldCount": 3769,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/84/bb/a9/18a25cd550d32e6de7e2d09c85458b15.jpg"
+  },
+  {
+    "id": "book-878",
+    "title": "Naruto Tập 59: Ngũ Kage Hợp Lực…!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 211,
+    "soldCount": 6252,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/98/a9/45/a3d36d2b7cbb255d2856d2d4dd35b7ed.jpg"
+  },
+  {
+    "id": "book-879",
+    "title": "Naruto - Tập 1 - Uzumaki Naruto (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 191,
+    "soldCount": 9719,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e0/f7/3a/b23a1759bdba500bfd0fbb6090b0787f.jpg"
+  },
+  {
+    "id": "book-880",
+    "title": "Naruto Tập 6: Quyết Tâm Của Sakura!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 124,
+    "soldCount": 760,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/87/8c/82/6e4c4f2e94b8d10e67ed8a22214f177c.jpg"
+  },
+  {
+    "id": "book-881",
+    "title": "Naruto Tập 53: Naruto Ra Đời (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 208,
+    "soldCount": 7492,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/de/f7/0a/751039cbb613a9bb47ca12cb17cc1fa7.jpg"
+  },
+  {
+    "id": "book-882",
+    "title": "Naruto Tập 58: Naruto VS. Itachi!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 61,
+    "soldCount": 9820,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/14/3a/3e/0fadaec1c90dcc583bb09fd63b627dac.jpg"
+  },
+  {
+    "id": "book-883",
+    "title": "Naruto - Tập 56: Đội Asuma Tái Ngộ! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 89,
+    "soldCount": 1566,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/80/a9/09/60c35fcfb90a2f1ccd864d559a1030d9.jpg"
+  },
+  {
+    "id": "book-884",
+    "title": "Naruto Tập 37: Trận Đấu Của Shikamaru!! (Tái Bản)",
+    "price": 27600,
+    "stock": 188,
+    "soldCount": 9520,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/5e/8a/55/a1ad70d5d83a7717c7a5c090044c04f6.jpg"
+  },
+  {
+    "id": "book-885",
+    "title": "Naruto Tập 55: Khai Màn Đại Chiến! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 175,
+    "soldCount": 7878,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e8/de/b1/bb6c91775c5509e84e0cf4697ccbc2bd.jpg"
+  },
+  {
+    "id": "book-886",
+    "title": "Naruto - Tập 37: Trận Đấu Của Shikamaru!! (Tái Bản 2022)",
+    "price": 25000,
+    "stock": 203,
+    "soldCount": 1169,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/0e/11/6d/4167d92e9c08e6163f3ebbaa35a71cde.jpg"
+  },
+  {
+    "id": "book-887",
+    "title": "Naruto Tập 33: Nhiệm Vụ Tuyệt Mật…!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 176,
+    "soldCount": 2485,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/47/9c/e9/6bbe373fa60248b10861da501072e288.jpg"
+  },
+  {
+    "id": "book-888",
+    "title": "Naruto - Tập 59 - Ngũ Kage Hợp Lực…!! (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 199,
+    "soldCount": 8499,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/26/54/bb/835cbaba3194e03add078ea073a2d1de.jpg"
+  },
+  {
+    "id": "book-889",
+    "title": "Naruto - Tập 57 - Naruto Xung Trận…!! (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 192,
+    "soldCount": 6030,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/a9/b6/55/17e3ca617027b416ddd174935810bc78.jpg"
+  },
+  {
+    "id": "book-890",
+    "title": "Naruto - Tập 38 - Thành Quả Luyện Tập…!! (Tái Bản 2025)",
+    "price": 30000,
+    "stock": 176,
+    "soldCount": 2621,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/39/9b/5e/84b6052c518e31a3549a49e8e7dbfe60.jpg"
+  },
+  {
+    "id": "book-891",
+    "title": "Naruto Tập 2: Ông Khách Khó Ưa (Tái Bản)",
+    "price": 27600,
+    "stock": 106,
+    "soldCount": 5322,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/2d/12/1a/db5493e86120f7174fefcffb1f5d2e00.jpg"
+  },
+  {
+    "id": "book-892",
+    "title": "Naruto Tập 22: Chuyển Sinh…!! (Tái Bản 2022)",
+    "price": 23500,
+    "stock": 114,
+    "soldCount": 9665,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/4e/22/9f/3e070609bc0e8f7a434781514bd623d5.jpg"
+  },
+  {
+    "id": "book-893",
+    "title": "Naruto Tập 9: Neji Và Hinata (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 30,
+    "soldCount": 2464,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/99/34/35/9e5a3002be9e1fa244e27047f3b70d3e.jpg"
+  },
+  {
+    "id": "book-894",
+    "title": "Naruto Tập 52: Đội 7 Của Mỗi Người!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 123,
+    "soldCount": 9580,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/48/62/d9/828cbd0f5b5029a0454615497e11073c.jpg"
+  },
+  {
+    "id": "book-895",
+    "title": "Naruto Tập 21: Không Thể Tha Thứ!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 99,
+    "soldCount": 7624,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/47/bb/95/2fdae1f2968ac8dc92fc952d2b950b2a.jpg"
+  },
+  {
+    "id": "book-896",
+    "title": "Naruto Tập 26: Ngày Từ Biệt…!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 80,
+    "soldCount": 1534,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/59/81/94/b9e8cb570faf9fa261910d20db8c7f09.jpg"
+  },
+  {
+    "id": "book-897",
+    "title": "Naruto Tập 44: Truyền Thụ Tiên Thuật…!! (Tái Bản 2022)",
+    "price": 27600,
+    "stock": 153,
+    "soldCount": 2216,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/8d/88/a1/3820391829c7d29caa45ec15f560d869.jpg"
+  },
+  {
+    "id": "book-898",
+    "title": "Naruto Tập 39: Hành Động (Tái Bản 2022)",
+    "price": 23750,
+    "stock": 143,
+    "soldCount": 5839,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e9/db/0f/0f3debfeac05b431d734b2cf904b1168.jpg"
+  },
+  {
+    "id": "book-899",
+    "title": "Naruto Tập 34: Khoảnh Khắc Gặp Lại...!! (Tái Bản 2022)",
+    "price": 25500,
+    "stock": 138,
+    "soldCount": 8154,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/79/3e/f5/50810ee3fed350f80f53410e6009c263.jpg"
+  },
+  {
+    "id": "book-900",
+    "title": "Naruto Tập 35: Cặp Đôi Mới!! (Tái Bản 2022)",
+    "price": 28800,
+    "stock": 101,
+    "soldCount": 363,
+    "coverImage": "https://salt.tikicdn.com/cache/750x750/ts/product/6b/f7/2e/0034780a5c3b5858973b09f3e030566c.jpg"
   }
 ]

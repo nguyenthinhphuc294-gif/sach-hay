@@ -6298,5 +6298,1805 @@
     "categoryId": "cat-van-phong-pham",
     "description": "Sản phẩm 'Bút Gel Deli 0.5mm EG118-YL Màu Vàng' chính hãng thuộc danh mục Văn Phòng Phẩm. Thương hiệu / Tác giả: Deli, cung cấp bởi Tập Đoàn Thiên Long & Deli. Hình ảnh thật được chụp thực tế từ sản phẩm phân phối chính thức.",
     "originalPrice": 12000
+  },
+  "book-701": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-788-445-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Học Tập (Tái Bản)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 630000
+  },
+  "book-702": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-402-627-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Những Người Thân Yêu (6 Tập)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 180000
+  },
+  "book-703": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-199-279-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu (6 Tập)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 300000
+  },
+  "book-704": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-643-144-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số (6 Tập)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 180000
+  },
+  "book-705": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-203-239-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 1' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-706": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-953-140-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 5' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-707": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-254-323-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 2' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-708": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-908-233-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 5 (Tái Bản)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-709": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-886-279-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 3' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-710": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-665-835-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 6' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-711": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-332-160-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Đội Quân Doraemon (6 Tập)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 147000
+  },
+  "book-712": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-384-212-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 4' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-713": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-105-772-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 2: Nobita Và Shizuka (Bìa Mềm)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-714": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-212-958-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Hoạt Hình Màu - Tập 1 (Tái Bản 2020)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-715": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-909-573-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Plus Tập 1' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-716": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-272-622-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Plus Tập 5' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-717": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-764-847-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 1: Những Tình Huống Dở Khóc Dở Cười (Bìa Mềm) (Tái Bản 2022)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-718": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-820-761-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tập 10: Nobita Và Hành Tinh Muông Thú [Tái Bản 2023]' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-719": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-739-104-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 4 (Tái Bản)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-720": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-537-624-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 3: Tình Huống Bất Ngờ (Bìa Mềm)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-721": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-311-134-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 4: Thiên Nhiên Kì Thú (Bìa Mềm)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-722": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-740-865-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Hoạt Hình Màu - Tập 2 (Tái Bản 2020)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-723": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-986-695-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 3: Tình Huống Bất Ngờ (Tái Bản 2019)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-724": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-413-218-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 2 (Tái Bản 2023)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-725": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-312-776-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu - Tập 4 (Tái Bản 2023)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-726": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-229-888-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 4: Thiên Nhiên Kì Thú (Tái Bản 2019)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-727": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-242-419-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tranh Truyện Màu - Nobita Vũ Trụ Phiêu Lưu Kí - Tập 1' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-728": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-519-515-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Học Tập - Cùng Làm Họa Sĩ (Tái Bản 2024)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 45000
+  },
+  "book-729": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-281-179-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Truyện - Doraemon Học Tập - Chọn Lẻ 19 Chủ Đề - Kim Đồng' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 50000
+  },
+  "book-730": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-682-425-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Bảo Bối - Tập 1' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-731": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-808-835-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Bảo Bối - Tập 1 (Tái Bản 2023)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-732": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-309-949-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Học Tập: Thể Dục Dụng Cụ (Tái Bản 2021)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 40000
+  },
+  "book-733": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-826-320-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Bộ Sách Doraemon: Tuyển Tập Những Người Thân Yêu (Không Kèm Hộp)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 180000
+  },
+  "book-734": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-300-244-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Truyện Dài - Tập 5 - Nobita Và Chuyến Phiêu Lưu Vào Xứ Quỷ (Tái Bản 2026)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-735": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-477-469-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Học Tập - Những Trò Chơi Em Yêu Thích (Tái Bản 2026)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 45000
+  },
+  "book-736": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-173-216-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Học Tập - Diện Tích-Thể Tích (Tái Bản 2024)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 45000
+  },
+  "book-737": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-252-690-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 4 - Thiên Nhiên Kì Thú' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-738": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-593-950-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Tiểu Thuyết Doraemon - Nobita Và Cuộc Phiêu Lưu Vào Thế Giới Trong Tranh' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 60000
+  },
+  "book-739": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-543-725-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 2' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-740": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-716-595-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Truyện Ngắn (45 Tập)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 1125000
+  },
+  "book-741": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-360-791-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 6 (Tái Bản)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-742": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-291-874-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Theo Chủ Đề (10 Cuốn)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 350000
+  },
+  "book-743": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-293-291-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Plus Tập 2' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 22000
+  },
+  "book-744": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-747-467-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tuyển Tập Tranh Truyện Màu Kĩ Thuật Số Tập 3' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-745": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-970-124-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tập 19: Nobita - Vũ Trụ Phiêu Lưu Kí [Tái Bản]' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-746": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-848-251-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tập 17: Nobita Và Cuộc Phiêu Lưu Ở Thành Phố Dây Cót [Tái Bản 2023]' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-747": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-342-626-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tập 13: Nobita Và Mê Cung Thiếc [Tái Bản 2023]' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-748": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-590-362-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Đố Vui (Tập 1) - Doraemon Xuất Hiện' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-749": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-937-230-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon Tranh Truyện Màu : Nobita Và Cuộc Phiêu Lưu Ở Thành Phố Dây Cót - Tập 1' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-750": {
+    "author": "Fujiko F. Fujio",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-219-263-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Doraemon - Tuyển Tập Theo Chủ Đề Tập 6: Những Câu Chuyện Đáng Sợ (Bìa Mềm)' thuộc series huyền thoại Doraemon. Tác giả: Fujiko F. Fujio, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-751": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-487-958-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 102 (Bản Bìa Áo): “Bước Ngoặt Quan Trọng”' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-752": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-853-819-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 104 (Bản Bìa Áo): “Kozuki Momonosuke - Tướng Quân Của Wano Quốc”' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-753": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-718-993-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 109' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-754": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-787-213-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 103 - Bản Bìa Áo: “Chiến Binh Giải Phóng”' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-755": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-887-482-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece (101 Tập) (Tái Bản)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 3025000
+  },
+  "book-756": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-333-181-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Bộ Truyện One Piece [Chọn Tập Lẻ' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-757": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-819-380-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 79: Lucy!! (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-758": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-511-391-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 7' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-759": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-531-494-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 106' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-760": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-103-508-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 69: Sad (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-761": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-819-904-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 105 (Bản Bìa Áo): “Ước Mơ Của Luffy”' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-762": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-167-597-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 74: Ta Sẽ Luôn Ở Bên Con (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-763": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-942-818-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 111 “Cuộc Phiêu Lưu Ở Elbaph”' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-764": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-469-600-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 101: “Siêu Sao Thượng Đài” - Bản Bìa Cứng - Limited Edition' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 150000
+  },
+  "book-765": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-963-392-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 106 - “Giấc Mơ Của Thiên Tài” - Bản Bìa Áo' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-766": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-342-333-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 27: Oveture (Tái Bản)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-767": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-542-772-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 5 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-768": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-433-581-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 13 - Không Sao!!! - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-769": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-103-781-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 108 (Bìa rời)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-770": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-745-347-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 6 - Lời Thề - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-771": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-602-123-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 23: Cuôc Phiêu Lưu Của Vivi (Tái Bản)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-772": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-189-944-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 96: “Oden Sinh Ra Là Để Nấu Sôi” (Tái Bản)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-773": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-859-759-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 56: Cảm Ơn (Tái Bản)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-774": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-460-628-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 6 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-775": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-349-343-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 111 - “Cuộc Phiêu Lưu Ở Elbaph” - Bản Bìa Áo' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-776": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-812-649-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 1 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-777": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-687-726-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One piece - Tập 105 bản bìa gập và bìa áo' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-778": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-317-932-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 2 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-779": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-225-716-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 3 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-780": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-736-859-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Party - Tập 4 (Tái Bản 2026)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-781": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-534-224-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Tuyển Tập Tranh Eiichiro Oda - One Piece - Color Walk - Tập 10 - Dragon' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 130000
+  },
+  "book-782": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-598-447-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập Tập 102 - “Bước Ngoặt Quan Trọng” (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-783": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-593-642-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 48' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 19500
+  },
+  "book-784": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-926-480-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece 500 Quiz Book - Get Or Lost Challenge Wanted - Tập 1' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 35000
+  },
+  "book-785": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-380-835-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 40 - Gear - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-786": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-938-487-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Truyện - One Piece - Vua Hải Tặc - Chọn Lẻ Tập 1 - 25 - Eiichiro Oda - Kim Đồng' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 40000
+  },
+  "book-787": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-841-506-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece (Tập 34)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 19500
+  },
+  "book-788": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-278-167-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 79 - Lucy!! - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-789": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-782-569-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Magazine - Tập 5 [Tặng Kèm Tờ Truy Nã Zoro]' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 130000
+  },
+  "book-790": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-774-880-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Lucky 77: Bộ Sưu Tập Postcard Và Giấy Nhắn Kèm Tranh Vẽ' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 99000
+  },
+  "book-791": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-537-258-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 110' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-792": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-707-444-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 108: “Thà Chết Còn Hơn' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-793": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-518-840-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 54: Không Thể Ngăn Cản (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-794": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-675-425-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 74 - Ta Sẽ Luôn Ở Bên Con (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-795": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-910-457-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 28: “Chiến Quỷ” Wiper (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-796": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-787-920-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece Tập 22: Hope! (Tái Bản 2022)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-797": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-636-571-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 19 (Tái Bản 2015)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 19500
+  },
+  "book-798": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-315-776-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 92 - \"Oiran Komurasaki Giá Lâm\" (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-799": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-943-733-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 3 - Thứ Không Thể Nói Dối - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-800": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-619-351-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'One Piece - Tập 96 - “Oden Sinh Ra Là Để Nấu Sôi” - Bản Bìa Áo (Tái Bản 2025)' thuộc series huyền thoại One Piece. Tác giả: Eiichiro Oda, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-801": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-490-355-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 3: Kế Hoạch Vô Nhân (Tái Bản 2022)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-802": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-778-517-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 13: Trên Từng Chiến Tuyến (Tái Bản 2022)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-803": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-350-825-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 17: Sức Mạnh Của Thần Huỷ Diệt' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-804": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-373-173-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 16: Chiến Binh Mạnh Nhất Vũ Trụ' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-805": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-185-952-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 18: Bardock, Cha Đẻ Của Goku' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-806": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-214-345-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 23: Son Gohan- Siêu Tiềm Lực Khai Mở!' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-807": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-142-886-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball (Trọn Bộ 42 Tập)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 1260000
+  },
+  "book-808": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-609-529-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 4: Hi Vọng Cuối Cùng (Tái Bản)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-809": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-457-141-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - 7 Viên Ngọc Rồng [Chọn Tập Lẻ' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-810": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-293-549-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Series các tập Dragon Ball SD - 7 Viên Ngọc Rồng Nhí' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-811": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-249-305-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 2: Vũ Trụ Nào Chiến Thắng' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-812": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-580-854-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 9: Tàn Cuộc (Tái Bản 2022)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-813": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-809-865-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 6: Hỡi Các Siêu Chiến Binh, Hãy Tập Hợp! (Tái Bản 2022)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-814": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-934-200-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 5: Trận Chiến Sống Còn [Tặng Kèm Postcard]' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-815": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-933-918-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Đại Ma Vương Piccolo Tập 3' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 77000
+  },
+  "book-816": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-721-607-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 8: Dấu Hiệu Thức Tỉnh Của Son Goku' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-817": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-100-568-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 10: Điều Ước Của Moro (Tái Bản)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-818": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-658-730-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng NHÍ Tập 7: Tiến Về Namek' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-819": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-292-353-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 5: Tạm Biệt Nhé Trunks Lớn' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-820": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-353-351-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 8: Đội Đặc Nhiệm Ginyu [Tặng Kèm Standee]' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-821": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-446-492-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Trọn Bộ 42 tập Dragon Ball - 7 Viên Ngọc Rồng' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 1450000
+  },
+  "book-822": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-485-774-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 2: Khuynh Đảo Đại Hội Võ Thuật' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-823": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-884-485-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - 7 Viên Ngọc Rồng Tập 5: Nỗi Kinh Hoàng Tháp Muscle' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-824": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-445-796-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 4 - Hi Vọng Cuối Cùng (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-825": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-242-492-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Bộ 23 Tập - Akira Toriyama & Toyotarou ( KĐ )' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 830000
+  },
+  "book-826": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-602-437-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Hai: Đại Ma Vương Piccolo - Tập 1 [Tặng Bookmark]' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 77000
+  },
+  "book-827": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-831-162-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 5' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-828": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-150-327-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - 7 Viên Ngọc Rồng - Tập 23 - Đội Đặc Nhiệm Ginyu (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-829": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-888-193-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 13 - Trên Từng Chiến Tuyến (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-830": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-491-437-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - 7 Viên Ngọc Rồng - Tập 33 - Ngoại Truyện Về Trunks (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-831": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-432-719-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 1 (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 80000
+  },
+  "book-832": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-847-972-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super - Tập 3 - Kế Hoạch Vô Nhân (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-833": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-465-794-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 1' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-834": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-924-492-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 2' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-835": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-775-481-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - 7 Viên Ngọc Rồng - Tập 3 - Đại Hội Võ Thuật Khởi Tranh! (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-836": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-422-242-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 3' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-837": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-677-792-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 2 (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 80000
+  },
+  "book-838": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-513-437-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Ba - Cuộc Đổ Bộ Của Người Saiya - Tập 3 (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 80000
+  },
+  "book-839": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-373-598-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball - Tập 38' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 19500
+  },
+  "book-840": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-416-807-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Truyện tranh - Combo 5 cuốn Dragon Ball Super - KĐ' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 180000
+  },
+  "book-841": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-242-615-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 19: Niềm Tự Hào Nguồn Cội' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-842": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-132-711-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 21: Đại Chiến Dr. Hedo' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-843": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-821-340-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 15: Moro - Kẻ Ăn Hành Tinh' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-844": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-265-412-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 14: Tuần Tra Viên Ngân Hà Son Goku' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-845": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-459-193-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Super Tập 11: Cuộc Đại Vượt Ngục (Tái Bản 2022)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-846": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-737-859-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Năm: Truy Lùng Cell Bọ Hung - Tập 4' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 77000
+  },
+  "book-847": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-712-328-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Sáu: Ma Buu Tập 1' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 77000
+  },
+  "book-848": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-994-432-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí Tập 9: Siêu Saiya - Chiến Binh Của Truyền Thuyết [Tặng Kèm Standee]' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-849": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-614-803-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball Full Color - Phần Năm - Truy Lùng Cell Bọ Hung - Tập 5 (Tái Bản 2025)' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 80000
+  },
+  "book-850": {
+    "author": "Akira Toriyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-322-794-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Dragon Ball SD - 7 Viên Ngọc Rồng Nhí - Tập 6 - Trời Long Đất Lở' thuộc series huyền thoại 7 Viên Ngọc Rồng (Dragon Ball). Tác giả: Akira Toriyama, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 75000
+  },
+  "book-851": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-291-217-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 63: Mộng Giới (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-852": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-452-209-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 48: Ngôi Làng Chào Đón!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-853": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-583-596-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 66: Thế Trận 3 Chân Mới' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-854": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-815-702-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 70: Naruto & Lục Đạo Tiên Nhân…!! [Tái Bản 2023]' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-855": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-414-497-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 46: Naruto Trở Về!! (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-856": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-368-633-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 8' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-857": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-175-689-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 29: Kakashi Vs. Itachi' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-858": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-395-609-7",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 41: Lựa Chọn Của Jiraiya!! (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-859": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-628-620-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 10: Ninja Kiệt Xuất…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-860": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-857-150-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 40: Nghệ Thuật Tối Thượng!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-861": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-942-535-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 4: Cây Cầu Mang Tên Người Anh Hùng!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-862": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-935-816-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 14: Hokage Vs. Hokage!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-863": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-728-555-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 51: Sasuke VS. Danzo…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-864": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-814-853-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 30: Bà Chiyo & Sakura (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-865": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-627-886-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 24: Nguy-Nguy-Nguy!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-866": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-425-499-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 5: Đấu Thủ!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-867": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-724-301-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 38: Thành Quả Luyện Tập…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-868": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-787-181-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 42: Bí Mật Của Mangekyo…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-869": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-985-197-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 3: Ước Mơ…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-870": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-589-883-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 49: Hội Đàm Ngũ Kage, Bắt Đầu…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-871": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-635-654-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 32: Hướng Tới Sasuke!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-872": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-413-198-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 50: Thủy Lao Tử Chiến!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-873": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-504-266-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 25: Anh Và Em (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-874": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-407-564-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 47: Phong Ấn Bị Phá Bỏ!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-875": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-371-325-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 45: Chiến Trường Làng Lá!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-876": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-595-758-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 7' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-877": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-591-427-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 1: Uzumaki Naruto (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-878": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-446-365-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 59: Ngũ Kage Hợp Lực…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-879": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-444-828-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 1 - Uzumaki Naruto (Tái Bản 2025)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-880": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-653-705-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 6: Quyết Tâm Của Sakura!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-881": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-413-342-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 53: Naruto Ra Đời (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-882": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-887-219-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 58: Naruto VS. Itachi!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-883": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-460-780-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 56: Đội Asuma Tái Ngộ! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-884": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-196-499-6",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 37: Trận Đấu Của Shikamaru!! (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-885": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-878-105-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 55: Khai Màn Đại Chiến! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-886": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-307-277-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 37: Trận Đấu Của Shikamaru!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-887": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-525-923-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 33: Nhiệm Vụ Tuyệt Mật…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-888": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-469-922-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 59 - Ngũ Kage Hợp Lực…!! (Tái Bản 2025)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-889": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-176-616-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 57 - Naruto Xung Trận…!! (Tái Bản 2025)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-890": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-632-463-2",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto - Tập 38 - Thành Quả Luyện Tập…!! (Tái Bản 2025)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-891": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-450-376-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 2: Ông Khách Khó Ưa (Tái Bản)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-892": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-989-431-1",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 22: Chuyển Sinh…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-893": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-712-764-9",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 9: Neji Và Hinata (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-894": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-194-642-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 52: Đội 7 Của Mỗi Người!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-895": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-885-704-3",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 21: Không Thể Tha Thứ!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-896": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-150-445-8",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 26: Ngày Từ Biệt…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-897": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-288-420-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 44: Truyền Thụ Tiên Thuật…!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-898": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-549-525-4",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 39: Hành Động (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 25000
+  },
+  "book-899": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-597-245-0",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 34: Khoảnh Khắc Gặp Lại...!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
+  },
+  "book-900": {
+    "author": "Masashi Kishimoto",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-364-133-5",
+    "categoryName": "Manga Huyền Thoại",
+    "categoryId": "cat-manga-huyen-thoai",
+    "description": "Tác phẩm truyện tranh kinh điển 'Naruto Tập 35: Cặp Đôi Mới!! (Tái Bản 2022)' thuộc series huyền thoại Naruto. Tác giả: Masashi Kishimoto, bản quyền tiếng Việt chính thức bởi NXB Kim Đồng. Hình ảnh thật được chụp thực tế từ tập truyện phát hành chính hãng.",
+    "originalPrice": 30000
   }
 }
