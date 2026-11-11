@@ -244,9 +244,6 @@
             <span class="profile-badge">Thành viên thân thiết</span>
         </div>
         <div class="profile-actions-row">
-            <a href="/admin" class="button secondary admin-portal-btn">
-                🛡️ Cổng Quản Trị (Admin)
-            </a>
             <form class="profile-logout-form" action="/account" method="post">
                 <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
                 <button class="secondary" name="action" value="logout">
