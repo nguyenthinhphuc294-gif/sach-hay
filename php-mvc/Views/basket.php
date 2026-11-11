@@ -203,8 +203,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                         </div>
 
                         <div class="cart-table-footer">
-                            <a href="/books" class="btn-back-catalog">&larr; Tiếp tục chọn thêm sách</a>
-                            <span class="cart-total-badge"><?= $totalItems ?> cuốn sách trong giỏ</span>
+                            <span class="cart-total-badge" style="margin-left: auto;"><?= $totalItems ?> cuốn sách trong giỏ</span>
                         </div>
                     </div>
 

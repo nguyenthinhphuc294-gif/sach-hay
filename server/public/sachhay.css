@@ -2769,7 +2769,7 @@ details.order p,
 /* Cart Table Footer */
 .cart-table-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 0.85rem 1rem;
     background: #f9fafb;
