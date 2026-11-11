@@ -8,7 +8,7 @@ $shortcuts = [
     ['flame','Sách Mới',[],'orange'],['book','Văn Học',['category'=>'Văn Học'],'blue'],
     ['trending','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],['smile','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
     ['layers','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],['sparkles','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
-    ['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'cyan'],['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
+    ['book','Giáo Khoa',['category'=>'Sách Giáo Khoa'],'cyan'],['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'cyan'],['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
 ];
 ?>
 <section class="storefront-banners" aria-label="Khuyến mãi nổi bật">

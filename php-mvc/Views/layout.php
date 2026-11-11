@@ -37,7 +37,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     </div>
     <div class="nav-bar">
         <div class="wrap nav-row">
-            <?php $navCategories = ['Văn Học','Sách Kinh Tế','Tâm Lý - Kỹ Năng','Manga - Comic','Manga Huyền Thoại','Sách Thiếu Nhi','Sách Ngoại Văn','Văn Phòng Phẩm']; ?>
+            <?php $navCategories = ['Văn Học','Sách Kinh Tế','Tâm Lý - Kỹ Năng','Manga - Comic','Sách Giáo Khoa','Sách Thiếu Nhi','Sách Ngoại Văn','Văn Phòng Phẩm']; ?>
             <details class="category-menu"><summary><?php $icon = 'menu'; require __DIR__ . '/store-icon.php'; ?> Danh mục sản phẩm <?php $icon = 'down'; require __DIR__ . '/store-icon.php'; ?></summary>
                 <div><?php foreach ($navCategories as $label): ?><a href="/books?<?= $e(http_build_query(['category'=>$label])) ?>"><?= $e($label) ?></a><?php endforeach; ?></div>
             </details>
