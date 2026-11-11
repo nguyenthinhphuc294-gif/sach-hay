@@ -91,9 +91,28 @@ final class PageController
                 break;
             case '/account':
             case '/orders':
-                $this->render('account', 'Tài khoản và đơn hàng', [
-                    'orders'=>$this->orders->customerOrders($this->customer, $_SESSION['owner_key']),
-                    'isAdmin'=>$this->admin,
+                $orders = $this->orders->customerOrders($this->customer, $_SESSION['owner_key']);
+                $vouchers = $this->db->run("SELECT code, kind, value, minimum, cap, valid_until FROM vouchers WHERE active = 1 ORDER BY value DESC")->fetchAll();
+                $totalSpent = 0;
+                $completedCount = 0;
+                foreach ($orders as $rec) {
+                    $st = $rec['order']['status'] ?? '';
+                    if ($st === 'completed' || ($rec['payment']['status'] ?? '') === 'paid') {
+                        $totalSpent += (int) ($rec['order']['total'] ?? 0);
+                        $completedCount++;
+                    }
+                }
+                $points = 150 + (int) floor($totalSpent / 5000);
+                $this->render('account', 'Tài Khoản & Đơn Hàng', [
+                    'orders' => $orders,
+                    'isAdmin' => $this->admin,
+                    'vouchers' => $vouchers,
+                    'totalSpent' => $totalSpent,
+                    'completedCount' => $completedCount,
+                    'points' => $points,
+                    'customerName' => $_SESSION['customer_name'] ?? null,
+                    'customerPhone' => $_SESSION['customer_phone'] ?? null,
+                    'customerAddress' => $_SESSION['customer_address'] ?? null,
                 ]);
                 break;
             case '/admin':
@@ -159,10 +178,34 @@ final class PageController
                 if ($action === 'login' || $action === 'register') {
                     $accounts->authenticate($action, $data);
                 } elseif ($action === 'logout') {
-                    unset($_SESSION['customer_id'], $_SESSION['customer_email'], $_SESSION['expires'], $_SESSION['purchase']);
+                    unset($_SESSION['customer_id'], $_SESSION['customer_email'], $_SESSION['customer_name'], $_SESSION['customer_phone'], $_SESSION['customer_address'], $_SESSION['expires'], $_SESSION['purchase']);
                     if (!session_regenerate_id(true)) throw new RuntimeException('Cannot regenerate session');
                 } elseif ($action === 'cancel') {
                     $this->orders->updateStatus(Http::text($data['id'] ?? null, 32), 'cancelled', true, $this->customer, $_SESSION['owner_key']);
+                } elseif ($action === 'update_profile') {
+                    if (!$this->customer) Http::invalid('Vui lòng đăng nhập.');
+                    $_SESSION['customer_name'] = Http::text($data['name'] ?? null, 100);
+                    $_SESSION['customer_phone'] = Http::text($data['phone'] ?? null, 15);
+                    $_SESSION['customer_address'] = Http::text($data['address'] ?? null, 255);
+                    $this->redirect('/account#profile', 'Cập nhật thông tin thành công!');
+                } elseif ($action === 'change_password') {
+                    if (!$this->customer) Http::invalid('Vui lòng đăng nhập.');
+                    $oldPass = $data['old_password'] ?? '';
+                    $newPass = $data['new_password'] ?? '';
+                    $confirmPass = $data['confirm_password'] ?? '';
+                    if (!is_string($newPass) || mb_strlen($newPass) < 6 || mb_strlen($newPass) > 128) {
+                        Http::invalid('Mật khẩu mới phải từ 6 đến 128 ký tự.');
+                    }
+                    if ($newPass !== $confirmPass) {
+                        Http::invalid('Xác nhận mật khẩu mới không khớp.');
+                    }
+                    $user = $this->db->one('SELECT * FROM customers WHERE id=?', [$this->customer]);
+                    if (!$user || !password_verify(hash('sha256', (string)$oldPass), $user['password_hash'])) {
+                        Http::invalid('Mật khẩu hiện tại không chính xác.');
+                    }
+                    $newHash = password_hash(hash('sha256', $newPass), PASSWORD_DEFAULT);
+                    $this->db->run('UPDATE customers SET password_hash=? WHERE id=?', [$newHash, $this->customer]);
+                    $this->redirect('/account#security', 'Đổi mật khẩu bảo mật thành công!');
                 } else {
                     Http::invalid();
                 }
