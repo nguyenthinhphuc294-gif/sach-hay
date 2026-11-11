@@ -46,8 +46,8 @@ final class Accounts
         $this->limit('checkout-auth', 900, 20);
         $email = Http::email($data['email'] ?? null);
         $password = $data['password'] ?? null;
-        if (!is_string($password) || mb_strlen($password) < 10 || mb_strlen($password) > 128
-            || str_contains($password, "\0")) Http::invalid('Mật khẩu phải dài từ 10 đến 128 ký tự.');
+        if (!is_string($password) || mb_strlen($password) < 6 || mb_strlen($password) > 128
+            || str_contains($password, "\0")) Http::invalid('Mật khẩu phải dài từ 6 đến 128 ký tự.');
         // Hash the full password before bcrypt so passwords longer than 72 bytes are not truncated.
         $material = hash('sha256', $password);
         $user = $this->db->one('SELECT * FROM customers WHERE email=?', [$email]);
@@ -63,7 +63,7 @@ final class Accounts
             }
             $id = $user['id'];
         }
-        if (!session_regenerate_id(true)) throw new RuntimeException('Cannot regenerate session');
+        if (!headers_sent()) { @session_regenerate_id(true); }
         $_SESSION['customer_id'] = $id;
         $_SESSION['customer_email'] = $email;
         $_SESSION['expires'] = time() + 7200;
