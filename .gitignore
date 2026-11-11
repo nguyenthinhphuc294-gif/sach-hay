@@ -8,3 +8,5 @@ coverage/
 !.env.example
 .sachhay-admin.hash*
 /public/assets/aistudio/
+php-mvc/storage/
+php-mvc/.sachhay-admin.hash*

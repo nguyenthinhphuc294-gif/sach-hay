@@ -15,12 +15,7 @@ export default defineConfig(() => {
     },
     server: {
       proxy: {
-        '/api/admin-session.php/books': 'http://127.0.0.1:8788',
-        '/api/admin-session.php': 'http://127.0.0.1:8787',
-        '/api/catalog': 'http://127.0.0.1:8788',
-        '/api/checkout': 'http://127.0.0.1:8788',
-        '/api/contact': 'http://127.0.0.1:8788',
-        '/api/payment/sepay-webhook': 'http://127.0.0.1:8788',
+        '/api': 'http://127.0.0.1:8787',
       },
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify—file watching is disabled to prevent flickering during agent edits.

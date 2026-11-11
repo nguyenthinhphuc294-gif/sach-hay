@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "vite build && node scripts/prepare-php.mjs",
+    "serve:php": "php -S 127.0.0.1:8787 -t dist php-mvc/dev-router.php",
+    "preview": "npm run serve:php",
     "dev:checkout": "node server/checkout/start.mjs",
     "seed:checkout": "node server/checkout/seed.mjs",
     "test:checkout": "node --test server/checkout/checkout.test.mjs",

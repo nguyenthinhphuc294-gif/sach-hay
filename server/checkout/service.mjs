@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { CheckoutError, normalizedItems } from './input.mjs';
 import { Order, StockBook, Voucher, VoucherUse } from './models.mjs';
 import { bankPaymentDetails, bankTransferConfig, paymentAccessToken } from './bank-payment.mjs';
+import { FREE_SHIPPING_MINIMUM, STANDARD_SHIPPING_FEE } from '../../shared/delivery.mjs';
 
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const conflict = (code, message) => new CheckoutError(409, code, message);
@@ -18,7 +19,7 @@ export async function quote(input, customer, session) {
     return { bookId, quantity, title: book.title, coverImage: book.coverImage, price: book.price, total: book.price * quantity };
   });
   const subtotal = lines.reduce((sum, line) => sum + line.total, 0);
-  let shippingFee = input.paymentMethod === 'STORE_PICKUP' || subtotal >= 250_000 ? 0 : 25_000;
+  let shippingFee = input.paymentMethod === 'STORE_PICKUP' || subtotal >= FREE_SHIPPING_MINIMUM ? 0 : STANDARD_SHIPPING_FEE;
   let discount = 0;
   let voucher;
   if (input.voucherCode) {

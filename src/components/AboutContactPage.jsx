@@ -1,8 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Clock, ExternalLink, Mail, MapPin, Phone, Send } from 'lucide-react';
-import shopInterior from '../assets/images/bookshop-interior.svg';
+import AboutBookshopSlideshow from './AboutBookshopSlideshow.jsx';
+import staffPhoto from '../assets/images/store-banners/phuc-thinh-staff.webp';
+import cafePhoto from '../assets/images/store-banners/phuc-thinh-cafe.webp';
+import bookshopPhoto from '../assets/images/store-banners/phuc-thinh-bookshop.webp';
+import readingRoomPhoto from '../assets/images/store-banners/phuc-thinh-reading-room.webp';
 import { storeContact, storePhoneHref } from '../data/storeContact';
 
+const storeSlides = [
+  { src: staffPhoto, alt: 'Hai nhân viên trước quầy Nhà Sách Phúc Thịnh Café' },
+  { src: cafePhoto, alt: 'Minh họa không gian Nhà Sách Phúc Thịnh Café' },
+  { src: bookshopPhoto, alt: 'Minh họa mặt tiền đỏ của Nhà Sách Hay Phúc Thịnh' },
+  { src: readingRoomPhoto, alt: 'Minh họa sảnh đọc sách và cầu thang của Nhà Sách Phúc Thịnh' },
+];
+const contentWidth = 'mx-auto w-full max-w-7xl px-4 sm:px-6';
 const mapQuery = encodeURIComponent('Phước Tân, Bien Hoa, Dong Nai');
 const mapEmbed = `https://maps.google.com/maps?q=${mapQuery}&z=14&hl=vi&output=embed`;
 const mapLink = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
@@ -75,37 +86,39 @@ export default function AboutContactPage() {
   }
 
   return (
-    <div className="mx-auto max-w-7xl space-y-10 px-4 py-6 sm:space-y-14 sm:px-6 sm:py-10">
-      <section aria-labelledby="about-title" className="overflow-hidden rounded-3xl border border-stone-200 bg-[#fff9ef]">
-        <div className="grid items-center md:grid-cols-2">
-          <div className="p-6 sm:p-10 lg:p-14">
-            <span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-3 py-1.5 text-xs font-bold text-red-800">
-              <BookOpen className="size-4" aria-hidden="true" /> NHÀ SÁCH Sách Hay
-            </span>
-            <h1 id="about-title" ref={headingRef} tabIndex={-1} className="mt-5 text-3xl font-black tracking-tight text-stone-900 sm:text-5xl">
-              Về chúng tôi &amp; Liên hệ
-            </h1>
-            <p className="mt-4 text-base leading-relaxed text-stone-700">
-              Sách Hay là nhà sách trực tuyến dành cho những ai thích đọc và muốn tìm một cuốn sách hợp với mình.
-              Từ văn học, truyện tranh đến sách thiếu nhi và kỹ năng, chúng tôi muốn việc chọn sách trở thành
-              một phần thú vị trong ngày của bạn.
-            </p>
+    <div className="space-y-10 py-6 sm:space-y-14 sm:py-10">
+      <div className={contentWidth}>
+        <section aria-labelledby="about-title" className="overflow-hidden rounded-3xl border border-stone-200 bg-[#fff9ef]">
+          <div className="grid items-center md:grid-cols-2">
+            <div className="p-6 sm:p-10 lg:p-14">
+              <span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-3 py-1.5 text-xs font-bold text-red-800">
+                <BookOpen className="size-4" aria-hidden="true" /> NHÀ SÁCH Sách Hay
+              </span>
+              <h1 id="about-title" ref={headingRef} tabIndex={-1} className="mt-5 text-3xl font-black tracking-tight text-stone-900 sm:text-5xl">
+                Về chúng tôi &amp; Liên hệ
+              </h1>
+              <p className="mt-4 text-base leading-relaxed text-stone-700">
+                Sách Hay là nhà sách trực tuyến dành cho những ai thích đọc và muốn tìm một cuốn sách hợp với mình.
+                Từ văn học, truyện tranh đến sách thiếu nhi và kỹ năng, chúng tôi muốn việc chọn sách trở thành
+                một phần thú vị trong ngày của bạn.
+              </p>
+            </div>
+            <AboutBookshopSlideshow />
           </div>
-          <img src={shopInterior} alt="Minh họa góc nhà sách với kệ gỗ, bàn đọc và ánh đèn ấm" width="720" height="500" className="h-full max-h-96 w-full object-cover md:max-h-none" />
-        </div>
-        <div className="grid gap-6 border-t border-stone-200 bg-white p-6 sm:grid-cols-2 sm:p-10 lg:px-14">
-          <div>
-            <h2 className="text-lg font-bold text-stone-900">Tầm nhìn</h2>
-            <p className="mt-1.5 text-sm leading-relaxed text-stone-700">Trở thành nơi bạn có thể quay lại mỗi khi cần tìm cuốn sách tiếp theo cho mình hoặc cho người thân.</p>
+          <div className="grid gap-6 border-t border-stone-200 bg-white p-6 sm:grid-cols-2 sm:p-10 lg:px-14">
+            <div>
+              <h2 className="text-lg font-bold text-stone-900">Tầm nhìn</h2>
+              <p className="mt-1.5 text-sm leading-relaxed text-stone-700">Trở thành nơi bạn có thể quay lại mỗi khi cần tìm cuốn sách tiếp theo cho mình hoặc cho người thân.</p>
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-stone-900">Sứ mệnh</h2>
+              <p className="mt-1.5 text-sm leading-relaxed text-stone-700">Giúp bạn dễ tìm sách phù hợp, hiểu rõ mình đang mua gì và có nơi để hỏi khi cần hỗ trợ.</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-lg font-bold text-stone-900">Sứ mệnh</h2>
-            <p className="mt-1.5 text-sm leading-relaxed text-stone-700">Giúp bạn dễ tìm sách phù hợp, hiểu rõ mình đang mua gì và có nơi để hỏi khi cần hỗ trợ.</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section aria-labelledby="contact-details">
+      <section aria-labelledby="contact-details" className={contentWidth}>
         <h2 id="contact-details" className="text-2xl font-extrabold text-stone-900">Thông tin cửa hàng</h2>
         <dl className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <ContactDetail icon={MapPin} label="Địa chỉ">
@@ -122,7 +135,9 @@ export default function AboutContactPage() {
         </dl>
       </section>
 
-      <div className="grid gap-5 lg:grid-cols-2">
+      <AboutBookshopSlideshow slides={storeSlides} fullWidth label="Banner minh họa không gian nhà sách" />
+
+      <div className={`${contentWidth} grid gap-5 lg:grid-cols-2`}>
         <section aria-labelledby="map-title" className="flex flex-col rounded-2xl border border-stone-200 bg-white p-5 sm:p-7">
           <h2 id="map-title" className="text-xl font-extrabold text-stone-900">Bản đồ khu vực Phước Tân</h2>
           <p className="mt-1.5 text-sm text-stone-700">{storeContact.area}</p>

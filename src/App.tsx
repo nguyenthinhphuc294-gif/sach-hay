@@ -19,6 +19,7 @@ import AboutContactPage from './components/AboutContactPage.jsx';
 import { AdminLogin } from './components/AdminLogin';
 import { Footer } from './components/Footer';
 import { ToastContainer } from './components/Toast';
+import { BookBot } from './components/BookBot';
 import { OrderSuccessModal } from './components/OrderSuccessModal';
 import { OrderTrackingModal } from './components/OrderTrackingModal';
 import PromoBannerModal from './components/PromoBannerModal.jsx';
@@ -107,6 +108,7 @@ const MainAppContent: React.FC = () => {
 
       {/* Global Toasts */}
       <ToastContainer />
+      <BookBot hidden={(activeView === 'admin' && !isAboutPage) || isBankPaymentOpen || isOrderSuccessOpen || Boolean(orderLookupMode)} />
 
       {activeView === 'home' && !isAboutPage && !isBankPaymentOpen && !isOrderSuccessOpen && !orderLookupMode && (
         <PromoBannerModal />

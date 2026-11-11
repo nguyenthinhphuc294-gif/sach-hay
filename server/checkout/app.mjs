@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { mountCatalog } from '../catalog.mjs';
+import { mountBookBot } from '../bookbot.mjs';
 import { ContactMessage, createContactMessage, limitContact } from '../contact.mjs';
 import { checkoutRoutes } from './routes.mjs';
 import { sepayWebhook } from './sepay-webhook.mjs';
@@ -23,6 +24,7 @@ export function checkoutApp() {
   app.disable('x-powered-by');
   if (process.env.CHECKOUT_TRUST_PROXY === '1') app.set('trust proxy', 1);
   mountCatalog(app);
+  mountBookBot(app);
   app.post('/api/payment/sepay-webhook', express.raw({ type: 'application/json', limit: '16kb', inflate: false }), sepayWebhook);
   app.post('/api/contact', limitContact, express.json({ limit: '16kb' }), createContactMessage);
   app.use('/api/checkout', express.json({ limit: '32kb' }), checkoutRoutes);

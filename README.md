@@ -1,5 +1,9 @@
 # SACHHAY - Website Thương Mại Điện Tử Bán Sách Trực Tuyến
 
+Bản triển khai hiện tại sử dụng **PHP MVC, PDO SQLite và giao diện React**. Xem
+[hướng dẫn chạy và triển khai PHP MVC](php-mvc/README.md). Các hướng dẫn Node/MongoDB
+ở phần cũ của tài liệu mô tả phiên bản trước.
+
 Website thương mại điện tử bán sách chuyên nghiệp **SACHHAY**, lấy cảm hứng từ cấu trúc, giao diện và trải nghiệm mua sắm của **Fahasa** (https://www.fahasa.com/).
 
 ---
@@ -179,3 +183,11 @@ Trong **Quản lý Sách → Thêm Sách Mới**, chọn một ảnh JPG, PNG ho
 Chạy cả PHP, Express và MongoDB theo hướng dẫn ở trên. Khi triển khai, chuyển tiếp `/api/catalog/*` và `/api/admin-session.php/books` (gồm các đường dẫn con) đến Express. Đường dẫn chính xác `/api/admin-session.php` vẫn chạy PHP. Nếu PHP không chạy trên `127.0.0.1:8787`, đặt `ADMIN_SESSION_CHECK_URL` thành URL đáng tin cậy trỏ tới endpoint PHP để Express kiểm tra phiên quản trị. Trình duyệt phải truy cập các API này qua cùng domain với website.
 
 Sách mới dùng kho MongoDB của checkout và hiện cho khách trên các thiết bị. Các sách mẫu hoặc sách cũ từng lưu trong trình duyệt tiếp tục dùng dữ liệu hiện có.
+
+## 10. PT-BookBot
+
+Nút **PT-BookBot** ở góc dưới website mở khung tư vấn tiếng Việt. Bot lọc các sách có thể đặt từ danh mục, đối chiếu giá và tồn kho với MongoDB qua `POST /api/bookbot` và mở trang chi tiết khi khách chọn sách. Câu trả lời về giao hàng và VietQR dựa trên cấu hình checkout.
+
+Chạy `npm run dev:checkout` và `npm run dev` như phần 5. Khi triển khai, chuyển tiếp `/api/bookbot` đến Express qua cùng tên miền. Nếu Express hoặc MongoDB chưa kết nối, bot hướng khách sang trang Liên hệ khi cần kiểm tra giá hoặc tồn kho.
+
+Bot chạy bằng quy tắc mặc định. Nếu muốn Gemini hỗ trợ phân loại những câu hỏi chưa rõ, đặt `GEMINI_API_KEY` và `BOOKBOT_GEMINI_MODEL` trong `.env` phía máy chủ rồi khởi động lại Express. Gemini chỉ trả loại câu hỏi và chủ đề, còn giá, tồn kho và điều kiện thanh toán do website xác định. Giữ khóa API trong biến môi trường của máy chủ.

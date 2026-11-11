@@ -45,9 +45,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
     openBookDetail,
     searchQuery,
     setSearchQuery,
+    selectedCategorySlug,
     setSelectedCategorySlug,
     wishlist
   } = useStore();
+  const isCatalog = !isAboutPage && activeView === 'catalog';
+  const isAllBooks = isCatalog && !selectedCategorySlug && !searchQuery.trim();
+  const isCurrentCategory = (slug: string) => isCatalog && selectedCategorySlug === slug;
+  const catalogTabClass = 'whitespace-nowrap border-b-2 border-transparent pb-1 text-slate-700 transition-colors hover:text-slate-950 aria-[current=page]:border-[#C92127] aria-[current=page]:font-bold aria-[current=page]:text-[#C92127]';
 
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -520,13 +525,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
                   <button
                     key={cat.id}
                     onClick={() => handleCategoryClick(cat.slug)}
-                    className="w-full flex items-center justify-between px-4 py-2 hover:bg-red-50 hover:text-[#C92127] text-slate-700 text-left transition-colors group"
+                    aria-current={isCurrentCategory(cat.slug) ? 'page' : undefined}
+                    className="flex w-full items-center justify-between px-4 py-2 text-left text-slate-700 transition-colors hover:bg-slate-100 aria-[current=page]:bg-red-50 aria-[current=page]:text-[#C92127]"
                   >
                     <div className="flex items-center gap-2.5">
                       {getCategoryIcon(cat.iconName)}
                       <span className="text-xs font-medium">{cat.name}</span>
                     </div>
-                    <span className="text-[11px] text-slate-400 group-hover:text-[#C92127]">
+                    <span className="text-[11px] text-slate-400">
                       {cat.bookCount}
                     </span>
                   </button>
@@ -536,7 +542,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
           </div>
 
           {/* QUICK CATEGORY HORIZONTAL NAV */}
-          <nav className="flex items-center gap-6 overflow-x-auto no-scrollbar py-2">
+          <nav aria-label="Điều hướng chính" className="flex items-center gap-6 overflow-x-auto no-scrollbar py-2">
             <button
               onClick={() => {
                 setActiveView('home');
@@ -555,9 +561,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
                 setSearchQuery('');
                 setActiveView('catalog');
               }}
-              className={`hover:text-[#C92127] whitespace-nowrap transition-colors ${
-                !isAboutPage && activeView === 'catalog' ? 'text-[#C92127] font-bold border-b-2 border-[#C92127] pb-1' : 'text-slate-700'
-              }`}
+              aria-current={isAllBooks ? 'page' : undefined}
+              className={catalogTabClass}
             >
               Tất Cả Sách
             </button>
@@ -570,7 +575,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
               <button
                 key={cat.id}
                 onClick={() => handleCategoryClick(cat.slug)}
-                className="text-slate-700 hover:text-[#C92127] whitespace-nowrap transition-colors"
+                aria-current={isCurrentCategory(cat.slug) ? 'page' : undefined}
+                className={catalogTabClass}
               >
                 {cat.name}
               </button>
@@ -598,13 +604,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
                 </button>
               </div>
 
-              <div className="mt-4 space-y-1">
+              <nav aria-label="Điều hướng trên điện thoại" className="mt-4 space-y-1">
                 <button
                   onClick={() => {
                     setActiveView('home');
                     setIsMenuOpen(false);
                   }}
-                  className="w-full text-left py-2 font-semibold text-slate-800"
+                  aria-current={!isAboutPage && activeView === 'home' ? 'page' : undefined}
+                  className="w-full py-2 text-left font-semibold text-slate-800 aria-[current=page]:text-[#C92127]"
                 >
                   Trang chủ
                 </button>
@@ -615,11 +622,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
                     setActiveView('catalog');
                     setIsMenuOpen(false);
                   }}
-                  className="w-full text-left py-2 font-semibold text-slate-800"
+                  aria-current={isAllBooks ? 'page' : undefined}
+                  className="w-full py-2 text-left font-semibold text-slate-800 aria-[current=page]:text-[#C92127]"
                 >
                   Tất cả sách
                 </button>
-                <NavLink to="/about" onClick={() => setIsMenuOpen(false)} className="block py-2 font-semibold text-[#C92127]">
+                <NavLink to="/about" onClick={() => setIsMenuOpen(false)} className="block py-2 font-semibold text-slate-800 aria-[current=page]:text-[#C92127]">
                   Về chúng tôi &amp; Liên hệ
                 </NavLink>
                 <div className="py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
@@ -629,13 +637,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderLookup }) => {
                   <button
                     key={c.id}
                     onClick={() => handleCategoryClick(c.slug)}
-                    className="w-full flex items-center justify-between py-1.5 text-sm text-slate-700"
+                    aria-current={isCurrentCategory(c.slug) ? 'page' : undefined}
+                    className="flex w-full items-center justify-between py-1.5 text-sm text-slate-700 aria-[current=page]:font-bold aria-[current=page]:text-[#C92127]"
                   >
                     <span>{c.name}</span>
                     <span className="text-xs text-slate-400">({c.bookCount})</span>
                   </button>
                 ))}
-              </div>
+              </nav>
             </div>
 
             <div className="pt-4 border-t border-slate-200 space-y-2">
