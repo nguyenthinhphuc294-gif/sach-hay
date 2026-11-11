@@ -142,7 +142,7 @@ final class PageController
                     Http::json([
                         'success' => true,
                         'message' => 'Đã thêm "' . $book['title'] . '" vào giỏ hàng!',
-                        'cartCount' => array_sum($_SESSION['cart'] ?? []),
+                        'cartCount' => count($_SESSION['cart'] ?? []),
                         'bookId' => $id,
                         'title' => $book['title']
                     ]);
@@ -281,7 +281,7 @@ final class PageController
     private function render(string $view, string $title, array $data = []): void
     {
         $csrf = $_SESSION['csrf'];
-        $cartCount = array_sum($_SESSION['cart'] ?? []);
+        $cartCount = count($_SESSION['cart'] ?? []);
         $email = $_SESSION['customer_email'] ?? '';
         $flash = $_SESSION['flash'] ?? '';
         $isAdmin = $this->admin;
