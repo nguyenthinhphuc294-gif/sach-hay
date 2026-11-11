@@ -47,7 +47,7 @@ final class StoreController
             if ($path === '/session/logout') {
                 $_SESSION = [];
                 session_destroy();
-                setcookie('SachHayCheckoutPhp', '', ['expires'=>1,'path'=>'/api/checkout','secure'=>Http::secure(),'httponly'=>true,'samesite'=>'Lax']);
+                setcookie('SachHayCheckoutPhp', '', ['expires'=>1,'path'=>'/','secure'=>Http::secure(),'httponly'=>true,'samesite'=>'Lax']);
                 Http::json(null, 204);
             }
             $customer = $_SESSION['customer_id'] ?? null;

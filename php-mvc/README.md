@@ -1,36 +1,37 @@
 # Chạy Sách Hay bằng PHP MVC
 
-Yêu cầu PHP 8.3 trở lên, `pdo_sqlite` và `mbstring`. Node.js dùng để build React trên máy phát triển.
+Cần PHP 8.3 trở lên với các extension PDO SQLite, mbstring, session và GD có hỗ trợ JPEG, PNG và WebP. Có thể kiểm tra bằng `php -m`.
+
+Chạy từ thư mục gốc của repo.
 
 ```sh
-npm ci
-npm run build
-php scripts/set-admin-password.php .sachhay-admin.hash
-npm run serve:php
+php scripts/set-admin-password.php
+php -S 127.0.0.1:8787 -t server/public php-mvc/dev-router.php
 ```
 
-Khi chạy lệnh tạo hash, nhập mật khẩu của bạn và bấm Enter. Mở <http://127.0.0.1:8787/>.
-Tài khoản quản trị có tên `admin`.
-PHP tự tạo `php-mvc/storage/sachhay.sqlite` khi có yêu cầu API đầu tiên.
-Tệp này giữ ảnh, tồn kho, tài khoản khách, đơn hàng, lượt voucher và liên hệ.
+Khi chạy lệnh đầu tiên, nhập mật khẩu quản trị của bạn rồi bấm Enter. Vào
+<http://127.0.0.1:8787/> để mua thử hoặc <http://127.0.0.1:8787/admin> để
+đăng nhập bằng tài khoản `admin`. PHP tạo cơ sở dữ liệu
+`php-mvc/storage/sachhay.sqlite` khi nhận yêu cầu đầu tiên. Dữ liệu mẫu
+nằm trong `php-mvc/demo-books.json`.
 
-## Triển khai trên cPanel
+## Triển khai trên VPS Linux hoặc cPanel
 
-1. Kiểm tra phiên bản PHP của domain và hai extension trên. Sao lưu `public_html` và tệp dữ liệu hiện có.
-2. Đặt thư mục `php-mvc` ngoài thư mục web, ở `/home/<tài-khoản>/sachhay-php-mvc`. Chép thêm
-   `server/checkout/demo-books.json` vào thư mục PHP đó. Chỉ dùng thư mục `storage` bên ngoài thư mục web
-   và cấp quyền ghi cho tiến trình PHP.
-3. Chép nội dung `dist` vào document root. Giữ dòng chọn phiên bản PHP do cPanel tạo trong
-   `.htaccess`, thêm các quy tắc từ `dist/.htaccess` trước các rewrite cũ.
-   Gỡ các rewrite cũ chuyển nhóm API sang Node.js. Đảm bảo `index.php` và `storefront.html` có trong document root.
-4. Dùng lại hash quản trị ở `/home/<tài-khoản>/.sachhay-admin.hash`, hoặc tạo hash bằng script và đặt tại vị trí này.
-5. Kiểm tra trang chủ, `/about`, `/api/catalog/books` và thao tác thêm sách kèm ảnh trong quản trị.
+- Với Apache trên VPS, đặt document root tại `server/public` trong bản sao repo,
+  bật mod_rewrite và cho phép quy tắc trong `.htaccess`. Bật HTTPS và
+  cấp cho tiến trình PHP quyền ghi vào `php-mvc/storage`.
+- Với cPanel, đặt `php-mvc` thành `/home/<tài-khoản>/sachhay-php-mvc` và chép
+  nội dung `server/public` vào document root. Giữ dòng chọn phiên bản PHP
+  do cPanel tạo trong `.htaccess`, rồi thêm các quy tắc rewrite từ repo.
+  Nếu domain đang chạy bản cũ, sao lưu trước khi đổi cấu hình.
+- Tệp `.sachhay-admin.hash` mặc định ở gốc repo trên VPS và ở thư mục home
+  của tài khoản trên cPanel. Tiến trình PHP cần đọc hash và ghi tệp giới hạn
+  đăng nhập bên cạnh. Nếu chọn đường dẫn khác, đặt biến `SACHHAY_ADMIN_HASH_FILE`.
+- Giữ thư mục `storage` ngoài document root và sao lưu khi nâng cấp.
 
-Chỉ bật VietQR khi đã cấu hình `VIETQR_BANK_BIN`, `VIETQR_ACCOUNT_NUMBER`, `VIETQR_ACCOUNT_NAME`
-và `SEPAY_WEBHOOK_SECRET` trong môi trường PHP. SePay gửi sự kiện HMAC đến
+VietQR chỉ xuất hiện khi máy chủ có `VIETQR_BANK_BIN`, `VIETQR_ACCOUNT_NUMBER`,
+`VIETQR_ACCOUNT_NAME` và `SEPAY_WEBHOOK_SECRET`. Webhook HMAC nhận sự kiện tại
 `/api/payment/sepay-webhook`. Có thể đặt `VIETQR_TEMPLATE` nếu cần đổi mẫu QR.
 
-Cơ sở dữ liệu được khởi tạo với sách và voucher mẫu. Các đơn hoặc tài khoản từ một hệ thống MongoDB
-đã hoạt động cần xuất và chuyển dữ liệu riêng trước khi chuyển hệ thống. Khi nâng cấp bản PHP,
-hãy sao lưu và giữ thư mục `storage`. Mục quản trị và báo cáo nào trước đây dùng dữ liệu mẫu
-trên giao diện vẫn cần API riêng nếu muốn quản lý chúng trên máy chủ.
+Trang quản trị đọc sách, đơn hàng, thống kê cơ bản, lượt voucher và tin nhắn từ SQLite.
+Các tài khoản và đơn hàng trên MongoDB của bản cũ cần được chuyển dữ liệu riêng nếu có.

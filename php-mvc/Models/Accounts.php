@@ -21,7 +21,7 @@ final class Accounts
     {
         session_name('SachHayCheckoutPhp');
         if (!session_start(['use_strict_mode'=>true, 'use_only_cookies'=>true, 'cookie_httponly'=>true,
-            'cookie_secure'=>Http::secure(), 'cookie_samesite'=>'Lax', 'cookie_path'=>'/api/checkout', 'gc_maxlifetime'=>7200])) {
+            'cookie_secure'=>Http::secure(), 'cookie_samesite'=>'Lax', 'cookie_path'=>'/', 'gc_maxlifetime'=>7200])) {
             throw new RuntimeException('Checkout session unavailable');
         }
     }

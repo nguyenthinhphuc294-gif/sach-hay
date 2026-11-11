@@ -16,28 +16,42 @@ final class Database extends PDO
         ]);
         $this->exec('PRAGMA busy_timeout=5000');
         $this->exec('PRAGMA foreign_keys=ON');
-        if (!$this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'")) {
+        $this->sqliteCreateFunction('sachhay_lower', static fn(string $value): string => mb_strtolower($value, 'UTF-8'), 1);
+        $ready = $this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'");
+        if (!$ready || $this->one('SELECT version FROM schema_ready')['version'] < 2) {
             $this->write(function (): void {
-                if ($this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'")) return;
-                $this->exec(file_get_contents(dirname(__DIR__) . '/schema.sql'));
-                $seed = dirname(__DIR__) . '/demo-books.json';
-                if (!is_file($seed)) $seed = dirname(__DIR__, 2) . '/server/checkout/demo-books.json';
-                $books = json_decode(file_get_contents($seed), true, 512, JSON_THROW_ON_ERROR);
-                foreach ($books as $book) {
-                    $this->run('INSERT INTO books(id,title,price,stock,sold_count,cover_path) VALUES(?,?,?,?,?,?)', [
-                        $book['id'], $book['title'], $book['price'], $book['stock'], $book['soldCount'] ?? 0, $book['coverImage'],
-                    ]);
+                if (!$this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'")) {
+                    $this->install();
                 }
-                $now = time();
-                foreach ([['SACHHAY20K','fixed',20000,150000,null], ['GIAM15','percentage',15,300000,60000],
-                    ['FREESHIP','shipping',25000,100000,null]] as $voucher) {
-                    $this->run('INSERT INTO vouchers(code,kind,value,minimum,cap,valid_from,valid_until) VALUES(?,?,?,?,?,?,?)',
-                        [...$voucher, $now, $now + 365 * 86400]);
+                if ($this->one('SELECT version FROM schema_ready')['version'] >= 2) return;
+                $details = json_decode(file_get_contents(dirname(__DIR__) . '/book-metadata.json'), true, 64, JSON_THROW_ON_ERROR);
+                foreach ($details as $id => $book) {
+                    $this->run('UPDATE books SET catalog=? WHERE id=? AND catalog IS NULL',
+                        [json_encode($book, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE),$id]);
                 }
-                $this->exec('CREATE TABLE schema_ready (version INTEGER NOT NULL)');
-                $this->exec('INSERT INTO schema_ready VALUES (1)');
+                $this->exec('UPDATE schema_ready SET version=2');
             });
         }
+    }
+
+    private function install(): void
+    {
+        $this->exec(file_get_contents(dirname(__DIR__) . '/schema.sql'));
+        $seed = dirname(__DIR__) . '/demo-books.json';
+        $books = json_decode(file_get_contents($seed), true, 512, JSON_THROW_ON_ERROR);
+        foreach ($books as $book) {
+            $this->run('INSERT INTO books(id,title,price,stock,sold_count,cover_path) VALUES(?,?,?,?,?,?)', [
+                $book['id'], $book['title'], $book['price'], $book['stock'], $book['soldCount'] ?? 0, $book['coverImage'],
+            ]);
+        }
+        $now = time();
+        foreach ([['SACHHAY20K','fixed',20000,150000,null], ['GIAM15','percentage',15,300000,60000],
+            ['FREESHIP','shipping',25000,100000,null]] as $voucher) {
+            $this->run('INSERT INTO vouchers(code,kind,value,minimum,cap,valid_from,valid_until) VALUES(?,?,?,?,?,?,?)',
+                [...$voucher, $now, $now + 365 * 86400]);
+        }
+        $this->exec('CREATE TABLE schema_ready (version INTEGER NOT NULL)');
+        $this->exec('INSERT INTO schema_ready VALUES (1)');
     }
 
     public function run(string $sql, array $args = []): PDOStatement

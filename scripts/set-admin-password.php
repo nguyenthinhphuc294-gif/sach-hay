@@ -6,7 +6,7 @@ if (PHP_SAPI !== 'cli') {
     exit;
 }
 
-$path = $argv[1] ?? dirname(__DIR__) . '/server/.sachhay-admin.hash';
+$path = $argv[1] ?? dirname(__DIR__) . '/.sachhay-admin.hash';
 $password = rtrim((string) fgets(STDIN), "\r\n");
 if (strlen($password) < 10 || strlen($password) > 72) {
     fwrite(STDERR, "Mật khẩu cần từ 10 đến 72 byte.\n");

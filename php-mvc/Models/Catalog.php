@@ -5,16 +5,53 @@ final class Catalog
 {
     public function __construct(private Database $db) {}
 
-    public function list(): array
+    public function list(bool $includeSeeded = false): array
     {
+        $filter = $includeSeeded ? 'catalog IS NOT NULL' : 'created_at IS NOT NULL';
         return array_map($this->product(...), $this->db->run(
-            'SELECT * FROM books WHERE active=1 AND created_at IS NOT NULL ORDER BY created_at DESC, id DESC'
+            "SELECT * FROM books WHERE active=1 AND $filter ORDER BY created_at DESC, id DESC"
         )->fetchAll());
     }
 
     public function book(string $id): ?array
     {
         return $this->db->one('SELECT * FROM books WHERE id=? AND active=1', [$id]);
+    }
+
+    public function browse(string $query = '', string $category = '', string $sort = '', int $page = 1): array
+    {
+        $filters = ['active=1'];
+        $args = [];
+        if ($query !== '') {
+            $filters[] = "instr(sachhay_lower(title || ' ' || coalesce(catalog,'')), sachhay_lower(?))>0";
+            $args[] = $query;
+        }
+        if ($category !== '') {
+            $filters[] = "json_extract(catalog,'$.categoryName')=?";
+            $args[] = $category;
+        }
+        $where = implode(' AND ', $filters);
+        $order = match ($sort) {
+            'price' => 'price ASC', 'price-desc' => 'price DESC', 'title' => 'title ASC',
+            'popular' => 'sold_count DESC', default => 'created_at DESC',
+        };
+        $total = $this->db->one("SELECT COUNT(*) AS total FROM books WHERE $where", $args)['total'];
+        $pages = max(1, (int) ceil($total / 12));
+        $page = min(max(1, $page), $pages);
+        $books = $this->db->run("SELECT id,title,price,stock,sold_count,cover_path,catalog,created_at FROM books
+            WHERE $where ORDER BY $order,id LIMIT 12 OFFSET ?", [...$args, ($page - 1) * 12])->fetchAll();
+        return compact('books', 'pages', 'page');
+    }
+
+    public function categories(): array
+    {
+        return $this->db->run("SELECT DISTINCT json_extract(catalog,'$.categoryName') AS name FROM books
+            WHERE active=1 AND catalog IS NOT NULL ORDER BY name")->fetchAll(PDO::FETCH_COLUMN);
+    }
+
+    public static function details(array $book): array
+    {
+        return $book['catalog'] ? json_decode($book['catalog'], true, 32, JSON_THROW_ON_ERROR) : [];
     }
 
     private function product(array $row): array
@@ -27,7 +64,7 @@ final class Catalog
             'title'=>$row['title'], 'price'=>$row['price'], 'stock'=>$row['stock'], 'soldCount'=>$row['sold_count'],
             'coverImage'=>$image, 'thumbnails'=>[$image], 'discountPercent'=>$original > $row['price'] ?
                 (int) round(100 * (1 - $row['price'] / $original)) : 0,
-            'publicationYear'=>(int) substr($row['created_at'], 0, 4), 'format'=>'Bìa mềm', 'language'=>'Tiếng Việt',
+            'publicationYear'=>(int) substr($row['created_at'] ?? '', 0, 4), 'format'=>'Bìa mềm', 'language'=>'Tiếng Việt',
             'rating'=>0, 'reviewCount'=>0, 'pages'=>0, 'dimensions'=>'', 'weight'=>0, 'isNewRelease'=>true,
             'shortDescription'=>mb_substr($data['description'], 0, 100), 'source'=>'catalog-api'];
     }
@@ -63,7 +100,7 @@ final class Catalog
                     [$id, $title, $data['price'], $data['stock'], $path, $cover, $json, gmdate(DATE_ATOM)]);
             } else {
                 $previous = $this->book($id);
-                if (!$previous || !$previous['created_at']) $this->missing();
+                if (!$previous) $this->missing();
                 $expected = $data['expectedStock'] ?? null;
                 if (!is_int($expected) || $expected < 0 || $expected > 1000000) Http::invalid('Vui lòng mở lại sản phẩm để chỉnh sửa.');
                 $changesStock = $data['stock'] !== $expected;
@@ -82,7 +119,7 @@ final class Catalog
 
     public function remove(string $id): void
     {
-        if (!$this->db->run('UPDATE books SET active=0 WHERE id=? AND active=1 AND created_at IS NOT NULL', [$id])->rowCount()) {
+        if (!$this->db->run('UPDATE books SET active=0 WHERE id=? AND active=1', [$id])->rowCount()) {
             $this->missing();
         }
     }

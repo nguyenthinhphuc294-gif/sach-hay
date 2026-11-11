@@ -21,7 +21,7 @@ function openAdminSession(bool $secure): void
         'cookie_httponly' => true,
         'cookie_secure' => $secure,
         'cookie_samesite' => 'Strict',
-        'cookie_path' => '/api/admin-session.php',
+        'cookie_path' => '/',
         'gc_maxlifetime' => 28800,
     ])) {
         respond(503, ['error' => 'Không mở được phiên quản trị.']);
@@ -29,7 +29,9 @@ function openAdminSession(bool $secure): void
 }
 
 // Keep the hash and throttle state outside the website's document root.
-$hashFile = getenv('SACHHAY_ADMIN_HASH_FILE') ?: dirname(__DIR__, 2) . '/.sachhay-admin.hash';
+$projectRoot = dirname(__DIR__, 3);
+$privateRoot = is_dir($projectRoot . '/php-mvc') ? $projectRoot : dirname(__DIR__, 2);
+$hashFile = getenv('SACHHAY_ADMIN_HASH_FILE') ?: $privateRoot . '/.sachhay-admin.hash';
 $hash = is_readable($hashFile) ? trim((string) file_get_contents($hashFile)) : '';
 $method = $_SERVER['REQUEST_METHOD'];
 $secure = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
@@ -67,6 +69,10 @@ if (($input['action'] ?? '') === 'logout') {
         openAdminSession($secure);
         $_SESSION = [];
         session_destroy();
+        setcookie('SachHayAdmin', '', [
+            'expires' => 1, 'path' => '/', 'secure' => $secure,
+            'httponly' => true, 'samesite' => 'Strict',
+        ]);
         setcookie('SachHayAdmin', '', [
             'expires' => 1, 'path' => '/api/admin-session.php', 'secure' => $secure,
             'httponly' => true, 'samesite' => 'Strict',
@@ -125,4 +131,8 @@ if (!session_regenerate_id(true)) {
     respond(503, ['error' => 'Không khởi tạo được phiên quản trị.']);
 }
 $_SESSION = ['admin_until' => $now + 28800, 'admin_config' => hash('sha256', $hash)];
+setcookie('SachHayAdmin', '', [
+    'expires' => 1, 'path' => '/api/admin-session.php', 'secure' => $secure,
+    'httponly' => true, 'samesite' => 'Strict',
+]);
 respond(200, ['authenticated' => true, 'expiresAt' => $_SESSION['admin_until']]);

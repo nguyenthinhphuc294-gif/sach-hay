@@ -1,2 +1,0 @@
-export const FREE_SHIPPING_MINIMUM = 250_000;
-export const STANDARD_SHIPPING_FEE = 25_000;

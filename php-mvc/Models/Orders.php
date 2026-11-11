@@ -149,6 +149,57 @@ final class Orders
         return hash_hmac('sha256', 'payment:' . $id, $owner);
     }
 
+    public function customerOrders(?string $customer, string $owner): array
+    {
+        $rows = $this->db->run('SELECT * FROM orders WHERE customer_id=? OR (customer_id IS NULL AND owner_key=?)
+            ORDER BY created_at DESC LIMIT 100', [$customer, $owner])->fetchAll();
+        return array_map($this->response(...), $rows);
+    }
+
+    public function adminOrders(int $page): array
+    {
+        $rows = $this->db->run('SELECT * FROM orders ORDER BY created_at DESC, id DESC LIMIT 21 OFFSET ?', [($page - 1) * 20])->fetchAll();
+        $orders = array_map(fn(array $row): array => $this->response($row)['order'], array_slice($rows, 0, 20));
+        return ['orders'=>$orders, 'hasNext'=>count($rows) > 20];
+    }
+
+    public function updateStatus(string $id, string $status, bool $customer = false, ?string $customerId = null, string $owner = ''): void
+    {
+        $this->db->write(function () use ($id, $status, $customer, $customerId, $owner): void {
+            $row = $this->db->one('SELECT * FROM orders WHERE id=?', [$id]);
+            if (!$row || ($customer && !($row['customer_id'] !== null
+                ? $row['customer_id'] === $customerId : hash_equals($row['owner_key'], $owner)))) {
+                throw new ApiError(404, 'ORDER_NOT_FOUND', 'Không tìm thấy đơn hàng.');
+            }
+            $data = json_decode($row['payload'], true, 64, JSON_THROW_ON_ERROR);
+            $current = $data['order']['status'];
+            if ($current === $status) return;
+            $next = ['pending'=>['confirmed','cancelled'], 'confirmed'=>['processing','cancelled'],
+                'processing'=>['shipping','cancelled'], 'shipping'=>['completed']];
+            if (!in_array($status, $next[$current] ?? [], true) || ($customer && ($status !== 'cancelled' || $current !== 'pending'))
+                || ($row['bank'] !== null && ($status === 'cancelled' ? $row['payment_status'] === 'paid' : $row['payment_status'] !== 'paid'))) {
+                throw new ApiError(409, 'INVALID_STATUS', 'Không thể cập nhật đơn ở trạng thái hiện tại.');
+            }
+            if ($status === 'cancelled') {
+                foreach ($data['order']['items'] as $line) {
+                    $this->db->run('UPDATE books SET stock=stock+?,sold_count=sold_count-? WHERE id=?',
+                        [$line['quantity'],$line['quantity'],$line['bookId']]);
+                }
+                $voucher = $data['order']['voucherCode'] ?? null;
+                if ($voucher !== null && $row['customer_id'] !== null) {
+                    $this->db->run('UPDATE vouchers SET used=used-1 WHERE code=? AND used>0', [$voucher]);
+                    $this->db->run('DELETE FROM voucher_uses WHERE code=? AND customer_id=? AND used=1', [$voucher, $row['customer_id']]);
+                    $this->db->run('UPDATE voucher_uses SET used=used-1 WHERE code=? AND customer_id=? AND used>1', [$voucher, $row['customer_id']]);
+                }
+            }
+            $data['order']['status'] = $status;
+            $data['order']['statusHistory'][] = ['status'=>$status, 'timestamp'=>gmdate(DATE_ATOM), 'note'=>'Đã cập nhật trạng thái đơn.'];
+            $paymentStatus = $status === 'cancelled' && $row['bank'] !== null ? 'cancelled' : $row['payment_status'];
+            $this->db->run('UPDATE orders SET payload=?,payment_status=? WHERE id=?',
+                [json_encode($data, JSON_THROW_ON_ERROR),$paymentStatus,$id]);
+        });
+    }
+
     private function response(array $row): array
     {
         $data = json_decode($row['payload'], true, 64, JSON_THROW_ON_ERROR);
@@ -193,6 +244,7 @@ final class Orders
                 !preg_match('/^woori(?:\s+bank)?$/iD', $event['gateway']) || $event['accountNumber'] !== $bank['accountNumber'] => 'wrong_destination',
                 $event['transferAmount'] !== $row['total'] => 'wrong_amount',
                 $date->getTimestamp() < strtotime($row['created_at']) => 'transfer_before_order',
+                $row['payment_status'] === 'cancelled' => 'cancelled_order',
                 $row['payment_status'] !== 'pending' => 'already_paid',
                 default => 'paid',
             };

@@ -5,25 +5,25 @@ $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 header('X-Content-Type-Options: nosniff');
 
-if (!str_starts_with($path, '/api/')) {
-    if (!in_array($method, ['GET','HEAD'], true)) {
-        http_response_code(405);
-        exit;
-    }
-    require __DIR__ . '/Views/store.php';
-    return;
-}
-
-header('Cache-Control: no-store');
+$isApi = str_starts_with($path, '/api/');
+if ($isApi) header('Cache-Control: no-store');
 require __DIR__ . '/Http.php';
-foreach (['Models/Database','Models/Accounts','Models/Catalog','Models/Orders','Controllers/StoreController'] as $file) {
+foreach (['Models/Database','Models/Accounts','Models/Catalog','Models/Orders','Controllers/StoreController','Controllers/PageController'] as $file) {
     require __DIR__ . '/' . $file . '.php';
 }
 
 try {
+    if (!$isApi) {
+        if (str_starts_with($path, '/media/')) {
+            require __DIR__ . '/media.php';
+            return;
+        }
+        (new PageController(new Database()))->dispatch($path, $method);
+        return;
+    }
     $controller = new StoreController(new Database());
     if ($path === '/api/catalog/books') $controller->catalog($method, null, false);
-    if (preg_match('~^/api/catalog/books/(book-[a-f0-9-]{32,36})/cover$~D', $path, $match))
+    if (preg_match('~^/api/catalog/books/(book-[a-f0-9-]{1,36})/cover$~D', $path, $match))
         $controller->catalog($method, $match[1], false);
     if (preg_match('~^/api/admin-session\.php/books(?:/(book-[a-f0-9-]{32,36}))?$~D', $path, $match))
         $controller->catalog($method, $match[1] ?? null, true);
@@ -41,5 +41,11 @@ try {
     Http::json(['code'=>$error->errorCode,'message'=>$error->getMessage()], $error->status);
 } catch (Throwable $error) {
     error_log('Sách Hay API: ' . get_class($error) . ' (' . $error->getCode() . ') at ' . basename($error->getFile()) . ':' . $error->getLine());
+    if (!$isApi) {
+        http_response_code(500);
+        header('Content-Type: text/plain; charset=utf-8');
+        echo 'Hệ thống chưa xử lý được yêu cầu. Vui lòng thử lại.';
+        return;
+    }
     Http::json(['code'=>'SERVER_ERROR','message'=>'Hệ thống chưa xử lý được yêu cầu. Vui lòng thử lại.'], 500);
 }

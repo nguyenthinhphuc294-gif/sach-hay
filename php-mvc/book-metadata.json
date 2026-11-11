@@ -1,0 +1,110 @@
+{
+  "book-01": {
+    "author": "José Mauro de Vasconcelos",
+    "publisher": "NXB Hội Nhà Văn & Nhã Nam",
+    "isbn": "978-604-989-123-4",
+    "categoryName": "Văn Học",
+    "categoryId": "cat-van-hoc",
+    "description": "Một câu chuyện cảm động và tràn ngập tình yêu thương về cậu bé Zezé 5 tuổi thông minh, giàu trí tưởng tượng nhưng thiếu thốn tình cảm gia đình. Người bạn tri kỷ duy nhất lắng nghe mọi tâm sự của em chính là cây cam ngọt sau vườn.",
+    "originalPrice": 108000
+  },
+  "book-02": {
+    "author": "Paulo Coelho",
+    "publisher": "NXB Hà Nội & Nhã Nam",
+    "isbn": "978-604-567-890-1",
+    "categoryName": "Văn Học",
+    "categoryId": "cat-van-hoc",
+    "description": "Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó. Cuộc phiêu lưu tìm kiếm kho báu của chàng chăn cừu Santiago là bài học sâu sắc về việc lắng nghe trái tim và theo đuổi ước mơ.",
+    "originalPrice": 79000
+  },
+  "book-03": {
+    "author": "Dale Carnegie",
+    "publisher": "NXB Tổng Hợp TP.HCM",
+    "isbn": "978-604-582-145-6",
+    "categoryName": "Tâm Lý - Kỹ Năng",
+    "categoryId": "cat-ky-nang",
+    "description": "Nghệ thuật ứng xử, giao tiếp và thu phục lòng người kinh điển nhất mọi thời đại. Cuốn sách giúp bạn xây dựng mối quan hệ bền vững, thấu hiểu tâm lý con người và đạt được sự tôn trọng trong công việc lẫn cuộc sống.",
+    "originalPrice": 120000
+  },
+  "book-04": {
+    "author": "Eiichiro Oda",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-232-108-0",
+    "categoryName": "Manga - Comic",
+    "categoryId": "cat-manga-comic",
+    "description": "Chuyến hải trình của băng hải tặc Mũ Rơm bước vào giai đoạn cao trào nghẹt thở nhất tại đảo Egghead. Những bí mật động trời về Chính Quyền Thế Giới và Thế Kỷ Trống dần được hé lộ.",
+    "originalPrice": 30000
+  },
+  "book-05": {
+    "author": "Robert T. Kiyosaki",
+    "publisher": "NXB Trẻ",
+    "isbn": "978-604-102-349-8",
+    "categoryName": "Sách Kinh Tế",
+    "categoryId": "cat-kinh-te",
+    "description": "Cuốn sách làm thay đổi hoàn toàn tư duy tài chính của hàng chục triệu người. Tác giả chỉ ra sự khác biệt cơ bản giữa cách người giàu và người nghèo dạy con về tiền bạc, tài sản và tiêu sản.",
+    "originalPrice": 90000
+  },
+  "book-06": {
+    "author": "Nguyễn Nhật Ánh",
+    "publisher": "NXB Trẻ",
+    "isbn": "978-604-118-490-2",
+    "categoryName": "Văn Học",
+    "categoryId": "cat-van-hoc",
+    "description": "Chuyện tình đơn phương trong sáng mà da diết của Ngạn dành cho cô bạn thời thơ ấu Hà Lan với đôi mắt biếc biếc như bầu trời làng Đo Đo. Một tác phẩm đã trở thành biểu tượng thanh xuân của người Việt.",
+    "originalPrice": 110000
+  },
+  "book-07": {
+    "author": "Daniel Kahneman",
+    "publisher": "NXB Thế Giới & Alpha Books",
+    "isbn": "978-604-773-190-3",
+    "categoryName": "Tâm Lý - Kỹ Năng",
+    "categoryId": "cat-ky-nang",
+    "description": "Khám phá hai hệ thống chi phối cách chúng ta suy nghĩ và đưa ra quyết định: Hệ thống 1 nhanh, trực quan, cảm xúc; và Hệ thống 2 chậm, lý trí, logic. Tác phẩm của người từng đoạt giải Nobel Kinh tế.",
+    "originalPrice": 260000
+  },
+  "book-08": {
+    "author": "Gosho Aoyama",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-230-104-5",
+    "categoryName": "Manga - Comic",
+    "categoryId": "cat-manga-comic",
+    "description": "Vụ án bí ẩn liên quan đến Tổ chức Áo đen cùng cuộc chạm trán nảy lửa của Conan và các đặc vụ FBI. Liệu danh tính thực sự của nhân vật số 2 Rum có chính thức được vạch trần?",
+    "originalPrice": 30000
+  },
+  "book-09": {
+    "author": "Antoine de Saint-Exupéry",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-209-881-2",
+    "categoryName": "Sách Thiếu Nhi",
+    "categoryId": "cat-thieu-nhi",
+    "description": "Người ta chỉ thấy rõ bằng trái tim, cái cốt tử thì vô hình trong mắt trần. Câu chuyện ngụ ngôn tuyệt mỹ dành cho trẻ em và cho cả những người lớn từng là trẻ em.",
+    "originalPrice": 65000
+  },
+  "book-10": {
+    "author": "Sách Hay Stationery",
+    "publisher": "Sách Hay Design",
+    "isbn": "STN-893-524-001",
+    "categoryName": "Văn Phòng Phẩm",
+    "categoryId": "cat-van-phong-pham",
+    "description": "Sổ tay bìa da PU cao cấp chống thấm nước, ruột giấy kẻ ngang định lượng 100gsm chống lem mực, tích hợp dây đánh dấu trang và khóa bấm vintage sang trọng.",
+    "originalPrice": 180000
+  },
+  "book-11": {
+    "author": "Paul Kalanithi",
+    "publisher": "NXB Lao Động & Nhã Nam",
+    "isbn": "978-604-598-112-9",
+    "categoryName": "Văn Học",
+    "categoryId": "cat-van-hoc",
+    "description": "Tự truyện xúc động của một bác sĩ phẫu thuật thần kinh tài năng khi đối mặt với căn bệnh ung thư phổi giai đoạn cuối. Cuốn sách là khúc ca về lẽ sống và tình yêu cuộc đời.",
+    "originalPrice": 130000
+  },
+  "book-12": {
+    "author": "Tatsuya Endo",
+    "publisher": "NXB Kim Đồng",
+    "isbn": "978-604-231-012-7",
+    "categoryName": "Manga - Comic",
+    "categoryId": "cat-manga-comic",
+    "description": "Gia đình Forger gồm điệp viên Loid, sát thủ Yor và cô bé ngoại cảm Anya tiếp tục đối mặt với những phi vụ hài hước nhưng không kém phần nguy hiểm để bảo vệ nền hòa bình.",
+    "originalPrice": 35000
+  }
+}
