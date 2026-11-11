@@ -4,11 +4,14 @@ $slides = [
     ['hero-manga.jpg','Tuần Lễ Manga & Light Novel Nhật Bản','Tìm những bộ truyện tranh đang có tại Sách Hay.',['category'=>'Manga - Comic']],
 ];
 $shortcuts = [
-    ['bolt','Flash Sale',['sort'=>'sale'],'amber'],['award','Bán Chạy',['sort'=>'popular'],'red'],
-    ['flame','Sách Mới',[],'orange'],['book','Văn Học',['category'=>'Văn Học'],'blue'],
-    ['trending','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],['smile','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
-    ['layers','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],['sparkles','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
-    ['book','Giáo Khoa',['category'=>'Sách Giáo Khoa'],'cyan'],['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'cyan'],['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
+    ['book','Văn Học',['category'=>'Văn Học'],'blue'],
+    ['trending','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],
+    ['smile','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
+    ['layers','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],
+    ['sparkles','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
+    ['book','Giáo Khoa',['category'=>'Sách Giáo Khoa'],'cyan'],
+    ['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'teal'],
+    ['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
 ];
 ?>
 <section class="storefront-banners" aria-label="Khuyến mãi nổi bật">

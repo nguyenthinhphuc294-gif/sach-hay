@@ -178,13 +178,48 @@ dd { margin: 0; }
 .side-banners img { width: 100%; height: 100%; }
 .side-banners span { position: absolute; inset: 0; padding: .7rem .9rem; font-weight: 800; }
 .side-banners small { text-transform: uppercase; }
-.quick-categories { display: grid; grid-template-columns: repeat(10,minmax(4rem,1fr)); gap: .4rem; overflow: auto; scrollbar-width: thin; }
-.quick-categories a { display: grid; justify-items: center; gap: .35rem; font-size: .75rem; text-align: center; font-weight: 700; }
-.category-icon { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: .65rem; font-size: 1.25rem; }
+.quick-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.35rem;
+    column-gap: 1rem;
+    padding: 1.25rem 1rem;
+}
+.quick-categories a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    font-size: .88rem;
+    text-align: center;
+    font-weight: 700;
+    color: #2b282c;
+    padding: .4rem .25rem;
+    border-radius: .75rem;
+    transition: all .2s ease;
+}
+.quick-categories a:hover {
+    color: var(--red);
+    transform: translateY(-2px);
+}
+.quick-categories a:hover .category-icon {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.09);
+}
+.category-icon {
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: .85rem;
+    font-size: 1.35rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
 .amber { background: #fff3d6; color: #985600; } .red { background: #ffebed; color: #bc1a28; }
 .orange { background: #fff0df; color: #9a4805; } .blue { background: #eaf2ff; color: #174ca8; }
 .green { background: #e3f8ee; color: #12633f; } .purple { background: #f3eaff; color: #60369e; } .pink { background: #ffeaf5; color: #a22667; }
-.cyan { background: #ecfeff; color: #0e7490; } .indigo { background: #eef2ff; color: #4338ca; }
+.cyan { background: #ecfeff; color: #0e7490; } .teal { background: #e6fffa; color: #0d9488; } .indigo { background: #eef2ff; color: #4338ca; }
 .category-icon .store-icon { width: 1.25rem; height: 1.25rem; }
 .shelf .section-head { padding-bottom: .7rem; border-bottom: 1px solid #edf0f3; }
 .shelf .section-head a { color: var(--red); font-size: .85rem; font-weight: 700; }
