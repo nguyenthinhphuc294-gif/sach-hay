@@ -139,10 +139,18 @@ document.addEventListener('submit', async event => {
         const data = await response.json();
         if (!response.ok) throw new Error(data.message || 'Không thể thêm vào giỏ hàng.');
 
-        // 1. Update header cart counter
-        const cartCounts = document.querySelectorAll('[data-cart-count]');
-        cartCounts.forEach(el => {
-            el.textContent = data.cartCount ? (data.cartCount + ' cuốn') : 'Trống';
+        // 1. Update header cart badge
+        const badges = document.querySelectorAll('[data-cart-badge]');
+        badges.forEach(badge => {
+            badge.textContent = data.cartCount || 0;
+            if (data.cartCount > 0) {
+                badge.style.display = 'flex';
+                badge.classList.remove('badge-pop');
+                void badge.offsetWidth;
+                badge.classList.add('badge-pop');
+            } else {
+                badge.style.display = 'none';
+            }
         });
 
         // 2. Temporary button success state
