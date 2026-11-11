@@ -32,34 +32,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
         <nav class="quick-links" aria-label="Mua hàng">
             <a href="/books?sort=sale" class="promotion-link" aria-label="Khuyến mãi"><span class="quick-icon"><?php $icon = 'bell'; require __DIR__ . '/store-icon.php'; ?></span></a>
             <a href="/cart"><span class="quick-icon"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?></span><span>Giỏ hàng<strong><?= $cartCount ? $cartCount . ' cuốn' : 'Trống' ?></strong></span></a>
-            <div class="account-nav-container">
-                <a href="/account" class="account-link" aria-label="Tài khoản"><span class="account-icon"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?></span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
-                <div class="account-popover">
-                    <?php if (!$email): ?>
-                        <div class="popover-header">
-                            <p class="popover-title">Tài khoản Sách Hay</p>
-                            <p class="popover-sub">Đăng nhập để nhận ưu đãi thành viên</p>
-                        </div>
-                        <div class="popover-actions">
-                            <a href="/account?tab=login" class="popover-btn primary">Đăng nhập</a>
-                            <a href="/account?tab=register" class="popover-btn secondary">Đăng ký</a>
-                        </div>
-                        <div class="popover-divider"></div>
-                        <a href="/orders" class="popover-link"><?php $icon = 'truck'; require __DIR__ . '/store-icon.php'; ?> Tra cứu đơn hàng</a>
-                    <?php else: ?>
-                        <div class="popover-header">
-                            <p class="popover-title">Xin chào,</p>
-                            <p class="popover-email"><?= $e($email) ?></p>
-                        </div>
-                        <div class="popover-divider"></div>
-                        <a href="/account" class="popover-link"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?> Tài khoản &amp; Đơn hàng</a>
-                        <form action="/account" method="post" style="margin-top: .5rem;">
-                            <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
-                            <button class="popover-logout-btn" name="action" value="logout">Đăng xuất</button>
-                        </form>
-                    <?php endif; ?>
-                </div>
-            </div>
+            <a href="/account" aria-label="Tài khoản"><span class="account-icon"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?></span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
         </nav>
     </div>
     <div class="nav-bar">
