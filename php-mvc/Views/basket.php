@@ -190,7 +190,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
 
                                     <!-- Cột nút xóa -->
                                     <div class="item-action-cell">
-                                        <form method="post" action="/cart" class="remove-form" onsubmit="return confirm('Bạn có chắc muốn xóa cuốn sách này khỏi giỏ hàng?');">
+                                        <form method="post" action="/cart" class="remove-form">
                                             <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
                                             <input type="hidden" name="book" value="<?= $e($line['bookId']) ?>">
                                             <button class="btn-remove-item" name="action" value="remove" title="Xóa cuốn sách này">
@@ -665,12 +665,10 @@ function stepCartQty(btn, delta) {
 
     let newVal = val + delta;
     if (newVal < 1) {
-        if (confirm('Bạn có chắc muốn xóa cuốn sách này khỏi giỏ hàng?')) {
-            const row = form.closest('.cart-row-item');
-            if (row) {
-                const removeForm = row.querySelector('.remove-form');
-                if (removeForm) removeForm.submit();
-            }
+        const row = form.closest('.cart-row-item');
+        if (row) {
+            const removeForm = row.querySelector('.remove-form');
+            if (removeForm) removeForm.submit();
         }
         return;
     }
