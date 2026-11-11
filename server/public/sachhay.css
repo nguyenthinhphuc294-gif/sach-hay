@@ -2165,6 +2165,9 @@ button.added {
     position: relative;
     color: var(--text);
     align-items: flex-start;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
 }
 .notif-item:last-child {
     border-bottom: none;
@@ -2255,4 +2258,40 @@ button.added {
     .notif-popover::before {
         right: 4.3rem;
     }
+}
+
+
+/* Text wrapping for notifications and long messages */
+.notif-popover,
+.notif-popover a,
+.notif-item,
+.notif-item-content,
+.notif-item-title,
+.notif-item-desc,
+.notif-item-time {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.notif-item-title {
+    line-height: 1.4 !important;
+}
+
+.notif-item-desc {
+    line-height: 1.45 !important;
+}
+
+/* Ensure all messages, alerts and order notes wrap naturally */
+details.order summary,
+details.order p,
+.notice,
+[role="alert"],
+[data-auth-message],
+.sachhay-toast,
+.order-notes,
+.message-content {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
 }
