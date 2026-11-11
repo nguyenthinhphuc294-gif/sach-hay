@@ -142,13 +142,25 @@ final class PageController
         $accounts = new Accounts($this->db);
         switch ($path) {
             case '/cart':
+                if (isset($data['selected']) && is_string($data['selected'])) {
+                    $selArr = array_filter(array_map('trim', explode(',', $data['selected'])));
+                    $_SESSION['selected_items'] = $selArr;
+                }
                 $id = Http::text($data['book'] ?? null, 80);
                 $quantity = $action === 'remove' ? 0 : filter_var($data['quantity'] ?? null, FILTER_VALIDATE_INT);
                 if ($quantity === false || $quantity < 0 || $quantity > 99) Http::invalid('Số lượng phải từ 0 đến 99.');
                 if ($action === 'add') $quantity += $_SESSION['cart'][$id] ?? 0;
                 if ($quantity === 0) {
                     unset($_SESSION['cart'][$id], $_SESSION['purchase']);
+                    if (isset($_SESSION['selected_items'])) {
+                        $_SESSION['selected_items'] = array_values(array_diff($_SESSION['selected_items'], [$id]));
+                    }
                     $this->redirect('/cart');
+                }
+                if ($action === 'add' && isset($_SESSION['selected_items'])) {
+                    if (!in_array($id, $_SESSION['selected_items'], true)) {
+                        $_SESSION['selected_items'][] = $id;
+                    }
                 }
                 $book = $this->catalog->book($id);
                 if (!$book || $quantity > min(99, $book['stock'])) Http::invalid('Số lượng vượt tồn kho.');
@@ -231,10 +243,16 @@ final class PageController
         }
     }
 
-    private function items(): array
+    private function items(bool $all = false): array
     {
         $items = [];
-        foreach ($_SESSION['cart'] ?? [] as $id=>$quantity) $items[] = ['bookId'=>(string) $id,'quantity'=>$quantity];
+        $selected = ($all || !isset($_SESSION['selected_items'])) ? null : $_SESSION['selected_items'];
+        foreach ($_SESSION['cart'] ?? [] as $id => $quantity) {
+            if ($selected !== null && !in_array((string)$id, $selected, true)) {
+                continue;
+            }
+            $items[] = ['bookId'=>(string) $id,'quantity'=>$quantity];
+        }
         return $items;
     }
 
@@ -247,12 +265,25 @@ final class PageController
             }
             $_SESSION['purchase']['input']['voucherCode'] = $vCode;
         }
-        $items = $this->items();
+        if (isset($_GET['selected']) && is_string($_GET['selected'])) {
+            $sel = array_filter(array_map('trim', explode(',', $_GET['selected'])));
+            if (!empty($sel)) {
+                $_SESSION['selected_items'] = $sel;
+            }
+        }
+        $isCheckout = $path === '/checkout';
+        $items = $this->items(!$isCheckout); // /cart shows all items, /checkout shows selected
         $lines = [];
-        foreach ($items as $item) $lines[] = $item + ['book'=>$this->catalog->book($item['bookId'])];
+        $selectedIds = $_SESSION['selected_items'] ?? array_keys($_SESSION['cart'] ?? []);
+        foreach ($items as $item) {
+            $lines[] = $item + [
+                'book' => $this->catalog->book($item['bookId']),
+                'selected' => in_array((string)$item['bookId'], $selectedIds, true),
+            ];
+        }
         $vouchers = $this->db->run("SELECT code, kind, value, minimum, cap, valid_until FROM vouchers WHERE active = 1 ORDER BY CASE WHEN kind = 'shipping' THEN 1 WHEN kind = 'percentage' THEN 2 ELSE 3 END, value DESC")->fetchAll();
-        $this->render('basket', $path === '/checkout' ? 'Thanh toán' : 'Giỏ hàng', [
-            'lines'=>$lines, 'checkout'=>$path === '/checkout', 'purchase'=>$_SESSION['purchase'] ?? null,
+        $this->render('basket', $isCheckout ? 'Thanh toán' : 'Giỏ hàng', [
+            'lines'=>$lines, 'checkout'=>$isCheckout, 'purchase'=>$_SESSION['purchase'] ?? null,
             'bankAvailable'=>Orders::bank() !== null,
             'vouchers'=>$vouchers,
             'customerName'=>$_SESSION['customer_name'] ?? null,
@@ -271,7 +302,10 @@ final class PageController
                 Http::invalid('Vui lòng kiểm tra lại đơn hàng trước khi đặt.');
             }
             $this->orders->place($purchase['input'], $this->customer, $key, $_SESSION['owner_key']);
-            unset($_SESSION['cart'], $_SESSION['purchase']);
+            foreach ($purchase['input']['items'] as $placedId => $placedQty) {
+                unset($_SESSION['cart'][$placedId]);
+            }
+            unset($_SESSION['purchase'], $_SESSION['selected_items']);
             $this->redirect('/orders', 'Đã tạo đơn hàng.');
         }
         unset($_SESSION['purchase']);

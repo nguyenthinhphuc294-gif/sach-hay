@@ -2,17 +2,33 @@
 // Tính toán số liệu giỏ hàng
 $subtotal = 0;
 $totalItems = 0;
+$selectedSubtotal = 0;
+$selectedItemsCount = 0;
+$selectedTitlesCount = 0;
+
 foreach ($lines as $line) {
     if (!empty($line['book'])) {
-        $subtotal += (int) $line['book']['price'] * (int) $line['quantity'];
-        $totalItems += (int) $line['quantity'];
+        $qty = (int) $line['quantity'];
+        $price = (int) $line['book']['price'];
+        $subtotal += $price * $qty;
+        $totalItems += $qty;
+        $isSelected = !isset($line['selected']) || $line['selected'];
+        if ($isSelected) {
+            $selectedSubtotal += $price * $qty;
+            $selectedItemsCount += $qty;
+            $selectedTitlesCount++;
+        }
     }
 }
 
+// Với /checkout thì $lines đã được filter theo selected items, với /cart thì dùng số liệu của các sản phẩm được tích chọn
+$activeSubtotal = $checkout ? $subtotal : $selectedSubtotal;
+$activeCount = $checkout ? $totalItems : $selectedItemsCount;
+
 $freeshipThreshold = 250000;
-$freeshipRemaining = max(0, $freeshipThreshold - $subtotal);
-$freeshipPercent = min(100, round(($subtotal / $freeshipThreshold) * 100));
-$estShipping = ($subtotal >= $freeshipThreshold || (!empty($purchase['input']['paymentMethod']) && $purchase['input']['paymentMethod'] === 'STORE_PICKUP')) ? 0 : 25000;
+$freeshipRemaining = max(0, $freeshipThreshold - $activeSubtotal);
+$freeshipPercent = min(100, round(($activeSubtotal / $freeshipThreshold) * 100));
+$estShipping = ($activeSubtotal >= $freeshipThreshold || (!empty($purchase['input']['paymentMethod']) && $purchase['input']['paymentMethod'] === 'STORE_PICKUP') || $activeCount === 0) ? 0 : 25000;
 
 // Dữ liệu mặc định người nhận (prefill từ tài khoản / purchase trước đó)
 $defaultName = $purchase['input']['customerName'] ?? ($customerName ?? '');
@@ -27,7 +43,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
     <div class="cart-step-bar">
         <a href="/cart" class="cart-step-item <?= !$checkout ? 'active' : 'completed' ?>">
             <span class="step-num"><?= $checkout ? '✓' : '1' ?></span>
-            <span class="step-text">Giỏ Hàng (<?= $totalItems ?> sản phẩm)</span>
+            <span class="step-text">Giỏ Hàng (<span id="step-bar-count"><?= $totalItems ?></span> sản phẩm)</span>
         </a>
         <span class="step-arrow">&rarr;</span>
         <a href="/checkout" class="cart-step-item <?= $checkout ? 'active' : '' ?>">
@@ -68,9 +84,9 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                 <?php if ($freeshipRemaining > 0): ?>
                     <span class="freeship-icon">🚚</span>
                     <span class="freeship-text">
-                        Mua thêm <strong><?= $money($freeshipRemaining) ?></strong> để được <strong>MIỄN PHÍ GIAO HÀNG</strong> toàn quốc!
+                        Mua thêm <strong id="freeship-remaining-text"><?= $money($freeshipRemaining) ?></strong> để được <strong>MIỄN PHÍ GIAO HÀNG</strong> toàn quốc!
                     </span>
-                    <a href="/books" class="freeship-add-btn">+ Chọn thêm sách</a>
+                    <a href="/books" class="freeship-add-btn" id="freeship-add-btn">+ Chọn thêm sách</a>
                 <?php else: ?>
                     <span class="freeship-icon success">🎉</span>
                     <span class="freeship-text success">
@@ -79,7 +95,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                 <?php endif; ?>
             </div>
             <div class="freeship-progress-track">
-                <div class="freeship-progress-fill" style="width: <?= $freeshipPercent ?>%;"></div>
+                <div class="freeship-progress-fill" id="freeship-progress-fill" style="width: <?= $freeshipPercent ?>%;"></div>
             </div>
         </div>
 
@@ -91,6 +107,13 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                     <!-- BẢNG DANH SÁCH SÁCH TRONG GIỎ HÀNG -->
                     <div class="cart-items-panel">
                         <div class="cart-table-header">
+                            <!-- Nút tích chọn tất cả ở header -->
+                            <div class="col-head-check">
+                                <label class="custom-cart-checkbox" title="Chọn / Bỏ chọn tất cả">
+                                    <input type="checkbox" id="select-all-checkbox" <?= ($selectedTitlesCount === count($lines) && count($lines) > 0) ? 'checked' : '' ?> onchange="toggleSelectAllCart(this)">
+                                    <span class="checkbox-box"></span>
+                                </label>
+                            </div>
                             <span class="col-head-product">Tựa Sách &amp; Chi Tiết (<?= count($lines) ?> tựa)</span>
                             <span class="col-head-price">Đơn Giá</span>
                             <span class="col-head-qty">Số Lượng</span>
@@ -102,8 +125,25 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                             <?php foreach ($lines as $line): 
                                 $book = $line['book'];
                                 $linePrice = $book ? ($book['price'] * $line['quantity']) : 0;
+                                $isLineSelected = !isset($line['selected']) || $line['selected'];
                             ?>
-                                <div class="cart-row-item" data-book-id="<?= $e($line['bookId']) ?>">
+                                <div class="cart-row-item <?= !$isLineSelected ? 'unselected' : '' ?>" 
+                                     data-book-id="<?= $e($line['bookId']) ?>"
+                                     data-price="<?= $book ? (int)$book['price'] : 0 ?>"
+                                     data-qty="<?= (int)$line['quantity'] ?>">
+                                    <!-- Nút checkbox tích chọn ở ngoài cùng bên trái sản phẩm -->
+                                    <div class="item-check-cell">
+                                        <label class="custom-cart-checkbox" title="Tích chọn để thanh toán sản phẩm này">
+                                            <input type="checkbox" 
+                                                   name="selected_books[]" 
+                                                   value="<?= $e($line['bookId']) ?>" 
+                                                   class="cart-item-checkbox" 
+                                                   <?= $isLineSelected ? 'checked' : '' ?> 
+                                                   onchange="onItemCheckChange(this)">
+                                            <span class="checkbox-box"></span>
+                                        </label>
+                                    </div>
+
                                     <!-- Cột thông tin sách -->
                                     <div class="item-product-cell">
                                         <?php if ($book): ?>
@@ -136,7 +176,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                                             <input type="hidden" name="book" value="<?= $e($line['bookId']) ?>">
                                             <div class="qty-stepper">
                                                 <button type="button" class="btn-step" onclick="stepCartQty(this, -1)" title="Giảm 1">-</button>
-                                                <input type="number" name="quantity" min="1" max="<?= min(99, $book['stock'] ?? 99) ?>" value="<?= $line['quantity'] ?>" class="qty-input" onchange="this.form.submit()">
+                                                <input type="number" name="quantity" min="1" max="<?= min(99, $book['stock'] ?? 99) ?>" value="<?= $line['quantity'] ?>" class="qty-input" onchange="stepCartQty(this, 0)">
                                                 <button type="button" class="btn-step" onclick="stepCartQty(this, 1)" title="Tăng 1">+</button>
                                             </div>
                                         </form>
@@ -302,6 +342,31 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                 <div class="order-summary-card">
                     <h3 class="summary-title">Tóm Tắt Đơn Hàng</h3>
 
+                    <?php if ($checkout && !empty($lines)): ?>
+                        <!-- XEM TRƯỚC CÁC SẢN PHẨM ĐÃ CHỌN ĐỂ THANH TOÁN TẠI /CHECKOUT -->
+                        <div class="checkout-selected-items-box">
+                            <div class="cs-head">
+                                <span class="cs-title">Sách thanh toán (<?= count($lines) ?> tựa)</span>
+                                <a href="/cart" class="cs-edit-link">Thay đổi</a>
+                            </div>
+                            <div class="cs-list">
+                                <?php foreach ($lines as $item): 
+                                    $b = $item['book'];
+                                    if (!$b) continue;
+                                ?>
+                                    <div class="cs-item">
+                                        <img src="<?= $e($b['cover_path']) ?>" alt="" class="cs-thumb">
+                                        <div class="cs-info">
+                                            <div class="cs-book-title" title="<?= $e($b['title']) ?>"><?= $e($b['title']) ?></div>
+                                            <div class="cs-book-meta"><?= $item['quantity'] ?> × <?= $money($b['price']) ?></div>
+                                        </div>
+                                        <div class="cs-line-total"><?= $money($b['price'] * $item['quantity']) ?></div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
                     <!-- KHUNG VOUCHER TRỰC TIẾP -->
                     <div class="summary-voucher-section">
                         <label for="summary-voucher-input" class="sv-label">Mã Giảm Giá &amp; Freeship</label>
@@ -330,16 +395,18 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                     <div class="summary-price-lines">
                         <div class="s-line">
                             <span class="s-label">Tạm tính tiền sách:</span>
-                            <strong class="s-value"><?= $money($subtotal) ?></strong>
+                            <strong class="s-value s-value-subtotal"><?= $money($activeSubtotal) ?></strong>
                         </div>
 
                         <div class="s-line">
                             <span class="s-label">Phí vận chuyển:</span>
-                            <?php if ($estShipping === 0): ?>
-                                <strong class="s-value freeship-tag">Miễn phí (Freeship)</strong>
-                            <?php else: ?>
-                                <strong class="s-value"><?= $money($estShipping) ?></strong>
-                            <?php endif; ?>
+                            <span class="s-shipping-wrap">
+                                <?php if ($estShipping === 0): ?>
+                                    <strong class="s-value freeship-tag">Miễn phí (Freeship)</strong>
+                                <?php else: ?>
+                                    <strong class="s-value s-value-shipping"><?= $money($estShipping) ?></strong>
+                                <?php endif; ?>
+                            </span>
                         </div>
 
                         <?php if ($purchase): 
@@ -355,7 +422,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
 
                         <div class="s-line points-line">
                             <span class="s-label">Tích lũy Sách Xu:</span>
-                            <span class="s-value points-val">+<?= number_format(floor($subtotal / 5000)) ?> Xu 🪙</span>
+                            <span class="s-value points-val">+<?= number_format(floor($activeSubtotal / 5000)) ?> Xu 🪙</span>
                         </div>
 
                         <hr class="summary-divider">
@@ -363,7 +430,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                         <div class="s-line grand-total-line">
                             <span class="s-label">Tổng thanh toán:</span>
                             <strong class="s-value grand-total-price">
-                                <?= $money($purchase ? $purchase['quote']['total'] : ($subtotal + $estShipping)) ?>
+                                <?= $money($purchase ? $purchase['quote']['total'] : ($activeSubtotal + $estShipping)) ?>
                             </strong>
                         </div>
                         <small class="vat-note">(Đã bao gồm VAT và ưu đãi giao hàng)</small>
@@ -372,9 +439,9 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                     <!-- NÚT HÀNH ĐỘNG CHÍNH -->
                     <div class="summary-actions">
                         <?php if (!$checkout): ?>
-                            <a href="/checkout" class="btn-checkout-primary">
-                                Tiến Hành Đặt Hàng &rarr;
-                            </a>
+                            <button type="button" id="btn-proceed-checkout" onclick="proceedToCheckout()" class="btn-checkout-primary <?= $activeCount === 0 ? 'disabled' : '' ?>">
+                                Tiến Hành Đặt Hàng (<span id="selected-items-count"><?= $activeCount ?></span>) &rarr;
+                            </button>
                         <?php else: ?>
                             <?php if ($purchase): ?>
                                 <form action="/checkout" method="post" class="place-order-form">
@@ -415,6 +482,181 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
 </div>
 
 <script>
+function formatVND(num) {
+    return new Intl.NumberFormat('vi-VN').format(Math.max(0, Math.round(num))) + ' ₫';
+}
+
+function onItemCheckChange(cb) {
+    const row = cb.closest('.cart-row-item');
+    if (row) {
+        if (cb.checked) {
+            row.classList.remove('unselected');
+        } else {
+            row.classList.add('unselected');
+        }
+    }
+    recalcCartTotals();
+    syncSelectedState();
+}
+
+function toggleSelectAllCart(masterCb) {
+    const isChecked = masterCb.checked;
+    const checkboxes = document.querySelectorAll('.cart-item-checkbox');
+    checkboxes.forEach(cb => {
+        cb.checked = isChecked;
+        const row = cb.closest('.cart-row-item');
+        if (row) {
+            if (isChecked) {
+                row.classList.remove('unselected');
+            } else {
+                row.classList.add('unselected');
+            }
+        }
+    });
+    recalcCartTotals();
+    syncSelectedState();
+}
+
+function recalcCartTotals() {
+    const checkboxes = document.querySelectorAll('.cart-item-checkbox');
+    const master = document.getElementById('select-all-checkbox');
+    
+    let checkedCount = 0;
+    let selectedSubtotal = 0;
+    let selectedUnits = 0;
+    
+    checkboxes.forEach(cb => {
+        if (cb.checked) {
+            checkedCount++;
+            const row = cb.closest('.cart-row-item');
+            if (row) {
+                const price = parseInt(row.getAttribute('data-price')) || 0;
+                const qty = parseInt(row.getAttribute('data-qty')) || 1;
+                selectedSubtotal += price * qty;
+                selectedUnits += qty;
+            }
+        }
+    });
+
+    // Cập nhật trạng thái checkbox tổng (Chọn tất cả)
+    if (master) {
+        if (checkboxes.length > 0 && checkedCount === checkboxes.length) {
+            master.checked = true;
+            master.indeterminate = false;
+        } else if (checkedCount > 0) {
+            master.checked = false;
+            master.indeterminate = true;
+        } else {
+            master.checked = false;
+            master.indeterminate = false;
+        }
+    }
+
+    // Cập nhật số lượng sản phẩm được chọn trên nút đặt hàng
+    const selCountEl = document.getElementById('selected-items-count');
+    if (selCountEl) {
+        selCountEl.textContent = selectedUnits;
+    }
+
+    // Khóa hoặc mở nút Tiến hành đặt hàng
+    const btnProceed = document.getElementById('btn-proceed-checkout');
+    if (btnProceed) {
+        if (checkedCount === 0) {
+            btnProceed.classList.add('disabled');
+        } else {
+            btnProceed.classList.remove('disabled');
+        }
+    }
+
+    // Cập nhật Tạm tính tiền sách
+    const subtotalEl = document.querySelector('.s-value-subtotal');
+    if (subtotalEl) {
+        subtotalEl.textContent = formatVND(selectedSubtotal);
+    }
+
+    // Tính toán phí vận chuyển (Freeship nếu >= 250k hoặc không chọn cuốn nào)
+    const threshold = 250000;
+    const estShipping = (selectedSubtotal >= threshold || selectedUnits === 0) ? 0 : 25000;
+    const shipWrap = document.querySelector('.s-shipping-wrap');
+    if (shipWrap) {
+        if (estShipping === 0) {
+            shipWrap.innerHTML = '<strong class="s-value freeship-tag">Miễn phí (Freeship)</strong>';
+        } else {
+            shipWrap.innerHTML = '<strong class="s-value s-value-shipping">' + formatVND(estShipping) + '</strong>';
+        }
+    }
+
+    // Cập nhật tổng thanh toán
+    const grandTotalEl = document.querySelector('.grand-total-price');
+    if (grandTotalEl) {
+        grandTotalEl.textContent = formatVND(selectedSubtotal + estShipping);
+    }
+
+    // Cập nhật điểm tích lũy Sách Xu
+    const pointsEl = document.querySelector('.points-val');
+    if (pointsEl) {
+        const pts = Math.floor(selectedSubtotal / 5000);
+        pointsEl.textContent = '+' + new Intl.NumberFormat('vi-VN').format(pts) + ' Xu 🪙';
+    }
+
+    // Cập nhật thanh tiến độ Freeship
+    const progressCard = document.querySelector('.freeship-progress-card');
+    if (progressCard) {
+        const remaining = Math.max(0, threshold - selectedSubtotal);
+        const percent = Math.min(100, Math.round((selectedSubtotal / threshold) * 100));
+        const fillEl = document.getElementById('freeship-progress-fill');
+        if (fillEl) {
+            fillEl.style.width = percent + '%';
+        }
+        const textEl = document.querySelector('.freeship-text');
+        const iconEl = document.querySelector('.freeship-icon');
+        const headerEl = document.querySelector('.freeship-progress-header');
+        let addBtn = document.getElementById('freeship-add-btn');
+        if (textEl && iconEl) {
+            if (remaining > 0) {
+                iconEl.className = 'freeship-icon';
+                iconEl.textContent = '🚚';
+                textEl.className = 'freeship-text';
+                textEl.innerHTML = 'Mua thêm <strong id="freeship-remaining-text">' + formatVND(remaining) + '</strong> để được <strong>MIỄN PHÍ GIAO HÀNG</strong> toàn quốc!';
+                if (!addBtn && headerEl) {
+                    addBtn = document.createElement('a');
+                    addBtn.href = '/books';
+                    addBtn.className = 'freeship-add-btn';
+                    addBtn.id = 'freeship-add-btn';
+                    addBtn.textContent = '+ Chọn thêm sách';
+                    headerEl.appendChild(addBtn);
+                }
+            } else {
+                iconEl.className = 'freeship-icon success';
+                iconEl.textContent = '🎉';
+                textEl.className = 'freeship-text success';
+                textEl.innerHTML = 'Chúc mừng! Đơn hàng của bạn đã đạt điều kiện <strong>MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</strong> (Freeship 250k)!';
+                if (addBtn) addBtn.remove();
+            }
+        }
+    }
+}
+
+let syncTimer = null;
+function syncSelectedState() {
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(() => {
+        const checked = Array.from(document.querySelectorAll('.cart-item-checkbox:checked')).map(cb => cb.value);
+        fetch('/cart?selected=' + encodeURIComponent(checked.join(',')), {
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        }).catch(() => {});
+    }, 250);
+}
+
+function proceedToCheckout() {
+    const checked = Array.from(document.querySelectorAll('.cart-item-checkbox:checked')).map(cb => cb.value);
+    if (checked.length === 0) {
+        alert('Vui lòng tích chọn ít nhất 1 sản phẩm để tiến hành đặt hàng.');
+        return;
+    }
+    window.location.href = '/checkout?selected=' + encodeURIComponent(checked.join(','));
+}
+
 function stepCartQty(btn, delta) {
     const form = btn.closest('.qty-stepper-form');
     if (!form) return;
@@ -440,6 +682,18 @@ function stepCartQty(btn, delta) {
         return;
     }
     input.value = newVal;
+
+    // Giữ nguyên các sản phẩm đang được tích chọn khi submit form cập nhật số lượng
+    const checked = Array.from(document.querySelectorAll('.cart-item-checkbox:checked')).map(cb => cb.value);
+    let selInput = form.querySelector('input[name="selected"]');
+    if (!selInput) {
+        selInput = document.createElement('input');
+        selInput.type = 'hidden';
+        selInput.name = 'selected';
+        form.appendChild(selInput);
+    }
+    selInput.value = checked.join(',');
+
     form.submit();
 }
 
@@ -464,7 +718,12 @@ function applyCouponCode() {
         hiddenInput.value = code;
         checkoutForm.submit();
     } else {
-        window.location.href = '/checkout?voucher=' + encodeURIComponent(code);
+        const checked = Array.from(document.querySelectorAll('.cart-item-checkbox:checked')).map(cb => cb.value);
+        let url = '/checkout?voucher=' + encodeURIComponent(code);
+        if (checked.length > 0) {
+            url += '&selected=' + encodeURIComponent(checked.join(','));
+        }
+        window.location.href = url;
     }
 }
 
@@ -480,4 +739,12 @@ function submitCheckoutQuote() {
         form.submit();
     }
 }
+
+// Khởi tạo trạng thái indeterminate của nút Chọn tất cả khi tải trang
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.cart-item-checkbox');
+    if (checkboxes.length > 0) {
+        recalcCartTotals();
+    }
+});
 </script>
