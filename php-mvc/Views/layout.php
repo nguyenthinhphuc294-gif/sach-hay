@@ -11,9 +11,11 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sách Hay — Nhà sách trực tuyến. Khám phá sách văn học, kỹ năng, kinh tế và thiếu nhi.">
     <title><?= $e($title) ?> | Sách Hay</title>
-    <link rel="preload" href="/fonts/plus-jakarta-sans.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="/sachhay.css">
-    <script src="/sachhay.js" defer></script>
+    <link rel="stylesheet" href="/sachhay.css?v=2">
+    <style>
+        <?= @file_get_contents(__DIR__ . '/../../server/public/sachhay.css') ?: '' ?>
+    </style>
+    <script src="/sachhay.js?v=2" defer></script>
 </head>
 <body>
 <header class="site-header">

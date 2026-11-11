@@ -14,6 +14,33 @@ foreach (['Models/Database','Models/Accounts','Models/Catalog','Models/Orders','
 
 try {
     if (!$isApi) {
+        if ($path === '/sachhay.css') {
+            header('Content-Type: text/css; charset=UTF-8');
+            header('Cache-Control: public, max-age=86400');
+            $cssFile = __DIR__ . '/../server/public/sachhay.css';
+            if (file_exists($cssFile)) {
+                readfile($cssFile);
+                return;
+            }
+        }
+        if ($path === '/sachhay.js') {
+            header('Content-Type: application/javascript; charset=UTF-8');
+            header('Cache-Control: public, max-age=86400');
+            $jsFile = __DIR__ . '/../server/public/sachhay.js';
+            if (file_exists($jsFile)) {
+                readfile($jsFile);
+                return;
+            }
+        }
+        if (str_starts_with($path, '/fonts/')) {
+            $fontFile = __DIR__ . '/../server/public' . $path;
+            if (file_exists($fontFile)) {
+                header('Content-Type: font/ttf');
+                header('Cache-Control: public, max-age=604800');
+                readfile($fontFile);
+                return;
+            }
+        }
         if (str_starts_with($path, '/media/')) {
             require __DIR__ . '/media.php';
             return;

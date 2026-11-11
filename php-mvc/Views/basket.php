@@ -6,7 +6,7 @@
     <?php foreach ($lines as $line): ?>
         <div class="cart-line">
             <?php if ($line['book']): ?>
-                <img src="<?= $e($line['book']['cover_path']) ?>" alt="">
+                <img src="<?= $e($line['book']['cover_path']) ?>" alt="" width="50" height="70" style="width: 50px; height: 70px; object-fit: contain; flex-shrink: 0; border-radius: 4px; background: #f8f8f8;">
                 <div><a href="/books/<?= $e($line['bookId']) ?>"><?= $e($line['book']['title']) ?></a>
                 <p class="price"><?= $money($line['book']['price'] * $line['quantity']) ?></p></div>
             <?php else: ?><p>Sách không còn bán</p><?php endif; ?>

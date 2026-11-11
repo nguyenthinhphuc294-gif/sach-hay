@@ -1,7 +1,7 @@
 <p class="crumb"><a href="/">Trang chủ</a> / <a href="/books">Sách</a> / <?= $e($book['title']) ?></p>
 <article class="panel book-detail">
     <a href="<?= $e($book['cover_path']) ?>" aria-label="Xem bìa sách lớn">
-        <img src="<?= $e($book['cover_path']) ?>" alt="Bìa <?= $e($book['title']) ?>">
+        <img src="<?= $e($book['cover_path']) ?>" alt="Bìa <?= $e($book['title']) ?>" style="max-width: 100%; height: auto; max-height: 27rem; object-fit: contain; border-radius: .55rem;">
     </a>
     <div>
         <h1><?= $e($book['title']) ?></h1>
