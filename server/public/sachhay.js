@@ -190,3 +190,142 @@ function showToast(text) {
         toast.classList.remove('show');
     }, 2800);
 }
+
+
+// ==========================================================================
+// NOTIFICATION DROPDOWN POPUP
+// ==========================================================================
+(function() {
+    function initNotif() {
+        const box = document.getElementById('notification-box');
+        const btn = document.getElementById('notif-bell-btn');
+        const pop = document.getElementById('notif-popover');
+        if (!box || !btn || !pop) return;
+
+        // Toggle popover
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = pop.hasAttribute('hidden');
+            if (isHidden) {
+                pop.removeAttribute('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                pop.setAttribute('hidden', '');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close on click outside
+        document.addEventListener('click', (e) => {
+            if (!box.contains(e.target)) {
+                pop.setAttribute('hidden', '');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !pop.hasAttribute('hidden')) {
+                pop.setAttribute('hidden', '');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Restore read state from localStorage
+        try {
+            const readNotifs = JSON.parse(localStorage.getItem('sachhay_read_notifs') || '[]');
+            if (readNotifs && readNotifs.length > 0) {
+                readNotifs.forEach(id => {
+                    const item = pop.querySelector('[data-id="' + id + '"]');
+                    if (item) {
+                        item.classList.remove('unread');
+                        const dot = item.querySelector('.notif-dot');
+                        if (dot) dot.remove();
+                    }
+                });
+                updateNotifBadge();
+            }
+        } catch (e) {}
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNotif);
+    } else {
+        initNotif();
+    }
+})();
+
+function markSingleNotifRead(item) {
+    if (item.classList.contains('unread')) {
+        item.classList.remove('unread');
+        const dot = item.querySelector('.notif-dot');
+        if (dot) dot.remove();
+
+        const id = item.dataset.id;
+        if (id) {
+            try {
+                const readNotifs = JSON.parse(localStorage.getItem('sachhay_read_notifs') || '[]');
+                if (!readNotifs.includes(id)) {
+                    readNotifs.push(id);
+                    localStorage.setItem('sachhay_read_notifs', JSON.stringify(readNotifs));
+                }
+            } catch (e) {}
+        }
+        updateNotifBadge();
+    }
+}
+
+function markAllNotifsRead(e) {
+    if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    const items = document.querySelectorAll('.notif-item');
+    const ids = [];
+    items.forEach(item => {
+        item.classList.remove('unread');
+        const dot = item.querySelector('.notif-dot');
+        if (dot) dot.remove();
+        if (item.dataset.id) ids.push(item.dataset.id);
+    });
+    try {
+        localStorage.setItem('sachhay_read_notifs', JSON.stringify(ids));
+    } catch (e) {}
+    updateNotifBadge();
+}
+
+function updateNotifBadge() {
+    const unread = document.querySelectorAll('.notif-item.unread').length;
+    const badge = document.getElementById('notif-badge-dot');
+    const tag = document.getElementById('notif-unread-tag');
+    if (badge) {
+        if (unread > 0) {
+            badge.textContent = unread;
+            badge.style.display = 'block';
+        } else {
+            badge.style.display = 'none';
+        }
+    }
+    if (tag) {
+        tag.textContent = unread > 0 ? (unread + ' mới') : '0 mới';
+        if (unread === 0) {
+            tag.style.background = '#e5e7eb';
+            tag.style.color = '#6b7280';
+        }
+    }
+}
+
+function filterNotifCategory(cat, btn) {
+    const chips = document.querySelectorAll('.ntab-chip');
+    chips.forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+
+    const items = document.querySelectorAll('.notif-item');
+    items.forEach(item => {
+        if (cat === 'all' || item.dataset.category === cat) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
