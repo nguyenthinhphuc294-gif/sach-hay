@@ -45,9 +45,6 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
             <a href="/"<?= ($home ?? false) ? ' aria-current="page"' : '' ?>>Trang Chủ</a>
             <a href="/books"<?= ($view === 'books' && !($home ?? false) && !($category ?? '') && ($sort ?? '') !== 'sale') ? ' aria-current="page"' : '' ?>>Tất Cả Sách</a>
             <a href="/about"<?= $view === 'about' ? ' aria-current="page"' : '' ?>>Về chúng tôi &amp; Liên hệ</a>
-            <?php foreach ($navCategories as $label): ?>
-                <a href="/books?<?= $e(http_build_query(['category'=>$label])) ?>"<?= ($category ?? '') === $label ? ' aria-current="page"' : '' ?>><?= $e($label) ?></a>
-            <?php endforeach; ?>
             </nav>
         </div>
     </div>
