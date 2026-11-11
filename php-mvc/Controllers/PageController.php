@@ -255,6 +255,9 @@ final class PageController
             'lines'=>$lines, 'checkout'=>$path === '/checkout', 'purchase'=>$_SESSION['purchase'] ?? null,
             'bankAvailable'=>Orders::bank() !== null,
             'vouchers'=>$vouchers,
+            'customerName'=>$_SESSION['customer_name'] ?? null,
+            'customerPhone'=>$_SESSION['customer_phone'] ?? null,
+            'customerAddress'=>$_SESSION['customer_address'] ?? null,
         ]);
     }
 
