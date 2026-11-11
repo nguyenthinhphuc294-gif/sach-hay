@@ -396,24 +396,46 @@
                 <!-- TAB 2: KHO VOUCHER & ƯU ĐÃI -->
                 <div id="ptab-vouchers" class="portal-tab-pane" style="display: none;">
                     <div class="tab-pane-header">
-                        <h2>Kho Voucher &amp; Mã Giảm Giá</h2>
-                        <span class="muted">Áp dụng mã tại bước thanh toán</span>
+                        <div>
+                            <h2>Kho Voucher &amp; Mã Giảm Giá (<?= count($vouchers) ?> Mã)</h2>
+                            <span class="muted">Áp dụng mã tại bước thanh toán để nhận ngay ưu đãi</span>
+                        </div>
+                    </div>
+
+                    <!-- BỘ LỌC VOUCHER -->
+                    <div class="voucher-filter-bar">
+                        <button type="button" class="vfilter-chip active" onclick="filterVoucherList('all', this)">
+                            Tất cả (<?= count($vouchers) ?>)
+                        </button>
+                        <button type="button" class="vfilter-chip vfilter-freeship" onclick="filterVoucherList('shipping', this)">
+                            🚚 Miễn phí vận chuyển (<?= count(array_filter($vouchers, fn($x) => $x['kind'] === 'shipping' || stripos($x['code'], 'SHIP') !== false)) ?>)
+                        </button>
+                        <button type="button" class="vfilter-chip" onclick="filterVoucherList('percentage', this)">
+                            🏷️ Giảm phần trăm (<?= count(array_filter($vouchers, fn($x) => $x['kind'] === 'percentage' && stripos($x['code'], 'SHIP') === false)) ?>)
+                        </button>
+                        <button type="button" class="vfilter-chip" onclick="filterVoucherList('fixed', this)">
+                            💰 Giảm tiền mặt (<?= count(array_filter($vouchers, fn($x) => $x['kind'] === 'fixed' && stripos($x['code'], 'SHIP') === false)) ?>)
+                        </button>
                     </div>
 
                     <div class="vouchers-grid">
                         <?php foreach ($vouchers as $v): 
+                            $isShipping = $v['kind'] === 'shipping' || stripos($v['code'], 'SHIP') !== false;
                             $valText = $v['kind'] === 'percentage' ? ($v['value'] . '%') : $money($v['value']);
-                            $kindLabel = $v['kind'] === 'shipping' ? 'Miễn phí vận chuyển' : ($v['kind'] === 'percentage' ? 'Giảm phần trăm' : 'Giảm tiền mặt');
+                            $kindLabel = $isShipping ? 'Miễn phí vận chuyển' : ($v['kind'] === 'percentage' ? 'Giảm phần trăm' : 'Giảm tiền mặt');
                         ?>
-                            <div class="voucher-ticket-card">
+                            <div class="voucher-ticket-card <?= $isShipping ? 'voucher-freeship' : '' ?>" data-kind="<?= $isShipping ? 'shipping' : $v['kind'] ?>">
                                 <div class="voucher-ticket-left">
-                                    <span class="voucher-icon"><?= $v['kind'] === 'shipping' ? '🚚' : '🏷️' ?></span>
+                                    <span class="voucher-icon"><?= $isShipping ? '🚚' : ($v['kind'] === 'percentage' ? '🏷️' : '💰') ?></span>
                                     <strong class="voucher-amount"><?= $valText ?></strong>
                                     <span class="voucher-badge-type"><?= $kindLabel ?></span>
                                 </div>
                                 <div class="voucher-ticket-right">
                                     <h3 class="voucher-title">Mã: <code><?= $e($v['code']) ?></code></h3>
-                                    <p class="voucher-desc">Đơn tối thiểu <?= $money($v['minimum']) ?><?= $v['cap'] ? (' · Tối đa ' . $money($v['cap'])) : '' ?></p>
+                                    <p class="voucher-desc">
+                                        <?= $v['minimum'] > 0 ? ('Đơn tối thiểu ' . $money($v['minimum'])) : 'Áp dụng cho mọi giá trị đơn' ?>
+                                        <?= $v['cap'] ? (' · Tối đa ' . $money($v['cap'])) : '' ?>
+                                    </p>
                                     <p class="voucher-date">HSD: <?= date('d/m/Y', $v['valid_until']) ?></p>
                                     <button type="button" class="btn-copy-code" onclick="copyVoucher('<?= $e($v['code']) ?>', this)">
                                         Sao chép mã
@@ -642,6 +664,21 @@
         orderCards.forEach(card => {
             if (status === 'all' || card.getAttribute('data-order-status') === status) {
                 card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    function filterVoucherList(kind, btn) {
+        const chips = document.querySelectorAll('.vfilter-chip');
+        chips.forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+
+        const cards = document.querySelectorAll('.voucher-ticket-card');
+        cards.forEach(card => {
+            if (kind === 'all' || card.getAttribute('data-kind') === kind) {
+                card.style.display = 'flex';
             } else {
                 card.style.display = 'none';
             }

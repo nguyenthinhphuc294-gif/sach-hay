@@ -50,10 +50,54 @@ final class Database extends PDO
             ]);
         }
         $now = time();
-        foreach ([['SACHHAY20K','fixed',20000,150000,null], ['GIAM15','percentage',15,300000,60000],
-            ['FREESHIP','shipping',25000,100000,null]] as $voucher) {
-            $this->run('INSERT INTO vouchers(code,kind,value,minimum,cap,valid_from,valid_until) VALUES(?,?,?,?,?,?,?)',
-                [...$voucher, $now, $now + 365 * 86400]);
+        $seedVouchers = [
+            ['SACHHAY20K', 'fixed', 20000, 150000, null],
+            ['GIAM15', 'percentage', 15, 300000, 60000],
+            ['FREESHIP', 'shipping', 25000, 100000, null],
+            ['FREESHIP0D', 'shipping', 25000, 0, null],
+            ['FREESHIP50K', 'shipping', 25000, 50000, null],
+            ['SHIP0DONG', 'shipping', 25000, 70000, null],
+            ['FREESHIPXTRA', 'shipping', 35000, 150000, null],
+            ['SHIPTIETKIEM', 'shipping', 20000, 80000, null],
+            ['FREESHIPVIP', 'shipping', 40000, 200000, null],
+            ['FREESHIPCUOITUAN', 'shipping', 25000, 99000, null],
+            ['FREESHIPHOATOC', 'shipping', 30000, 180000, null],
+            ['SHIP24H', 'shipping', 25000, 120000, null],
+            ['FREESHIPDONGNAI', 'shipping', 25000, 50000, null],
+            ['FREESHIPHCM', 'shipping', 25000, 50000, null],
+            ['FREESHIPHN', 'shipping', 25000, 50000, null],
+            ['FREESHIPMIENTAY', 'shipping', 25000, 80000, null],
+            ['FREESHIPMIENTRUNG', 'shipping', 25000, 80000, null],
+            ['SHIPTOANQUOC', 'shipping', 25000, 100000, null],
+            ['FREESHIPPLUS', 'shipping', 30000, 160000, null],
+            ['BANMOI10', 'percentage', 10, 80000, 30000],
+            ['GIAM5', 'percentage', 5, 100000, 25000],
+            ['GIAM8', 'percentage', 8, 120000, 35000],
+            ['GIAM10', 'percentage', 10, 150000, 40000],
+            ['GIAM12', 'percentage', 12, 180000, 50000],
+            ['GIAM18', 'percentage', 18, 250000, 70000],
+            ['GIAM20', 'percentage', 20, 300000, 80000],
+            ['GIAM25', 'percentage', 25, 400000, 100000],
+            ['GIAM30', 'percentage', 30, 500000, 120000],
+            ['HOIVIEN15', 'percentage', 15, 200000, 60000],
+            ['SINHNHAT20', 'percentage', 20, 150000, 70000],
+            ['TRIAN10', 'percentage', 10, 130000, 45000],
+            ['SACH10K', 'fixed', 10000, 79000, null],
+            ['SACH15K', 'fixed', 15000, 110000, null],
+            ['SACH25K', 'fixed', 25000, 170000, null],
+            ['SACH30K', 'fixed', 30000, 210000, null],
+            ['SACH40K', 'fixed', 40000, 260000, null],
+            ['SACH50K', 'fixed', 50000, 320000, null],
+            ['SACH70K', 'fixed', 70000, 450000, null],
+            ['SACH100K', 'fixed', 100000, 650000, null],
+            ['KINHTE20K', 'fixed', 20000, 140000, null],
+            ['VANHOC15K', 'fixed', 15000, 120000, null],
+            ['KYNANG25K', 'fixed', 25000, 160000, null],
+            ['THIEUNHI15K', 'fixed', 15000, 100000, null],
+        ];
+        foreach ($seedVouchers as $voucher) {
+            $this->run('INSERT INTO vouchers(code,kind,value,minimum,cap,valid_from,valid_until,max_uses,max_per_user) VALUES(?,?,?,?,?,?,?,?,?)',
+                [...$voucher, $now, $now + 365 * 86400, 1000, 10]);
         }
         $this->exec('CREATE TABLE schema_ready (version INTEGER NOT NULL)');
         $this->exec('INSERT INTO schema_ready VALUES (1)');

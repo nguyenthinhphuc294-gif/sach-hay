@@ -1854,3 +1854,135 @@ button.added {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Voucher Filter Bar */
+.voucher-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.25rem;
+}
+.vfilter-chip {
+    padding: .45rem .85rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    font-size: .82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.vfilter-chip:hover {
+    border-color: var(--muted);
+    background: #f9fafb;
+}
+.vfilter-chip.active {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+}
+.vfilter-chip.vfilter-freeship {
+    color: #15803d;
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+}
+.vfilter-chip.vfilter-freeship:hover {
+    background: #dcfce7;
+    border-color: #86efac;
+}
+.vfilter-chip.vfilter-freeship.active {
+    background: #16a34a;
+    color: #fff;
+    border-color: #16a34a;
+}
+
+/* Freeship Voucher - Green Theme (Màu xanh lá) */
+.voucher-ticket-card.voucher-freeship {
+    border: 1px solid #86efac;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    box-shadow: 0 2px 8px rgba(22, 163, 74, 0.08);
+}
+.voucher-ticket-card.voucher-freeship:hover {
+    border-color: #22c55e;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.16);
+    transform: translateY(-2px);
+    transition: all .2s ease;
+}
+.voucher-ticket-card.voucher-freeship .voucher-ticket-left {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    border-right: 2px dashed rgba(255, 255, 255, 0.5);
+}
+.voucher-ticket-card.voucher-freeship .voucher-title code {
+    background: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+.voucher-ticket-card.voucher-freeship .btn-copy-code {
+    background: #16a34a;
+    color: #ffffff;
+}
+.voucher-ticket-card.voucher-freeship .btn-copy-code:hover {
+    background: #15803d;
+}
+
+/* Checkout Page Quick Voucher Suggestions */
+.checkout-voucher-selector {
+    grid-column: 1 / -1;
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: .6rem;
+    padding: .75rem;
+    margin-top: -.25rem;
+    margin-bottom: .5rem;
+}
+.checkout-voucher-selector .cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 650;
+    margin-bottom: .5rem;
+    color: var(--text);
+}
+.checkout-voucher-selector .cv-view-all {
+    color: var(--red);
+    font-size: .78rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+.checkout-voucher-selector .cv-view-all:hover {
+    text-decoration: underline;
+}
+.checkout-voucher-selector .cv-chips-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+.checkout-voucher-selector .cv-chip {
+    padding: .3rem .6rem;
+    font-size: .75rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.checkout-voucher-selector .cv-chip:hover {
+    border-color: var(--red);
+    color: var(--red);
+}
+.checkout-voucher-selector .cv-chip.cv-chip-freeship {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #15803d;
+    font-weight: 650;
+}
+.checkout-voucher-selector .cv-chip.cv-chip-freeship:hover {
+    background: #16a34a;
+    color: #fff;
+    border-color: #16a34a;
+}

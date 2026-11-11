@@ -45,7 +45,25 @@
             <label>Quận / huyện<input name="district" maxlength="150" value="<?= $e($purchase['input']['district'] ?? '') ?>"></label>
             <label>Phường / xã<input name="ward" maxlength="150" value="<?= $e($purchase['input']['ward'] ?? '') ?>"></label>
             <label>Địa chỉ<input name="address" maxlength="150" value="<?= $e($purchase['input']['address'] ?? '') ?>"></label>
-            <label>Mã giảm giá<input name="voucherCode" maxlength="40" value="<?= $e($purchase['input']['voucherCode'] ?? '') ?>"></label>
+            <label>Mã giảm giá<input name="voucherCode" id="checkout-voucher-input" maxlength="40" value="<?= $e($purchase['input']['voucherCode'] ?? '') ?>" placeholder="Nhập hoặc chọn mã giảm giá / freeship"></label>
+            <?php if (!empty($vouchers)): ?>
+                <div class="checkout-voucher-selector">
+                    <div class="cv-header">
+                        <span>🏷️ Gợi ý mã ưu đãi:</span>
+                        <a href="/account#vouchers" class="cv-view-all">Xem tất cả <?= count($vouchers) ?> mã &rarr;</a>
+                    </div>
+                    <div class="cv-chips-scroll">
+                        <?php foreach (array_slice($vouchers, 0, 12) as $cv): 
+                            $isShip = $cv['kind'] === 'shipping' || stripos($cv['code'], 'SHIP') !== false;
+                            $label = $isShip ? '🚚 ' . $cv['code'] . ' (Freeship)' : ($cv['kind'] === 'percentage' ? ('🏷️ ' . $cv['code'] . ' (-' . $cv['value'] . '%)') : ('💰 ' . $cv['code'] . ' (-' . number_format($cv['value'] / 1000) . 'k)'));
+                        ?>
+                            <button type="button" class="cv-chip <?= $isShip ? 'cv-chip-freeship' : '' ?>" onclick="applyCheckoutVoucher('<?= $e($cv['code']) ?>')" title="Nhấp để áp dụng <?= $e($cv['code']) ?>">
+                                <?= $e($label) ?>
+                            </button>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
             <label>Thanh toán<select name="paymentMethod">
                 <?php foreach (['COD'=>'Thanh toán khi nhận hàng','STORE_PICKUP'=>'Nhận tại cửa hàng','BANK_TRANSFER'=>'Chuyển khoản VietQR'] as $key=>$label): ?>
                     <?php if ($key !== 'BANK_TRANSFER' || $bankAvailable): ?><option value="<?= $e($key) ?>"<?= ($purchase['input']['paymentMethod'] ?? 'COD') === $key ? ' selected' : '' ?>><?= $e($label) ?></option><?php endif; ?>

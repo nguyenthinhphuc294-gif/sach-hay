@@ -92,7 +92,7 @@ final class PageController
             case '/account':
             case '/orders':
                 $orders = $this->orders->customerOrders($this->customer, $_SESSION['owner_key']);
-                $vouchers = $this->db->run("SELECT code, kind, value, minimum, cap, valid_until FROM vouchers WHERE active = 1 ORDER BY value DESC")->fetchAll();
+                $vouchers = $this->db->run("SELECT code, kind, value, minimum, cap, valid_until FROM vouchers WHERE active = 1 ORDER BY CASE WHEN kind = 'shipping' THEN 1 WHEN kind = 'percentage' THEN 2 ELSE 3 END, value DESC")->fetchAll();
                 $totalSpent = 0;
                 $completedCount = 0;
                 foreach ($orders as $rec) {
@@ -243,9 +243,11 @@ final class PageController
         $items = $this->items();
         $lines = [];
         foreach ($items as $item) $lines[] = $item + ['book'=>$this->catalog->book($item['bookId'])];
+        $vouchers = $this->db->run("SELECT code, kind, value, minimum, cap, valid_until FROM vouchers WHERE active = 1 ORDER BY CASE WHEN kind = 'shipping' THEN 1 WHEN kind = 'percentage' THEN 2 ELSE 3 END, value DESC")->fetchAll();
         $this->render('basket', $path === '/checkout' ? 'Thanh toán' : 'Giỏ hàng', [
             'lines'=>$lines, 'checkout'=>$path === '/checkout', 'purchase'=>$_SESSION['purchase'] ?? null,
             'bankAvailable'=>Orders::bank() !== null,
+            'vouchers'=>$vouchers,
         ]);
     }
 
