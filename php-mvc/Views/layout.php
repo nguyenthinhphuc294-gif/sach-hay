@@ -31,7 +31,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
         </form>
         <nav class="quick-links" aria-label="Mua hàng">
             <a href="/books?sort=sale" class="promotion-link" aria-label="Khuyến mãi"><span class="quick-icon"><?php $icon = 'bell'; require __DIR__ . '/store-icon.php'; ?></span></a>
-            <a href="/cart"><span class="quick-icon"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?></span><span>Giỏ hàng<strong><?= $cartCount ? $cartCount . ' cuốn' : 'Trống' ?></strong></span></a>
+            <a href="/cart"><span class="quick-icon"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?></span><span>Giỏ hàng<strong data-cart-count><?= $cartCount ? $cartCount . ' cuốn' : 'Trống' ?></strong></span></a>
             <a href="/account" aria-label="Tài khoản"><span class="account-icon"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?></span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
         </nav>
     </div>

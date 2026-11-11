@@ -106,3 +106,79 @@ for (const payment of document.querySelectorAll('[data-payment-url]')) {
     }
     setTimeout(poll, 5000);
 }
+
+
+// ==========================================================================
+// AJAX ADD TO CART HANDLER
+// ==========================================================================
+document.addEventListener('submit', async event => {
+    const form = event.target;
+    if (!(form instanceof HTMLFormElement)) return;
+    const actionInput = form.querySelector('input[name="action"]');
+    if (!actionInput || actionInput.value !== 'add') return;
+
+    const formAction = form.getAttribute('action') || '';
+    if (!formAction.endsWith('/cart')) return;
+
+    event.preventDefault();
+    const button = form.querySelector('button');
+    const originalText = button ? button.innerHTML : '';
+    if (button) button.disabled = true;
+
+    try {
+        const formData = new FormData(form);
+        const response = await fetch('/cart', {
+            method: 'POST',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'Accept': 'application/json'
+            },
+            body: formData
+        });
+
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.message || 'Không thể thêm vào giỏ hàng.');
+
+        // 1. Update header cart counter
+        const cartCounts = document.querySelectorAll('[data-cart-count]');
+        cartCounts.forEach(el => {
+            el.textContent = data.cartCount ? (data.cartCount + ' cuốn') : 'Trống';
+        });
+
+        // 2. Temporary button success state
+        if (button) {
+            button.classList.add('added');
+            button.innerHTML = '✓ Đã thêm';
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.classList.remove('added');
+                button.disabled = false;
+            }, 1200);
+        }
+
+        // 3. Floating toast notification
+        showToast(data.message || 'Đã thêm sản phẩm vào giỏ hàng!');
+    } catch (err) {
+        alert(err.message || 'Lỗi thêm vào giỏ hàng');
+        if (button) {
+            button.innerHTML = originalText;
+            button.disabled = false;
+        }
+    }
+});
+
+function showToast(text) {
+    let toast = document.getElementById('sachhay-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'sachhay-toast';
+        toast.className = 'sachhay-toast';
+        document.body.appendChild(toast);
+    }
+    toast.innerHTML = '<span class="toast-icon">✓</span> <span>' + text + '</span>';
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2800);
+}

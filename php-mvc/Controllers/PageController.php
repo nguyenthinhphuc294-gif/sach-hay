@@ -134,8 +134,24 @@ final class PageController
                 $book = $this->catalog->book($id);
                 if (!$book || $quantity > min(99, $book['stock'])) Http::invalid('Số lượng vượt tồn kho.');
                 if (!isset($_SESSION['cart'][$id]) && count($_SESSION['cart'] ?? []) >= 30) Http::invalid('Giỏ hàng tối đa 30 tựa sách.');
-                $_SESSION['cart'][$id] = $quantity;
+                                $_SESSION['cart'][$id] = $quantity;
                 unset($_SESSION['purchase']);
+                $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH'])
+                    || str_contains(strtolower($_SERVER['HTTP_ACCEPT'] ?? ''), 'application/json');
+                if ($isAjax) {
+                    Http::json([
+                        'success' => true,
+                        'message' => 'Đã thêm "' . $book['title'] . '" vào giỏ hàng!',
+                        'cartCount' => array_sum($_SESSION['cart'] ?? []),
+                        'bookId' => $id,
+                        'title' => $book['title']
+                    ]);
+                }
+                if ($action === 'add') {
+                    $referer = $_SERVER['HTTP_REFERER'] ?? '';
+                    $target = ($referer !== '' && !str_contains($referer, '/cart')) ? $referer : '/books';
+                    $this->redirect($target, 'Đã thêm vào giỏ hàng.');
+                }
                 $this->redirect('/cart');
             case '/checkout':
                 $this->checkout($data);
