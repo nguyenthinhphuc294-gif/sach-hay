@@ -1,6 +1,11 @@
 <h1><?= $e($title) ?></h1>
 <section class="panel">
 <?php if (!$lines): ?>
+    <?php if (!empty($_GET['voucher'])): ?>
+        <p style="color: #15803d; background: #f0fdf4; border: 1px solid #bbf7d0; padding: .6rem 1rem; border-radius: .5rem; font-weight: 600; margin-bottom: 1rem;">
+            🎉 Đã chọn mã <code><?= $e($_GET['voucher']) ?></code>! Mời bạn chọn sách để nhận ưu đãi ngay.
+        </p>
+    <?php endif; ?>
     <p>Giỏ hàng đang trống.</p><a class="button" href="/books">Tiếp tục mua sách</a>
 <?php else: ?>
     <?php foreach ($lines as $line): ?>
@@ -45,7 +50,7 @@
             <label>Quận / huyện<input name="district" maxlength="150" value="<?= $e($purchase['input']['district'] ?? '') ?>"></label>
             <label>Phường / xã<input name="ward" maxlength="150" value="<?= $e($purchase['input']['ward'] ?? '') ?>"></label>
             <label>Địa chỉ<input name="address" maxlength="150" value="<?= $e($purchase['input']['address'] ?? '') ?>"></label>
-            <label>Mã giảm giá<input name="voucherCode" id="checkout-voucher-input" maxlength="40" value="<?= $e($purchase['input']['voucherCode'] ?? '') ?>" placeholder="Nhập hoặc chọn mã giảm giá / freeship"></label>
+            <label>Mã giảm giá<input name="voucherCode" id="checkout-voucher-input" maxlength="40" value="<?= $e($purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '')) ?>" placeholder="Nhập hoặc chọn mã giảm giá / freeship"></label>
             <?php if (!empty($vouchers)): ?>
                 <div class="checkout-voucher-selector">
                     <div class="cv-header">

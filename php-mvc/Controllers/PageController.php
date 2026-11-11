@@ -240,6 +240,13 @@ final class PageController
 
     private function basket(string $path): void
     {
+        if (isset($_GET['voucher']) && is_string($_GET['voucher'])) {
+            $vCode = strtoupper(trim($_GET['voucher']));
+            if (!isset($_SESSION['purchase'])) {
+                $_SESSION['purchase'] = ['input' => []];
+            }
+            $_SESSION['purchase']['input']['voucherCode'] = $vCode;
+        }
         $items = $this->items();
         $lines = [];
         foreach ($items as $item) $lines[] = $item + ['book'=>$this->catalog->book($item['bookId'])];

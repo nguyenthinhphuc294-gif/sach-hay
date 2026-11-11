@@ -437,9 +437,7 @@
                                         <?= $v['cap'] ? (' · Tối đa ' . $money($v['cap'])) : '' ?>
                                     </p>
                                     <p class="voucher-date">HSD: <?= date('d/m/Y', $v['valid_until']) ?></p>
-                                    <button type="button" class="btn-copy-code" onclick="copyVoucher('<?= $e($v['code']) ?>', this)">
-                                        Sao chép mã
-                                    </button>
+                                    <button type="button" class="btn-copy-code btn-apply-voucher" onclick="applyVoucher('<?= $e($v['code']) ?>', this)">Áp dụng ngay</button>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -685,18 +683,31 @@
         });
     }
 
+    const userCartCount = <?= array_sum($_SESSION['cart'] ?? []) ?>;
+
+    function applyVoucher(code, btn) {
+        try {
+            navigator.clipboard.writeText(code);
+            localStorage.setItem('sachhay_voucher', code);
+            sessionStorage.setItem('sachhay_voucher', code);
+        } catch (e) {}
+
+        btn.textContent = 'Đã áp dụng! ✓';
+        btn.style.background = '#15803d';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#15803d';
+
+        setTimeout(() => {
+            if (userCartCount > 0) {
+                window.location.href = '/checkout?voucher=' + encodeURIComponent(code);
+            } else {
+                window.location.href = '/books?voucher=' + encodeURIComponent(code);
+            }
+        }, 500);
+    }
+
     function copyVoucher(code, btn) {
-        navigator.clipboard.writeText(code).then(() => {
-            const original = btn.textContent;
-            btn.textContent = 'Đã chép! ✓';
-            btn.style.background = '#15803d';
-            btn.style.color = '#fff';
-            setTimeout(() => {
-                btn.textContent = original;
-                btn.style.background = '';
-                btn.style.color = '';
-            }, 2000);
-        });
+        applyVoucher(code, btn);
     }
 
     function validateChangePass(form) {
