@@ -180,11 +180,9 @@ dd { margin: 0; }
 .side-banners small { text-transform: uppercase; }
 .quick-categories {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 195px));
-    justify-content: center;
-    row-gap: 1.5rem;
-    column-gap: 1.75rem;
-    padding: 1.85rem 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding: 1.5rem;
 }
 .quick-categories a {
     display: flex;
