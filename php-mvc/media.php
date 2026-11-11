@@ -7,6 +7,10 @@ $assets = [
     '/media/staff.webp'=>'images/store-banners/phuc-thinh-staff.webp',
     '/media/reading-room.webp'=>'images/store-banners/phuc-thinh-reading-room.webp',
     '/media/promo.mp4'=>'videos/promo-video.mp4',
+    '/media/hero-books.jpg'=>'images/hero-books.jpg',
+    '/media/hero-manga.jpg'=>'images/hero-manga.jpg',
+    '/media/hero-stationery.jpg'=>'images/hero-stationery.jpg',
+    '/media/flash-sale.jpg'=>'images/flash-sale.jpg',
 ];
 if (!in_array($method, ['GET','HEAD'], true) || !isset($assets[$path])) {
     http_response_code(isset($assets[$path]) ? 405 : 404);
@@ -21,7 +25,10 @@ $length = filesize($file);
 $start = 0;
 $end = $length - 1;
 $video = str_ends_with($file, '.mp4');
-header('Content-Type: ' . ($video ? 'video/mp4' : 'image/webp'));
+$mime = match (pathinfo($file, PATHINFO_EXTENSION)) {
+    'mp4' => 'video/mp4', 'jpg' => 'image/jpeg', default => 'image/webp',
+};
+header('Content-Type: ' . $mime);
 header('Cache-Control: public, max-age=3600');
 if ($video) {
     header('Accept-Ranges: bytes');

@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero about-hero">
     <div class="hero-copy"><p class="eyebrow">NHÀ SÁCH SÁCH HAY</p><h1>Về chúng tôi &amp; Liên hệ</h1>
         <p>Sách Hay giúp bạn tìm những cuốn sách phù hợp, từ văn học và truyện tranh đến sách thiếu nhi và phát triển bản thân.</p></div>
     <img src="/media/bookshop.webp" alt="Không gian nhà sách">

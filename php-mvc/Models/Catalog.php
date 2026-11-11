@@ -30,6 +30,7 @@ final class Catalog
             $filters[] = "json_extract(catalog,'$.categoryName')=?";
             $args[] = $category;
         }
+        if ($sort === 'sale') $filters[] = "json_extract(catalog,'$.originalPrice')>price";
         $where = implode(' AND ', $filters);
         $order = match ($sort) {
             'price' => 'price ASC', 'price-desc' => 'price DESC', 'title' => 'title ASC',

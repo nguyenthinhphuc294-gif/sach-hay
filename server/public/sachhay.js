@@ -26,6 +26,27 @@ adminForm?.addEventListener('submit', event => {
 document.querySelector('[data-admin-logout]')?.addEventListener('click', event => adminSession({action: 'logout'}, event.currentTarget));
 
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const hero = document.querySelector('[data-hero-slider]');
+if (hero) {
+    const slides = Array.from(hero.querySelectorAll('[data-hero-slide]'));
+    const dots = Array.from(hero.querySelectorAll('[data-hero-dot]'));
+    let current = 0;
+    function showSlide(index) {
+        slides[current].hidden = true;
+        dots[current].setAttribute('aria-pressed', 'false');
+        current = (index + slides.length) % slides.length;
+        slides[current].hidden = false;
+        dots[current].setAttribute('aria-pressed', 'true');
+    }
+    for (const button of hero.querySelectorAll('[data-hero-step]')) {
+        button.addEventListener('click', () => showSlide(current + Number(button.dataset.heroStep)));
+    }
+    dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+    if (!motion.matches) setInterval(() => {
+        if (!document.hidden && !hero.matches(':hover, :focus-within')) showSlide(current + 1);
+    }, 5000);
+}
+
 const showcase = document.querySelector('[data-showcase]');
 if (showcase && !motion.matches) {
     const slides = Array.from(showcase.querySelectorAll('img'));

@@ -54,10 +54,22 @@ final class PageController
             $query = $this->query('q', 120);
             $category = $this->query('category', 160);
             $sort = $this->query('sort', 20);
-            $this->render('books', $path === '/' ? 'Nhà sách trực tuyến' : 'Danh mục sách',
-                $this->catalog->browse($query, $category, $sort, $this->page()) + [
-                    'home'=>$path === '/', 'q'=>$query,'category'=>$category,'sort'=>$sort,'categories'=>$this->catalog->categories(),
-                ]);
+            $home = $path === '/';
+            $result = $this->catalog->browse($query, $category, $sort, $this->page());
+            $categories = $this->catalog->categories();
+            $homeShelves = [];
+            if ($home) {
+                $homeShelves[] = ['title'=>'Flash Sale','style'=>'sale','params'=>['sort'=>'sale'],
+                    'books'=>array_slice($this->catalog->browse('', '', 'sale')['books'], 0, 5)];
+                $homeShelves[] = ['title'=>'Xu hướng mua sắm','style'=>'trending','params'=>['sort'=>'popular'],
+                    'books'=>array_slice($this->catalog->browse('', '', 'popular')['books'], 0, 5)];
+                foreach ($categories as $label) {
+                    $homeShelves[] = ['title'=>$label,'style'=>'category','params'=>['category'=>$label],
+                        'books'=>array_slice($this->catalog->browse('', $label)['books'], 0, 5)];
+                }
+            }
+            $this->render('books', $home ? 'Nhà sách trực tuyến' : 'Danh mục sách',
+                $result + compact('home','category','sort','categories','homeShelves') + ['q'=>$query]);
             return;
         }
         if (preg_match('~^/books/([a-zA-Z0-9_-]{1,80})$~D', $path, $match)) {
