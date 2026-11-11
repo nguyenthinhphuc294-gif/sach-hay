@@ -58,18 +58,20 @@ final class PageController
             $result = $this->catalog->browse($query, $category, $sort, $this->page());
             $categories = $this->catalog->categories();
             $homeShelves = [];
+            $ranking = [];
             if ($home) {
+                $ranking = array_slice($this->catalog->browse('', '', 'popular')['books'], 0, 6);
                 $homeShelves[] = ['title'=>'Flash Sale','style'=>'sale','params'=>['sort'=>'sale'],
                     'books'=>array_slice($this->catalog->browse('', '', 'sale')['books'], 0, 5)];
                 $homeShelves[] = ['title'=>'Xu hướng mua sắm','style'=>'trending','params'=>['sort'=>'popular'],
-                    'books'=>array_slice($this->catalog->browse('', '', 'popular')['books'], 0, 5)];
+                    'books'=>array_slice($ranking, 0, 5)];
                 foreach ($categories as $label) {
                     $homeShelves[] = ['title'=>$label,'style'=>'category','params'=>['category'=>$label],
                         'books'=>array_slice($this->catalog->browse('', $label)['books'], 0, 5)];
                 }
             }
             $this->render('books', $home ? 'Nhà sách trực tuyến' : 'Danh mục sách',
-                $result + compact('home','category','sort','categories','homeShelves') + ['q'=>$query]);
+                $result + compact('home','category','sort','categories','homeShelves','ranking') + ['q'=>$query]);
             return;
         }
         if (preg_match('~^/books/([a-zA-Z0-9_-]{1,80})$~D', $path, $match)) {
@@ -149,6 +151,11 @@ final class PageController
                 }
                 unset($_SESSION['purchase']);
                 $this->redirect('/account');
+            case '/newsletter':
+                $email = Http::email($data['email'] ?? null);
+                $accounts->limit('newsletter', 600, 5);
+                $this->db->run('INSERT INTO newsletter_subscribers VALUES(?,?) ON CONFLICT(email) DO NOTHING', [$email, gmdate(DATE_ATOM)]);
+                $this->redirect('/', 'Đã đăng ký nhận bản tin. Cảm ơn bạn.');
             case '/contact':
                 $accounts->limit('contact', 600, 5);
                 $this->db->run('INSERT INTO contacts VALUES(?,?,?,?,?)', [bin2hex(random_bytes(16)),

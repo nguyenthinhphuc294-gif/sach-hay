@@ -18,18 +18,23 @@ final class Database extends PDO
         $this->exec('PRAGMA foreign_keys=ON');
         $this->sqliteCreateFunction('sachhay_lower', static fn(string $value): string => mb_strtolower($value, 'UTF-8'), 1);
         $ready = $this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'");
-        if (!$ready || $this->one('SELECT version FROM schema_ready')['version'] < 2) {
+        if (!$ready || $this->one('SELECT version FROM schema_ready')['version'] < 3) {
             $this->write(function (): void {
                 if (!$this->one("SELECT name FROM sqlite_master WHERE name='schema_ready'")) {
                     $this->install();
                 }
-                if ($this->one('SELECT version FROM schema_ready')['version'] >= 2) return;
-                $details = json_decode(file_get_contents(dirname(__DIR__) . '/book-metadata.json'), true, 64, JSON_THROW_ON_ERROR);
-                foreach ($details as $id => $book) {
-                    $this->run('UPDATE books SET catalog=? WHERE id=? AND catalog IS NULL',
-                        [json_encode($book, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE),$id]);
+                $version = $this->one('SELECT version FROM schema_ready')['version'];
+                if ($version < 2) {
+                    $details = json_decode(file_get_contents(dirname(__DIR__) . '/book-metadata.json'), true, 64, JSON_THROW_ON_ERROR);
+                    foreach ($details as $id => $book) {
+                        $this->run('UPDATE books SET catalog=? WHERE id=? AND catalog IS NULL',
+                            [json_encode($book, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE),$id]);
+                    }
                 }
-                $this->exec('UPDATE schema_ready SET version=2');
+                if ($version < 3) {
+                    $this->exec('CREATE TABLE IF NOT EXISTS newsletter_subscribers (email TEXT PRIMARY KEY, created_at TEXT NOT NULL)');
+                    $this->exec('UPDATE schema_ready SET version=3');
+                }
             });
         }
     }

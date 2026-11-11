@@ -40,18 +40,31 @@ $shortcuts = [
     <?php endforeach; ?>
 </nav>
 <?php foreach ($homeShelves as $shelf): ?>
+    <?php if ($shelf['style'] === 'sale'): ?>
+        <?php require __DIR__ . '/flash-sale.php'; continue; ?>
+    <?php endif; ?>
     <section class="panel shelf shelf-<?= $e($shelf['style']) ?>">
         <div class="section-head">
-            <h2><?= $shelf['style'] === 'sale' ? '⚡ ' : '' ?><?= $e($shelf['title']) ?></h2>
+            <h2><?= $e($shelf['title']) ?></h2>
             <a href="<?= $e($browseUrl($shelf['params'])) ?>">Xem tất cả ›</a>
         </div>
-        <?php if ($shelf['style'] === 'sale' && $shelf['books']): ?>
-            <a class="flash-strip" href="<?= $e($browseUrl($shelf['params'])) ?>"><img src="/media/flash-sale.jpg" loading="lazy" alt="Xem sách đang giảm giá"></a>
-        <?php endif; ?>
         <?php if (!$shelf['books']): ?><p>Chưa có sách trong chương trình này.</p><?php endif; ?>
         <div class="book-grid"><?php foreach ($shelf['books'] as $book) require __DIR__ . '/book-card.php'; ?></div>
     </section>
 <?php endforeach; ?>
+<?php if ($ranking): ?>
+    <section class="panel ranking">
+        <div class="section-head"><div><h2>Bảng Xếp Hạng Sách Bán Chạy Nhất</h2><p class="muted">Các tựa sách có số lượt bán cao nhất tại Sách Hay</p></div><a href="/books?sort=popular">Xem bảng xếp hạng ›</a></div>
+        <ol>
+            <?php foreach ($ranking as $index=>$rankedBook): ?>
+                <li><span class="rank-badge">#<?= $index + 1 ?></span>
+                    <a href="/books/<?= $e($rankedBook['id']) ?>"><img src="<?= $e($rankedBook['cover_path']) ?>" alt="" loading="lazy"><span><?= $e($rankedBook['title']) ?></span></a>
+                    <span class="price"><?= $money($rankedBook['price']) ?></span>
+                </li>
+            <?php endforeach; ?>
+        </ol>
+    </section>
+<?php endif; ?>
 <dialog class="promo" data-promo aria-label="Video khuyến mãi">
     <button type="button" aria-label="Đóng video" data-close-promo>×</button>
     <video data-src="/media/promo.mp4" autoplay muted loop playsinline></video>

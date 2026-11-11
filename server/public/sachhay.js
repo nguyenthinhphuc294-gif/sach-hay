@@ -26,6 +26,19 @@ adminForm?.addEventListener('submit', event => {
 document.querySelector('[data-admin-logout]')?.addEventListener('click', event => adminSession({action: 'logout'}, event.currentTarget));
 
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const flashClock = document.querySelector('[data-flash-end]');
+if (flashClock) {
+    const digits = flashClock.querySelectorAll('[data-flash-digit]');
+    const end = Number(flashClock.dataset.flashEnd);
+    function updateClock() {
+        const seconds = Math.max(0, end - Math.floor(Date.now() / 1000));
+        const parts = [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60];
+        digits.forEach((digit, index) => { digit.textContent = String(parts[index]).padStart(2, '0'); });
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+}
+
 const hero = document.querySelector('[data-hero-slider]');
 if (hero) {
     const slides = Array.from(hero.querySelectorAll('[data-hero-slide]'));

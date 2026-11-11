@@ -11,6 +11,9 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sách Hay — Nhà sách trực tuyến. Khám phá sách văn học, kỹ năng, kinh tế và thiếu nhi.">
     <title><?= $e($title) ?> | Sách Hay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
     <link rel="stylesheet" href="/sachhay.css">
     <script src="/sachhay.js" defer></script>
 </head>
@@ -53,11 +56,6 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     <?php if ($flash): ?><p class="notice" role="status"><?= $e($flash) ?></p><?php endif; ?>
     <?php require __DIR__ . '/' . $view . '.php'; ?>
 </main>
-<footer class="site-footer">
-    <div class="wrap footer-row">
-        <div><a class="brand" href="/">Sách Hay</a><p>Nhà sách trực tuyến · Phước Tân, Biên Hòa, Đồng Nai</p></div>
-        <div><a href="/about">Liên hệ</a> · <a href="/orders">Tra cứu đơn hàng</a> · <a href="/admin">Quản trị</a></div>
-    </div>
-</footer>
+<?php require __DIR__ . '/footer.php'; ?>
 </body>
 </html>
