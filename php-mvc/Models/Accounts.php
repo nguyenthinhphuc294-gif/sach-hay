@@ -11,10 +11,32 @@ final class Accounts
         $file = getenv('SACHHAY_ADMIN_HASH_FILE') ?: dirname(__DIR__, 2) . '/.sachhay-admin.hash';
         if (!is_readable($file)) return false;
         $hash = trim((string) file_get_contents($file));
+        if ($hash === '') return false;
+
+        $previousActive = session_status() === PHP_SESSION_ACTIVE;
+        $previousName = $previousActive ? session_name() : '';
+        if ($previousActive) {
+            session_write_close();
+        }
+
         session_name('SachHayAdmin');
-        if (!session_start(['read_and_close'=>true, 'use_strict_mode'=>true, 'use_only_cookies'=>true])) return false;
-        return $hash !== '' && ($_SESSION['admin_until'] ?? 0) > time()
+        if (!@session_start(['read_and_close'=>true, 'use_strict_mode'=>true, 'use_only_cookies'=>true])) {
+            if ($previousActive) {
+                session_name($previousName);
+                @session_start();
+            }
+            return false;
+        }
+
+        $authorized = ($_SESSION['admin_until'] ?? 0) > time()
             && hash_equals(hash('sha256', $hash), (string) ($_SESSION['admin_config'] ?? ''));
+
+        if ($previousActive) {
+            session_name($previousName);
+            @session_start();
+        }
+
+        return $authorized;
     }
 
     public static function checkoutSession(): void
