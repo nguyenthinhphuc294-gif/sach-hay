@@ -266,15 +266,20 @@ final class PageController
             $_SESSION['purchase']['input']['voucherCode'] = $vCode;
         }
         if (isset($_GET['selected']) && is_string($_GET['selected'])) {
-            $sel = array_filter(array_map('trim', explode(',', $_GET['selected'])));
-            if (!empty($sel)) {
-                $_SESSION['selected_items'] = $sel;
-            }
+            $rawSel = trim($_GET['selected']);
+            $_SESSION['selected_items'] = ($rawSel === '') ? [] : array_values(array_filter(array_map('trim', explode(',', $rawSel))));
+        }
+        if (isset($_SESSION['selected_items']) && is_array($_SESSION['selected_items'])) {
+            $cartKeys = array_map('strval', array_keys($_SESSION['cart'] ?? []));
+            $_SESSION['selected_items'] = array_values(array_intersect($_SESSION['selected_items'], $cartKeys));
         }
         $isCheckout = $path === '/checkout';
         $items = $this->items(!$isCheckout); // /cart shows all items, /checkout shows selected
+        if ($isCheckout && empty($items)) {
+            $this->redirect('/cart', 'Vui lòng chọn ít nhất 1 sản phẩm để thanh toán.');
+        }
         $lines = [];
-        $selectedIds = $_SESSION['selected_items'] ?? array_keys($_SESSION['cart'] ?? []);
+        $selectedIds = $_SESSION['selected_items'] ?? array_map('strval', array_keys($_SESSION['cart'] ?? []));
         foreach ($items as $item) {
             $lines[] = $item + [
                 'book' => $this->catalog->book($item['bookId']),

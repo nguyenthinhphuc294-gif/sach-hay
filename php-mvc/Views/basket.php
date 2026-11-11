@@ -210,7 +210,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                 <?php else: ?>
                     <!-- KHI Ở BƯỚC /checkout: FORM THÔNG TIN GIAO HÀNG & PHƯƠNG THỨC THANH TOÁN -->
                     <div class="checkout-forms-panel">
-                        <?php if ($purchase): $quote = $purchase['quote']; ?>
+                        <?php if (!empty($purchase['key']) && !empty($purchase['quote']) && !empty($purchase['input'])): $quote = $purchase['quote']; ?>
                             <div class="checkout-confirmed-banner">
                                 <div class="confirmed-badge-icon">✓</div>
                                 <div>
@@ -408,9 +408,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                             </span>
                         </div>
 
-                        <?php if ($purchase): 
-                            $quote = $purchase['quote'];
-                        ?>
+                        <?php if (!empty($purchase['key']) && !empty($purchase['quote']) && !empty($purchase['input'])): $quote = $purchase['quote']; ?>
                             <?php if ($quote['discount'] > 0): ?>
                                 <div class="s-line discount-line">
                                     <span class="s-label">Giảm giá voucher:</span>
@@ -429,7 +427,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                         <div class="s-line grand-total-line">
                             <span class="s-label">Tổng thanh toán:</span>
                             <strong class="s-value grand-total-price">
-                                <?= $money($purchase ? $purchase['quote']['total'] : ($activeSubtotal + $estShipping)) ?>
+                                <?= $money(($checkout && !empty($purchase['quote']['total'])) ? $purchase['quote']['total'] : ($activeSubtotal + $estShipping)) ?>
                             </strong>
                         </div>
                         <small class="vat-note">(Đã bao gồm VAT và ưu đãi giao hàng)</small>
@@ -442,7 +440,7 @@ $defaultVoucher = $purchase['input']['voucherCode'] ?? ($_GET['voucher'] ?? '');
                                 Tiến Hành Đặt Hàng (<span id="selected-items-count"><?= $activeCount ?></span>) &rarr;
                             </button>
                         <?php else: ?>
-                            <?php if ($purchase): ?>
+                            <?php if (!empty($purchase['key']) && !empty($purchase['quote'])): ?>
                                 <form action="/checkout" method="post" class="place-order-form">
                                     <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
                                     <input type="hidden" name="key" value="<?= $e($purchase['key']) ?>">
@@ -718,7 +716,7 @@ function applyCouponCode() {
         checkoutForm.submit();
     } else {
         const checked = Array.from(document.querySelectorAll('.cart-item-checkbox:checked')).map(cb => cb.value);
-        let url = '/checkout?voucher=' + encodeURIComponent(code);
+        let url = '/cart?voucher=' + encodeURIComponent(code);
         if (checked.length > 0) {
             url += '&selected=' + encodeURIComponent(checked.join(','));
         }

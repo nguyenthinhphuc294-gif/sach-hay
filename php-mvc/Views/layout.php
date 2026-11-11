@@ -1,6 +1,6 @@
 <?php
 $e = static fn(mixed $value): string => htmlspecialchars((string) $value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-$money = static fn(int $value): string => number_format($value, 0, ',', '.') . ' ₫';
+$money = static fn(mixed $value): string => number_format((int) ($value ?? 0), 0, ',', '.') . ' ₫';
 $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','processing'=>'Đang chuẩn bị',
     'shipping'=>'Đang giao','completed'=>'Hoàn thành','cancelled'=>'Đã hủy'];
 ?>
