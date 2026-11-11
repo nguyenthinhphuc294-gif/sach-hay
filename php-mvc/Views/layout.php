@@ -11,34 +11,32 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sách Hay — Nhà sách trực tuyến. Khám phá sách văn học, kỹ năng, kinh tế và thiếu nhi.">
     <title><?= $e($title) ?> | Sách Hay</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+    <link rel="preload" href="/fonts/plus-jakarta-sans.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="/sachhay.css">
     <script src="/sachhay.js" defer></script>
 </head>
 <body>
 <header class="site-header">
     <div class="announcement"><div class="wrap topbar">
-        <span>✦ Hội sách Sách Hay 2026 · Freeship đơn từ 250.000 ₫</span>
-        <div><a href="/orders">Tra cứu đơn hàng</a><a href="/about">Liên hệ</a></div>
+        <span><?php $icon = 'sparkles'; require __DIR__ . '/store-icon.php'; ?> Hội sách Sách Hay 2026 · Freeship đơn từ 250.000 ₫</span>
+        <div><a href="/orders"><?php $icon = 'truck'; require __DIR__ . '/store-icon.php'; ?> Tra cứu đơn hàng</a><a href="/about">Liên hệ</a></div>
     </div></div>
     <div class="wrap header-row">
-        <a class="brand header-brand" href="/"><span class="brand-mark" aria-hidden="true">▤</span><span><b>Sách <em>Hay</em></b><small>NHÀ SÁCH TRỰC TUYẾN</small></span></a>
+        <a class="brand header-brand" href="/"><span class="brand-mark"><?php $icon = 'book'; require __DIR__ . '/store-icon.php'; ?></span><span><b>Sách <em>Hay</em></b><small>NHÀ SÁCH TRỰC TUYẾN</small></span></a>
         <form class="search" action="/books" role="search">
             <input name="q" value="<?= $e($q ?? '') ?>" placeholder="Tìm tên sách, tác giả hoặc ISBN" aria-label="Tìm sách">
-            <button aria-label="Tìm sách"><span class="search-icon" aria-hidden="true"></span></button>
+            <button aria-label="Tìm sách"><?php $icon = 'search'; require __DIR__ . '/store-icon.php'; ?></button>
         </form>
         <nav class="quick-links" aria-label="Mua hàng">
-            <a href="/books?sort=sale" class="promotion-link" aria-label="Khuyến mãi"><span class="quick-icon" aria-hidden="true">♧</span></a>
-            <a href="/cart"><span class="quick-icon" aria-hidden="true">🛒</span><span>Giỏ hàng<strong><?= $cartCount ? $cartCount . ' cuốn' : 'Trống' ?></strong></span></a>
-            <a href="/account"><span class="account-icon" aria-hidden="true">♙</span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
+            <a href="/books?sort=sale" class="promotion-link" aria-label="Khuyến mãi"><span class="quick-icon"><?php $icon = 'bell'; require __DIR__ . '/store-icon.php'; ?></span></a>
+            <a href="/cart"><span class="quick-icon"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?></span><span>Giỏ hàng<strong><?= $cartCount ? $cartCount . ' cuốn' : 'Trống' ?></strong></span></a>
+            <a href="/account"><span class="account-icon"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?></span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
         </nav>
     </div>
     <div class="nav-bar">
         <div class="wrap nav-row">
             <?php $navCategories = ['Văn Học','Sách Kinh Tế','Tâm Lý - Kỹ Năng','Manga - Comic','Sách Thiếu Nhi','Sách Ngoại Văn','Văn Phòng Phẩm']; ?>
-            <details class="category-menu"><summary><span aria-hidden="true">☰</span> Danh mục sản phẩm <span aria-hidden="true">⌄</span></summary>
+            <details class="category-menu"><summary><?php $icon = 'menu'; require __DIR__ . '/store-icon.php'; ?> Danh mục sản phẩm <?php $icon = 'down'; require __DIR__ . '/store-icon.php'; ?></summary>
                 <div><?php foreach ($navCategories as $label): ?><a href="/books?<?= $e(http_build_query(['category'=>$label])) ?>"><?= $e($label) ?></a><?php endforeach; ?></div>
             </details>
             <nav class="nav-links" aria-label="Danh mục">

@@ -61,7 +61,7 @@ $footerCategories = [
         </div>
         <div class="footer-bottom">
             <p>© 2026 Sách Hay. Bản quyền thuộc Công ty Cổ phần Phát hành Sách Sách Hay.</p>
-            <p>Xây dựng với niềm đam mê sách <span aria-hidden="true">♥</span></p>
+            <p class="with-icon">Xây dựng với niềm đam mê sách <span><?php $icon = 'heart'; require __DIR__ . '/store-icon.php'; ?></span></p>
         </div>
     </div>
 </footer>

@@ -24,7 +24,7 @@ $discount = $original > $book['price'] ? (int) round(100 * (1 - $book['price'] /
             <input type="hidden" name="action" value="add">
             <input type="hidden" name="book" value="<?= $e($book['id']) ?>">
             <input type="hidden" name="quantity" value="1">
-            <button class="secondary">Thêm vào giỏ</button>
+            <button class="secondary with-icon"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?> Thêm vào giỏ</button>
         </form>
     <?php else: ?><p class="muted">Hết hàng</p><?php endif; ?>
 </article>

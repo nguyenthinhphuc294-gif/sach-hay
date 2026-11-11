@@ -4,11 +4,11 @@ $slides = [
     ['hero-manga.jpg','Tuần Lễ Manga & Light Novel Nhật Bản','Tìm những bộ truyện tranh đang có tại Sách Hay.',['category'=>'Manga - Comic']],
 ];
 $shortcuts = [
-    ['⚡','Flash Sale',['sort'=>'sale'],'amber'],['★','Bán Chạy',['sort'=>'popular'],'red'],
-    ['✦','Sách Mới',[],'orange'],['▤','Văn Học',['category'=>'Văn Học'],'blue'],
-    ['↗','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],['♡','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
-    ['▧','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],['☀','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
-    ['◎','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'blue'],['✎','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'purple'],
+    ['bolt','Flash Sale',['sort'=>'sale'],'amber'],['award','Bán Chạy',['sort'=>'popular'],'red'],
+    ['flame','Sách Mới',[],'orange'],['book','Văn Học',['category'=>'Văn Học'],'blue'],
+    ['trending','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],['smile','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
+    ['layers','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],['sparkles','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
+    ['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'cyan'],['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
 ];
 ?>
 <section class="storefront-banners" aria-label="Khuyến mãi nổi bật">
@@ -23,8 +23,8 @@ $shortcuts = [
                 </div>
             </article>
         <?php endforeach; ?>
-        <button type="button" class="slide-arrow previous" data-hero-step="-1" aria-label="Ảnh trước">‹</button>
-        <button type="button" class="slide-arrow next" data-hero-step="1" aria-label="Ảnh sau">›</button>
+        <button type="button" class="slide-arrow previous" data-hero-step="-1" aria-label="Ảnh trước"><?php $icon = 'left'; require __DIR__ . '/store-icon.php'; ?></button>
+        <button type="button" class="slide-arrow next" data-hero-step="1" aria-label="Ảnh sau"><?php $icon = 'right'; require __DIR__ . '/store-icon.php'; ?></button>
         <div class="slide-dots"><?php foreach ($slides as $index=>$_): ?>
             <button type="button" data-hero-dot="<?= $index ?>" aria-label="Ảnh <?= $index + 1 ?>" aria-pressed="<?= $index ? 'false' : 'true' ?>"></button>
         <?php endforeach; ?></div>
@@ -36,7 +36,7 @@ $shortcuts = [
 </section>
 <nav class="quick-categories panel" aria-label="Danh mục nhanh">
     <?php foreach ($shortcuts as [$icon,$label,$params,$color]): ?>
-        <a href="<?= $e($browseUrl($params)) ?>"><span class="category-icon <?= $e($color) ?>" aria-hidden="true"><?= $e($icon) ?></span><?= $e($label) ?></a>
+        <a href="<?= $e($browseUrl($params)) ?>"><span class="category-icon <?= $e($color) ?>"><?php require __DIR__ . '/store-icon.php'; ?></span><?= $e($label) ?></a>
     <?php endforeach; ?>
 </nav>
 <?php foreach ($homeShelves as $shelf): ?>
@@ -46,7 +46,7 @@ $shortcuts = [
     <section class="panel shelf shelf-<?= $e($shelf['style']) ?>">
         <div class="section-head">
             <h2><?= $e($shelf['title']) ?></h2>
-            <a href="<?= $e($browseUrl($shelf['params'])) ?>">Xem tất cả ›</a>
+            <a class="with-icon" href="<?= $e($browseUrl($shelf['params'])) ?>">Xem tất cả <?php $icon = 'right'; require __DIR__ . '/store-icon.php'; ?></a>
         </div>
         <?php if (!$shelf['books']): ?><p>Chưa có sách trong chương trình này.</p><?php endif; ?>
         <div class="book-grid"><?php foreach ($shelf['books'] as $book) require __DIR__ . '/book-card.php'; ?></div>
@@ -54,7 +54,7 @@ $shortcuts = [
 <?php endforeach; ?>
 <?php if ($ranking): ?>
     <section class="panel ranking">
-        <div class="section-head"><div><h2>Bảng Xếp Hạng Sách Bán Chạy Nhất</h2><p class="muted">Các tựa sách có số lượt bán cao nhất tại Sách Hay</p></div><a href="/books?sort=popular">Xem bảng xếp hạng ›</a></div>
+        <div class="section-head"><div class="with-icon"><span class="category-icon amber"><?php $icon = 'trophy'; require __DIR__ . '/store-icon.php'; ?></span><div><h2>Bảng Xếp Hạng Sách Bán Chạy Nhất</h2><p class="muted">Các tựa sách có số lượt bán cao nhất tại Sách Hay</p></div></div><a class="with-icon" href="/books?sort=popular">Xem bảng xếp hạng <?php $icon = 'right'; require __DIR__ . '/store-icon.php'; ?></a></div>
         <ol>
             <?php foreach ($ranking as $index=>$rankedBook): ?>
                 <li><span class="rank-badge">#<?= $index + 1 ?></span>
@@ -66,6 +66,6 @@ $shortcuts = [
     </section>
 <?php endif; ?>
 <dialog class="promo" data-promo aria-label="Video khuyến mãi">
-    <button type="button" aria-label="Đóng video" data-close-promo>×</button>
+    <button type="button" aria-label="Đóng video" data-close-promo><?php $icon = 'close'; require __DIR__ . '/store-icon.php'; ?></button>
     <video data-src="/media/promo.mp4" autoplay muted loop playsinline></video>
 </dialog>

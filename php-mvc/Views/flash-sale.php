@@ -19,7 +19,7 @@ $clockParts = [intdiv($left, 3600), intdiv($left % 3600, 60), $left % 60];
                 <?php endforeach; ?>
             </div>
         </div>
-        <a class="flash-view" href="<?= $e($browseUrl($shelf['params'])) ?>">Xem tất cả Flash Sale <span aria-hidden="true">›</span></a>
+        <a class="flash-view with-icon" href="<?= $e($browseUrl($shelf['params'])) ?>">Xem tất cả Flash Sale <?php $icon = 'right'; require __DIR__ . '/store-icon.php'; ?></a>
     </div>
     <div class="flash-products">
         <?php if (!$shelf['books']): ?><p>Chưa có sách trong chương trình này.</p><?php endif; ?>
