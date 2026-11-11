@@ -2295,3 +2295,52 @@ details.order p,
     word-break: break-word !important;
     overflow-wrap: break-word !important;
 }
+
+
+/* ==========================================================================
+   CART LINK VERTICAL STACK (ICON ON TOP OF "GIỎ HÀNG")
+   ========================================================================== */
+.quick-links .cart-link {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.15rem !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: white !important;
+    padding: 0.1rem 0.35rem;
+    line-height: 1;
+}
+
+.quick-links .cart-link:hover {
+    color: #ffe06b !important;
+}
+
+.quick-links .cart-link .cart-icon-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.85rem;
+    height: 1.85rem;
+}
+
+.quick-links .cart-link .cart-icon-wrap .store-icon {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.quick-links .cart-link .cart-label,
+.quick-links .cart-link > span:last-child {
+    font-size: 0.74rem;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+    white-space: nowrap;
+}
+
+.quick-links .cart-link:hover .cart-label,
+.quick-links .cart-link:hover > span:last-child {
+    color: #ffe06b;
+}

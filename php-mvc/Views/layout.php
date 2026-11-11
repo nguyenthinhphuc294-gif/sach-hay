@@ -128,7 +128,7 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
                     </div>
                 </div>
             </div>
-            <a href="/cart" class="cart-link" aria-label="Giỏ hàng"><span class="quick-icon cart-icon-wrap"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?><span class="cart-badge" data-cart-badge style="<?= ($cartCount ?? 0) > 0 ? '' : 'display:none;' ?>"><?= $cartCount ?? 0 ?></span></span><span>Giỏ hàng</span></a>
+            <a href="/cart" class="cart-link" aria-label="Giỏ hàng"><span class="quick-icon cart-icon-wrap"><?php $icon = 'cart'; require __DIR__ . '/store-icon.php'; ?><span class="cart-badge" data-cart-badge style="<?= ($cartCount ?? 0) > 0 ? '' : 'display:none;' ?>"><?= $cartCount ?? 0 ?></span></span><span class="cart-label">Giỏ hàng</span></a>
             <a href="/account" aria-label="Tài khoản"><span class="account-icon"><?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?></span><span>Tài khoản<?php if ($email): ?><strong>Của tôi</strong><?php endif; ?></span></a>
         </nav>
     </div>
