@@ -93,6 +93,7 @@ final class PageController
             case '/orders':
                 $this->render('account', 'Tài khoản và đơn hàng', [
                     'orders'=>$this->orders->customerOrders($this->customer, $_SESSION['owner_key']),
+                    'isAdmin'=>Accounts::adminAuthorized(),
                 ]);
                 break;
             case '/admin':

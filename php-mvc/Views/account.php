@@ -1,5 +1,21 @@
 <p class="crumb"><a href="/">Trang chủ</a> / Tài khoản</p>
 
+<?php if (!empty($isAdmin)): ?>
+    <section class="admin-banner-card">
+        <div class="admin-banner-content">
+            <span class="admin-shield-icon">🛡️</span>
+            <div>
+                <h2 class="admin-banner-title">Bạn đang đăng nhập phiên Quản Trị Viên (Admin)</h2>
+                <p class="admin-banner-sub">Bạn có toàn quyền quản lý kho sách, xem và cập nhật trạng thái đơn hàng, doanh thu và tin nhắn khách hàng.</p>
+            </div>
+        </div>
+        <div class="admin-banner-actions">
+            <a href="/admin" class="button admin-enter-btn">Vào Bảng Quản Trị &rarr;</a>
+            <button type="button" class="secondary" data-admin-logout>Đăng xuất Admin</button>
+        </div>
+    </section>
+<?php endif; ?>
+
 <?php if (!$email): ?>
     <div class="auth-wrapper">
         <div class="auth-card">
@@ -16,10 +32,13 @@
                 <button type="button" class="auth-tab" id="tab-btn-register" onclick="switchAuthTab('register')" role="tab" aria-selected="false">
                     Đăng Ký
                 </button>
+                <button type="button" class="auth-tab admin-tab-btn" id="tab-btn-admin" onclick="switchAuthTab('admin')" role="tab" aria-selected="false">
+                    🛡️ Admin
+                </button>
             </div>
 
             <div class="auth-body">
-                <!-- FORM ĐĂNG NHẬP -->
+                <!-- FORM ĐĂNG NHẬP KHÁCH HÀNG -->
                 <div id="auth-panel-login" class="auth-panel">
                     <form action="/account" method="post" class="auth-form">
                         <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
@@ -47,13 +66,19 @@
                             Đăng Nhập
                         </button>
 
-                        <p class="auth-switch-text">
-                            Chưa có tài khoản? <a href="javascript:void(0)" onclick="switchAuthTab('register')">Đăng ký tài khoản mới</a>
-                        </p>
+                        <div class="auth-footer-links">
+                            <p class="auth-switch-text">
+                                Chưa có tài khoản? <a href="javascript:void(0)" onclick="switchAuthTab('register')">Đăng ký tài khoản mới</a>
+                            </p>
+                            <div class="admin-quick-link">
+                                <span>Bạn là Quản trị viên?</span>
+                                <a href="javascript:void(0)" onclick="switchAuthTab('admin')">Đăng nhập Admin tại đây 🛡️</a>
+                            </div>
+                        </div>
                     </form>
                 </div>
 
-                <!-- FORM ĐĂNG KÝ -->
+                <!-- FORM ĐĂNG KÝ KHÁCH HÀNG -->
                 <div id="auth-panel-register" class="auth-panel" style="display: none;">
                     <form action="/account" method="post" class="auth-form" onsubmit="return validateRegister(this)">
                         <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
@@ -99,6 +124,44 @@
                         </p>
                     </form>
                 </div>
+
+                <!-- FORM ĐĂNG NHẬP QUẢN TRỊ VIÊN (ADMIN) -->
+                <div id="auth-panel-admin" class="auth-panel" style="display: none;">
+                    <form method="post" class="auth-form" data-admin-auth>
+                        <div class="admin-auth-header-box">
+                            <span class="admin-icon-large">🛡️</span>
+                            <div>
+                                <h3 style="margin:0 0 .2rem; font-size:1.05rem; font-weight:750;">Đăng Nhập Quản Trị Viên</h3>
+                                <p class="muted" style="margin:0; font-size:.8rem;">Truy cập cổng quản lý kho hàng, đơn hàng và cấu hình.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-username">Tài khoản Admin</label>
+                            <input id="admin-username" name="username" required maxlength="64" autocomplete="username" value="admin" placeholder="admin">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admin-password">Mật khẩu Admin</label>
+                            <div class="password-wrapper">
+                                <input id="admin-password" name="password" type="password" required maxlength="72" autocomplete="current-password" placeholder="Nhập mật khẩu quản trị">
+                                <button type="button" class="toggle-password" onclick="togglePass('admin-password', this)" aria-label="Xem mật khẩu" title="Xem/Ẩn mật khẩu">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p role="alert" data-auth-message class="form-error" hidden style="margin: 0; padding: .4rem .6rem; background: #fee2e2; border-radius: .4rem;"></p>
+
+                        <button type="submit" class="auth-btn-primary" style="background: #1f2420;">
+                            Đăng Nhập Quản Trị &rarr;
+                        </button>
+
+                        <p class="auth-switch-text">
+                            <a href="javascript:void(0)" onclick="switchAuthTab('login')">← Quay lại Đăng nhập Khách hàng</a>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -107,23 +170,27 @@
     function switchAuthTab(tab) {
         const loginBtn = document.getElementById('tab-btn-login');
         const regBtn = document.getElementById('tab-btn-register');
+        const adminBtn = document.getElementById('tab-btn-admin');
         const loginPanel = document.getElementById('auth-panel-login');
         const regPanel = document.getElementById('auth-panel-register');
+        const adminPanel = document.getElementById('auth-panel-admin');
         
+        [loginBtn, regBtn, adminBtn].forEach(b => { if (b) { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); } });
+        [loginPanel, regPanel, adminPanel].forEach(p => { if (p) p.style.display = 'none'; });
+
         if (tab === 'register') {
-            loginBtn.classList.remove('active');
-            loginBtn.setAttribute('aria-selected', 'false');
             regBtn.classList.add('active');
             regBtn.setAttribute('aria-selected', 'true');
-            loginPanel.style.display = 'none';
             regPanel.style.display = 'block';
             history.replaceState(null, '', '#register');
+        } else if (tab === 'admin') {
+            adminBtn.classList.add('active');
+            adminBtn.setAttribute('aria-selected', 'true');
+            adminPanel.style.display = 'block';
+            history.replaceState(null, '', '#admin');
         } else {
-            regBtn.classList.remove('active');
-            regBtn.setAttribute('aria-selected', 'false');
             loginBtn.classList.add('active');
             loginBtn.setAttribute('aria-selected', 'true');
-            regPanel.style.display = 'none';
             loginPanel.style.display = 'block';
             history.replaceState(null, '', '#login');
         }
@@ -157,7 +224,11 @@
     // Tự động chuyển tab theo URL query hoặc hash
     (function () {
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('tab') === 'register' || window.location.hash === '#register') {
+        const queryTab = urlParams.get('tab');
+        const hash = window.location.hash;
+        if (queryTab === 'admin' || hash === '#admin') {
+            switchAuthTab('admin');
+        } else if (queryTab === 'register' || hash === '#register') {
             switchAuthTab('register');
         }
     })();
@@ -172,12 +243,17 @@
             <p class="profile-email"><?= $e($email) ?></p>
             <span class="profile-badge">Thành viên thân thiết</span>
         </div>
-        <form class="profile-logout-form" action="/account" method="post">
-            <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
-            <button class="secondary" name="action" value="logout">
-                <?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?> Đăng xuất
-            </button>
-        </form>
+        <div class="profile-actions-row">
+            <a href="/admin" class="button secondary admin-portal-btn">
+                🛡️ Cổng Quản Trị (Admin)
+            </a>
+            <form class="profile-logout-form" action="/account" method="post">
+                <input type="hidden" name="csrf" value="<?= $e($csrf) ?>">
+                <button class="secondary" name="action" value="logout">
+                    <?php $icon = 'user'; require __DIR__ . '/store-icon.php'; ?> Đăng xuất
+                </button>
+            </form>
+        </div>
     </section>
 <?php endif; ?>
 

@@ -768,3 +768,144 @@ dd { margin: 0; }
     width: 2rem;
     height: 2rem;
 }
+
+
+/* Admin Integration in Account */
+.admin-banner-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, #1f2420 0%, #303732 100%);
+    color: white;
+    border-radius: .85rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    flex-wrap: wrap;
+}
+
+.admin-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 14rem;
+}
+
+.admin-shield-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.admin-banner-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 .25rem;
+    color: #fff;
+}
+
+.admin-banner-sub {
+    font-size: .82rem;
+    color: #d1d5db;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.admin-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+}
+
+.admin-enter-btn {
+    background: var(--red) !important;
+    color: white !important;
+    padding: .6rem 1.1rem;
+    font-weight: 750;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.admin-enter-btn:hover {
+    background: var(--dark-red) !important;
+}
+
+.admin-tab-btn {
+    color: #374151 !important;
+}
+
+.admin-tab-btn.active {
+    color: #111827 !important;
+    border-bottom-color: #111827 !important;
+    background: white !important;
+}
+
+.admin-auth-header-box {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    padding: .85rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: .6rem;
+    margin-bottom: .4rem;
+}
+
+.admin-icon-large {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.auth-footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: .4rem;
+}
+
+.admin-quick-link {
+    text-align: center;
+    font-size: .82rem;
+    padding: .5rem;
+    background: #f9fafb;
+    border: 1px dashed #d1d5db;
+    border-radius: .45rem;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.admin-quick-link a {
+    color: #1f2937;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.admin-quick-link a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.profile-actions-row {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    flex-wrap: wrap;
+}
+
+.admin-portal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 700;
+    background: #1f2420 !important;
+    color: white !important;
+    border: none;
+}
+
+.admin-portal-btn:hover {
+    background: #374151 !important;
+}
