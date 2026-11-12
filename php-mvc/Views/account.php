@@ -165,31 +165,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- LỢI ÍCH KHI LÀ HỘI VIÊN -->
-        <div class="auth-benefits-row">
-            <div class="benefit-item">
-                <span class="benefit-icon">🚚</span>
-                <div>
-                    <strong>Freeship Đơn Từ 250k</strong>
-                    <p>Miễn phí giao hàng tiêu chuẩn trên toàn quốc</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <span class="benefit-icon">🎁</span>
-                <div>
-                    <strong>Tích Điểm Đổi Quà</strong>
-                    <p>Nhận ngay 150 Sách Xu khi tạo tài khoản</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <span class="benefit-icon">🛡️</span>
-                <div>
-                    <strong>Bảo Hành 100% Chính Hãng</strong>
-                    <p>Đổi trả miễn phí trong 7 ngày nếu lỗi in ấn</p>
-                </div>
-            </div>
-        </div>
     </div>
 
 <?php else: ?>
