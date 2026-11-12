@@ -4,14 +4,14 @@ $slides = [
     ['hero-manga.jpg','Tuần Lễ Manga & Light Novel Nhật Bản','Tìm những bộ truyện tranh đang có tại Sách Hay.',['category'=>'Manga - Comic']],
 ];
 $shortcuts = [
-    ['book','Văn Học',['category'=>'Văn Học'],'blue'],
-    ['trending','Kinh Tế',['category'=>'Sách Kinh Tế'],'green'],
-    ['smile','Kỹ Năng Sống',['category'=>'Tâm Lý - Kỹ Năng'],'purple'],
-    ['layers','Truyện Tranh',['category'=>'Manga - Comic'],'pink'],
-    ['sparkles','Thiếu Nhi',['category'=>'Sách Thiếu Nhi'],'amber'],
-    ['book','Giáo Khoa',['category'=>'Sách Giáo Khoa'],'cyan'],
-    ['globe','Ngoại Văn',['category'=>'Sách Ngoại Văn'],'teal'],
-    ['pen','Văn Phòng Phẩm',['category'=>'Văn Phòng Phẩm'],'indigo'],
+    ['van-hoc', 'Văn Học', ['category'=>'Văn Học'], 'blue'],
+    ['kinh-te', 'Kinh Tế', ['category'=>'Sách Kinh Tế'], 'green'],
+    ['ky-nang-song', 'Kỹ Năng Sống', ['category'=>'Tâm Lý - Kỹ Năng'], 'purple'],
+    ['truyen-tranh', 'Truyện Tranh', ['category'=>'Manga - Comic'], 'pink'],
+    ['thieu-nhi', 'Thiếu Nhi', ['category'=>'Sách Thiếu Nhi'], 'amber'],
+    ['giao-khoa', 'Giáo Khoa', ['category'=>'Sách Giáo Khoa'], 'cyan'],
+    ['ngoai-van', 'Ngoại Văn', ['category'=>'Sách Ngoại Văn'], 'teal'],
+    ['van-phong-pham', 'Văn Phòng Phẩm', ['category'=>'Văn Phòng Phẩm'], 'indigo'],
 ];
 ?>
 <section class="storefront-banners" aria-label="Khuyến mãi nổi bật">
@@ -38,8 +38,13 @@ $shortcuts = [
     </div>
 </section>
 <nav class="quick-categories panel" aria-label="Danh mục nhanh">
-    <?php foreach ($shortcuts as [$icon,$label,$params,$color]): ?>
-        <a href="<?= $e($browseUrl($params)) ?>"><span class="category-icon <?= $e($color) ?>"><?php require __DIR__ . '/store-icon.php'; ?></span><?= $e($label) ?></a>
+    <?php foreach ($shortcuts as [$key, $label, $params, $color]): ?>
+        <a href="<?= $e($browseUrl($params)) ?>" class="cat-card-item">
+            <span class="category-icon cat-<?= $e($key) ?> <?= $e($color) ?>">
+                <?php $catKey = $key; require __DIR__ . '/category-art.php'; ?>
+            </span>
+            <span class="category-title"><?= $e($label) ?></span>
+        </a>
     <?php endforeach; ?>
 </nav>
 <?php foreach ($homeShelves as $shelf): ?>
