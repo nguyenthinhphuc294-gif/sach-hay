@@ -36,12 +36,9 @@
                 </button>
 
                 <div class="auth-footer-links">
-                    <p class="auth-switch-text">
-                        Bạn là khách hàng? <a href="/account">Quay lại đăng nhập tài khoản</a>
-                    </p>
                     <div class="admin-quick-link">
-                        <span>Quay lại trang chủ?</span>
-                        <a href="/">Về Trang Chủ Sách Hay 🏠</a>
+                        <span>Bạn là khách hàng?</span>
+                        <a href="/account" style="color: var(--red); font-weight: 750;">Quay lại đăng nhập tài khoản</a>
                     </div>
                 </div>
             </form>
