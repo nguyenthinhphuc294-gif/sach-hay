@@ -9,12 +9,6 @@
             <p class="auth-subhead">Đăng nhập để vào hệ thống quản lý Nhà sách Sách Hay</p>
         </div>
 
-        <div class="auth-tabs" role="tablist">
-            <button type="button" class="auth-tab active" role="tab" aria-selected="true" style="cursor: default;">
-                Đăng Nhập
-            </button>
-        </div>
-
         <div class="auth-body">
             <form method="post" class="auth-form" data-admin-auth>
                 <div class="form-group">
