@@ -92,7 +92,8 @@ const adminForm = document.querySelector('[data-admin-auth]');
 adminForm?.addEventListener('submit', event => {
     event.preventDefault();
     const data = Object.fromEntries(new FormData(adminForm));
-    adminSession({action: 'login', ...data}, adminForm.querySelector('button'));
+    const btn = adminForm.querySelector('button[type="submit"]') || adminForm.querySelector('button');
+    adminSession({action: 'login', ...data}, btn);
 });
 document.querySelector('[data-admin-logout]')?.addEventListener('click', event => adminSession({action: 'logout'}, event.currentTarget));
 
