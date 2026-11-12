@@ -37,7 +37,7 @@
 
                 <div class="auth-footer-links">
                     <p class="auth-switch-text">
-                        Bạn là khách hàng? <a href="/account">Đăng nhập tài khoản mua sách</a>
+                        Bạn là khách hàng? <a href="/account">Quay lại đăng nhập tài khoản</a>
                     </p>
                     <div class="admin-quick-link">
                         <span>Quay lại trang chủ?</span>
