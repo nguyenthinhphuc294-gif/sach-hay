@@ -1,3 +1,72 @@
+
+// ==========================================
+// AUTH TABS & PASSWORD TOGGLE FUNCTIONS
+// ==========================================
+function switchAuthTab(tab) {
+    const panels = {
+        'login': document.getElementById('auth-panel-login'),
+        'register': document.getElementById('auth-panel-register'),
+        'admin': document.getElementById('auth-panel-admin')
+    };
+    for (const k in panels) {
+        if (panels[k]) {
+            panels[k].style.display = (k === tab) ? 'block' : 'none';
+        }
+    }
+    const tabs = {
+        'login': document.getElementById('tab-btn-login'),
+        'register': document.getElementById('tab-btn-register'),
+        'admin': document.getElementById('tab-btn-admin')
+    };
+    for (const t in tabs) {
+        if (tabs[t]) {
+            if (t === tab) {
+                tabs[t].classList.add('active');
+                tabs[t].setAttribute('aria-selected', 'true');
+            } else {
+                tabs[t].classList.remove('active');
+                tabs[t].setAttribute('aria-selected', 'false');
+            }
+        }
+    }
+    if (panels[tab]) {
+        const input = panels[tab].querySelector('input:not([type="hidden"])');
+        if (input) setTimeout(() => input.focus(), 60);
+    }
+    if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', '#' + tab);
+    }
+}
+
+function togglePass(inputId, btn) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+    const isPass = input.type === 'password';
+    input.type = isPass ? 'text' : 'password';
+    const eye = btn.querySelector('.eye-icon');
+    if (eye) eye.textContent = isPass ? '🙈' : '👁️';
+}
+
+function validateRegister(form) {
+    const p1 = form.querySelector('#reg-password');
+    const p2 = form.querySelector('#reg-password-confirm');
+    const err = document.getElementById('reg-match-error');
+    if (p1 && p2 && p1.value !== p2.value) {
+        if (err) err.style.display = 'block';
+        p2.focus();
+        return false;
+    }
+    if (err) err.style.display = 'none';
+    return true;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const hash = (window.location.hash || '').replace('#', '');
+    if (hash === 'register' || hash === 'admin' || hash === 'login') {
+        switchAuthTab(hash);
+    }
+});
+
 async function adminSession(body, button) {
     const message = document.querySelector('[data-auth-message]');
     button.disabled = true;

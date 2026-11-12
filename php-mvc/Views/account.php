@@ -167,6 +167,73 @@
         </div>
     </div>
 
+    <script>
+    function switchAuthTab(tab) {
+        var panels = {
+            'login': document.getElementById('auth-panel-login'),
+            'register': document.getElementById('auth-panel-register'),
+            'admin': document.getElementById('auth-panel-admin')
+        };
+        for (var k in panels) {
+            if (panels[k]) {
+                panels[k].style.display = (k === tab) ? 'block' : 'none';
+            }
+        }
+        var tabs = {
+            'login': document.getElementById('tab-btn-login'),
+            'register': document.getElementById('tab-btn-register'),
+            'admin': document.getElementById('tab-btn-admin')
+        };
+        for (var t in tabs) {
+            if (tabs[t]) {
+                if (t === tab) {
+                    tabs[t].classList.add('active');
+                    tabs[t].setAttribute('aria-selected', 'true');
+                } else {
+                    tabs[t].classList.remove('active');
+                    tabs[t].setAttribute('aria-selected', 'false');
+                }
+            }
+        }
+        if (panels[tab]) {
+            var input = panels[tab].querySelector('input:not([type="hidden"])');
+            if (input) setTimeout(function() { input.focus(); }, 60);
+        }
+        if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', '#' + tab);
+        }
+    }
+
+    function togglePass(inputId, btn) {
+        var input = document.getElementById(inputId);
+        if (!input) return;
+        var isPass = input.type === 'password';
+        input.type = isPass ? 'text' : 'password';
+        var eye = btn.querySelector('.eye-icon');
+        if (eye) eye.textContent = isPass ? '🙈' : '👁️';
+    }
+
+    function validateRegister(form) {
+        var p1 = form.querySelector('#reg-password');
+        var p2 = form.querySelector('#reg-password-confirm');
+        var err = document.getElementById('reg-match-error');
+        if (p1 && p2 && p1.value !== p2.value) {
+            if (err) err.style.display = 'block';
+            p2.focus();
+            return false;
+        }
+        if (err) err.style.display = 'none';
+        return true;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var hash = (window.location.hash || '').replace('#', '');
+        if (hash === 'register' || hash === 'admin' || hash === 'login') {
+            switchAuthTab(hash);
+        }
+    });
+    </script>
+
 <?php else: ?>
     <!-- GIAO DIỆN TÀI KHOẢN CHI TIẾT (KHI ĐÃ ĐĂNG NHẬP) -->
     <div class="account-dashboard">
