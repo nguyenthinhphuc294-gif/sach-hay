@@ -5,8 +5,7 @@
 function switchAuthTab(tab) {
     const panels = {
         'login': document.getElementById('auth-panel-login'),
-        'register': document.getElementById('auth-panel-register'),
-        'admin': document.getElementById('auth-panel-admin')
+        'register': document.getElementById('auth-panel-register')
     };
     for (const k in panels) {
         if (panels[k]) {
@@ -15,8 +14,7 @@ function switchAuthTab(tab) {
     }
     const tabs = {
         'login': document.getElementById('tab-btn-login'),
-        'register': document.getElementById('tab-btn-register'),
-        'admin': document.getElementById('tab-btn-admin')
+        'register': document.getElementById('tab-btn-register')
     };
     for (const t in tabs) {
         if (tabs[t]) {
@@ -62,8 +60,12 @@ function validateRegister(form) {
 
 window.addEventListener('DOMContentLoaded', () => {
     const hash = (window.location.hash || '').replace('#', '');
-    if (hash === 'register' || hash === 'admin' || hash === 'login') {
-        switchAuthTab(hash);
+    if (document.getElementById('auth-panel-login')) {
+        if (hash === 'register') {
+            switchAuthTab('register');
+        } else {
+            switchAuthTab('login');
+        }
     }
 });
 

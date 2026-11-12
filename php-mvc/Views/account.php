@@ -33,9 +33,6 @@
                 <button type="button" class="auth-tab" id="tab-btn-register" onclick="switchAuthTab('register')" role="tab" aria-selected="false">
                     Đăng Ký
                 </button>
-                <button type="button" class="auth-tab admin-tab-btn" id="tab-btn-admin" onclick="switchAuthTab('admin')" role="tab" aria-selected="false">
-                    🛡️ Admin
-                </button>
             </div>
 
             <div class="auth-body">
@@ -73,7 +70,7 @@
                             </p>
                             <div class="admin-quick-link">
                                 <span>Bạn là Quản trị viên?</span>
-                                <a href="javascript:void(0)" onclick="switchAuthTab('admin')">Đăng nhập Admin tại đây 🛡️</a>
+                                <a href="/admin">Đăng nhập Admin tại đây 🛡️</a>
                             </div>
                         </div>
                     </form>
@@ -125,44 +122,6 @@
                         </p>
                     </form>
                 </div>
-
-                <!-- FORM ĐĂNG NHẬP QUẢN TRỊ VIÊN (ADMIN) -->
-                <div id="auth-panel-admin" class="auth-panel" style="display: none;">
-                    <form method="post" class="auth-form" data-admin-auth>
-                        <div class="admin-auth-header-box">
-                            <span class="admin-icon-large">🛡️</span>
-                            <div>
-                                <h3 style="margin:0 0 .2rem; font-size:1.05rem; font-weight:750;">Đăng Nhập Quản Trị Viên</h3>
-                                <p class="muted" style="margin:0; font-size:.8rem;">Truy cập cổng quản lý kho hàng, đơn hàng và cấu hình.</p>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="admin-username">Tài khoản Admin</label>
-                            <input id="admin-username" name="username" required maxlength="64" autocomplete="username" value="admin" placeholder="admin">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="admin-password">Mật khẩu Admin</label>
-                            <div class="password-wrapper">
-                                <input id="admin-password" name="password" type="password" required maxlength="72" autocomplete="current-password" placeholder="Nhập mật khẩu quản trị">
-                                <button type="button" class="toggle-password" onclick="togglePass('admin-password', this)" aria-label="Xem mật khẩu" title="Xem/Ẩn mật khẩu">
-                                    <span class="eye-icon">👁️</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <p role="alert" data-auth-message class="form-error" hidden style="margin: 0; padding: .4rem .6rem; background: #fee2e2; border-radius: .4rem;"></p>
-
-                        <button type="submit" class="auth-btn-primary" style="background: #1f2420;">
-                            Đăng Nhập Quản Trị &rarr;
-                        </button>
-
-                        <p class="auth-switch-text">
-                            <a href="javascript:void(0)" onclick="switchAuthTab('login')">← Quay lại Đăng nhập Khách hàng</a>
-                        </p>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
@@ -171,8 +130,7 @@
     function switchAuthTab(tab) {
         var panels = {
             'login': document.getElementById('auth-panel-login'),
-            'register': document.getElementById('auth-panel-register'),
-            'admin': document.getElementById('auth-panel-admin')
+            'register': document.getElementById('auth-panel-register')
         };
         for (var k in panels) {
             if (panels[k]) {
@@ -181,8 +139,7 @@
         }
         var tabs = {
             'login': document.getElementById('tab-btn-login'),
-            'register': document.getElementById('tab-btn-register'),
-            'admin': document.getElementById('tab-btn-admin')
+            'register': document.getElementById('tab-btn-register')
         };
         for (var t in tabs) {
             if (tabs[t]) {
@@ -228,9 +185,12 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         var hash = (window.location.hash || '').replace('#', '');
-        if (hash === 'register' || hash === 'admin' || hash === 'login') {
-            switchAuthTab(hash);
+        if (hash === 'register') {
+            switchAuthTab('register');
+        } else {
+            switchAuthTab('login');
         }
+    });
     });
     </script>
 
