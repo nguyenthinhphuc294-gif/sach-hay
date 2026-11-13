@@ -135,6 +135,9 @@ final class PageController
                 if (!isset($_SESSION['cart'][$id]) && count($_SESSION['cart'] ?? []) >= 30) Http::invalid('Giỏ hàng tối đa 30 tựa sách.');
                 $_SESSION['cart'][$id] = $quantity;
                 unset($_SESSION['purchase']);
+                if (!empty($data['buy_now'])) {
+                    $this->redirect('/checkout');
+                }
                 $this->redirect('/cart');
             case '/checkout':
                 $this->checkout($data);
