@@ -17,7 +17,10 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     </style>
     <script src="/sachhay.js?v=2" defer></script>
 </head>
-<body>
+<body<?= ($view === 'admin') ? ' class="admin-app-body"' : '' ?>>
+<?php if ($view === 'admin'): ?>
+    <?php require __DIR__ . '/' . $view . '.php'; ?>
+<?php else: ?>
 <header class="site-header">
     <div class="announcement"><div class="wrap topbar">
         <span><?php $icon = 'sparkles'; require __DIR__ . '/store-icon.php'; ?> Hội sách Sách Hay 2026 · Freeship đơn từ 250.000 ₫</span>
@@ -151,5 +154,6 @@ $statusNames = ['pending'=>'Chờ xác nhận','confirmed'=>'Đã xác nhận','
     <?php require __DIR__ . '/' . $view . '.php'; ?>
 </main>
 <?php require __DIR__ . '/footer.php'; ?>
+<?php endif; ?>
 </body>
 </html>

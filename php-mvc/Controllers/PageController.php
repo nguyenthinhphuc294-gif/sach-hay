@@ -125,9 +125,20 @@ final class PageController
                     'books'=>$this->catalog->list(true), 'page'=>$page,
                     'stats'=>$this->db->one("SELECT COUNT(*) AS total,
                         SUM(CASE WHEN json_extract(payload,'$.order.status')='pending' THEN 1 ELSE 0 END) AS pending,
-                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' THEN total ELSE 0 END) AS revenue FROM orders"),
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' THEN total ELSE 0 END) AS revenue,
+                        SUM(CASE WHEN json_extract(payload,'$.order.status') IN ('pending','confirmed','processing','shipping') THEN total ELSE 0 END) AS pendingRevenue,
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' AND payment_method='COD' THEN total ELSE 0 END) AS codRevenue,
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' AND payment_method='BANK_TRANSFER' THEN total ELSE 0 END) AS bankRevenue,
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' AND payment_method='STORE_PICKUP' THEN total ELSE 0 END) AS storeRevenue,
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' THEN 1 ELSE 0 END) AS completedCount FROM orders"),
+                    'revenueDaily'=>$this->db->run("SELECT substr(created_at, 1, 10) as day, 
+                        SUM(CASE WHEN json_extract(payload,'$.order.status')='completed' THEN total ELSE 0 END) as revenue,
+                        COUNT(*) as orderCount
+                        FROM orders GROUP BY substr(created_at, 1, 10) ORDER BY day ASC LIMIT 14")->fetchAll(),
+                    'revenueOrders'=>$this->db->run("SELECT id, order_code, payment_method, total, payload, payment_status, paid_at, created_at 
+                        FROM orders ORDER BY created_at DESC LIMIT 100")->fetchAll(),
                     'contacts'=>$this->db->run('SELECT name,email,message,created_at FROM contacts ORDER BY created_at DESC LIMIT 20')->fetchAll(),
-                    'vouchers'=>$this->db->run('SELECT code,value,kind,used,max_uses,valid_until FROM vouchers ORDER BY code')->fetchAll(),
+                    'vouchers'=>$this->db->run("SELECT code, value, kind, used, max_uses, valid_until, minimum, cap, active FROM vouchers ORDER BY CASE WHEN kind='shipping' THEN 1 WHEN kind='percentage' THEN 2 ELSE 3 END, value DESC")->fetchAll(),
                 ]);
                 break;
             default:
@@ -237,7 +248,8 @@ final class PageController
             case '/admin':
                 if (!$this->admin) throw new ApiError(403, 'ADMIN_REQUIRED', 'Vui lòng đăng nhập quản trị.');
                 $this->manage($action, $data);
-                $this->redirect('/admin', 'Đã cập nhật.');
+                $frag = in_array($action, ['save_voucher', 'delete_voucher'], true) ? '#vouchers' : ($action === 'order' ? '#orders' : '#books');
+                $this->redirect('/admin' . $frag, 'Đã cập nhật dữ liệu thành công!');
             default:
                 $this->notFound();
         }
@@ -332,6 +344,28 @@ final class PageController
         }
         if ($action === 'remove') {
             $this->catalog->remove(Http::text($data['id'] ?? null, 80));
+            return;
+        }
+        if ($action === 'save_voucher') {
+            $code = strtoupper(trim(Http::text($data['code'] ?? null, 40)));
+            $kind = Http::text($data['kind'] ?? null, 20);
+            $value = (int) ($data['value'] ?? 0);
+            $minimum = (int) ($data['minimum'] ?? 0);
+            $cap = !empty($data['cap']) ? (int) $data['cap'] : null;
+            $maxUses = (int) ($data['max_uses'] ?? 1000);
+            $validUntil = !empty($data['valid_until']) ? strtotime($data['valid_until']) : (time() + 365 * 86400);
+            $now = time();
+
+            $this->db->run("INSERT INTO vouchers(code, kind, value, minimum, cap, valid_from, valid_until, max_uses, max_per_user) 
+                VALUES(?, ?, ?, ?, ?, ?, ?, ?, 1)
+                ON CONFLICT(code) DO UPDATE SET kind=excluded.kind, value=excluded.value, minimum=excluded.minimum, 
+                    cap=excluded.cap, valid_until=excluded.valid_until, max_uses=excluded.max_uses",
+                [$code, $kind, $value, $minimum, $cap, $now, $validUntil, $maxUses]);
+            return;
+        }
+        if ($action === 'delete_voucher') {
+            $code = strtoupper(trim(Http::text($data['code'] ?? null, 40)));
+            $this->db->run("DELETE FROM vouchers WHERE code=?", [$code]);
             return;
         }
         if ($action !== 'save') Http::invalid();
